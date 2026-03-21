@@ -1,90 +1,89 @@
 # OLW for WordPress
 
-A desktop blog editor for WordPress, forked from [Open Live Writer](https://github.com/OpenLiveWriter/OpenLiveWriter).
+桌面版 WordPress 部落格編輯器，從 [Open Live Writer](https://github.com/OpenLiveWriter/OpenLiveWriter) 分支而來。
 
-**Key change:** Replaced the legacy XML-RPC protocol with the modern **WordPress REST API**, providing better security and reliability.
+**核心改動：** 移除舊有的 XML-RPC 協定，改用更安全的 **WordPress REST API** 進行通訊。
 
-## What's Different
+## 與原版差異
 
 | | Open Live Writer | OLW for WordPress |
 |---|---|---|
-| Protocol | XML-RPC | WordPress REST API (v2) |
-| Authentication | XML-RPC credentials | Application Passwords (WP 5.6+) |
-| Supported platforms | WordPress, Blogger, MovableType, LiveJournal, SharePoint, etc. | **WordPress only** |
-| Security | XML-RPC often disabled by security plugins | REST API is the standard, always available |
+| 通訊協定 | XML-RPC | WordPress REST API (v2) |
+| 驗證方式 | XML-RPC 帳密 | 應用程式密碼 (WP 5.6+) |
+| 支援平台 | WordPress、Blogger、MovableType、LiveJournal、SharePoint 等 | **僅支援 WordPress** |
+| 安全性 | XML-RPC 常被安全外掛停用 | REST API 是官方標準，永遠可用 |
 
-## Requirements
+## 系統需求
 
-- **WordPress 4.7+** (REST API built-in)
-- **WordPress 5.6+** recommended (Application Passwords built-in)
-- Windows 7 or later, .NET Framework 4.6.1
+- **WordPress 4.7+**（內建 REST API）
+- **WordPress 5.6+** 建議（內建應用程式密碼功能）
+- Windows 7 以上，.NET Framework 4.6.1
 
-## Setup
+## 使用設定
 
-1. In your WordPress admin, go to **Users > Profile > Application Passwords**
-2. Enter a name (e.g. "OLW") and click **Add New Application Password**
-3. Copy the generated password
-4. In OLW for WordPress, enter your site URL, WordPress username, and the application password
+1. 進入 WordPress 後台，前往 **使用者 > 個人資料 > 應用程式密碼**
+2. 輸入名稱（例如「OLW」），點擊 **新增應用程式密碼**
+3. 複製產生的密碼
+4. 在 OLW for WordPress 中輸入網站網址、WordPress 使用者名稱，以及應用程式密碼
 
-## Building from Source
+## 從原始碼編譯
 
-### Prerequisites
+### 前置需求
 
-- Visual Studio 2015+ or MSBuild 14.0+
+- Visual Studio 2015+ 或 MSBuild 14.0+
 - NuGet CLI
 
-### Build locally (Windows)
+### 本機編譯（Windows）
 
 ```cmd
 build.cmd
 ```
 
-### Build via GitHub Actions (recommended)
+### 透過 GitHub Actions 編譯（推薦）
 
-Every push to `main` triggers an automatic build on GitHub Actions using a Windows runner. No local Windows machine needed.
+每次 push 到 `main` 分支都會自動在 GitHub Actions 的 Windows 環境上編譯。不需要自己有 Windows 電腦。
 
-1. Push your code
-2. Go to **Actions** tab in this repository
-3. Download build artifacts when the workflow completes
+1. Push 程式碼
+2. 到本 Repository 的 **Actions** 頁籤查看
+3. 編譯完成後下載產出檔案
 
-The workflow also creates an installer package on pushes to `main`.
+push 到 `main` 時也會自動建立安裝檔。
 
-## Architecture
+## 專案架構
 
 ```
 src/managed/
   OpenLiveWriter.BlogClient/
-    Clients/WordPressRestClient.cs    # Core REST API client
-    Detection/BlogServiceDetector.cs  # Auto-detects WordPress REST API
-  OpenLiveWriter.PostEditor/          # Post editing UI
-  OpenLiveWriter.CoreServices/        # Shared utilities
-  OpenLiveWriter/                     # Application entry point
-  writer.sln                          # Solution file
+    Clients/WordPressRestClient.cs    # 核心 REST API 用戶端
+    Detection/BlogServiceDetector.cs  # 自動偵測 WordPress REST API
+  OpenLiveWriter.PostEditor/          # 文章編輯器介面
+  OpenLiveWriter.CoreServices/        # 共用工具程式庫
+  OpenLiveWriter/                     # 應用程式進入點
+  writer.sln                          # 方案檔
 ```
 
-### REST API Client
+### REST API 用戶端
 
-`WordPressRestClient` communicates with WordPress via `/wp-json/wp/v2/` endpoints:
+`WordPressRestClient` 透過 `/wp-json/wp/v2/` 端點與 WordPress 溝通：
 
-- **Posts & Pages** - Full CRUD with title, content, excerpt, slug, status, categories, tags
-- **Categories & Tags** - List, create, and assign
-- **Media** - Upload images and files via multipart POST
-- **Authors** - List available authors
+- **文章與頁面** - 完整的新增、讀取、更新、刪除，支援標題、內容、摘要、代稱、狀態、分類、標籤
+- **分類與標籤** - 列出、建立、指派
+- **媒體** - 透過 multipart POST 上傳圖片與檔案
+- **作者** - 列出可用的作者
 
-Authentication uses HTTP Basic Auth with Application Passwords, sent over HTTPS.
+驗證採用 HTTP Basic Auth 搭配應用程式密碼，透過 HTTPS 傳輸。
 
-## History
+## 歷史
 
-The product that became Live Writer was originally created by a small, super-talented team of engineers including
-JJ Allaire, Joe Cheng, Charles Teague, and Spike Washburn. The team was acquired by Microsoft in 2006.
-In December 2015, Microsoft donated the code to the .NET Foundation as Open Live Writer.
+Live Writer 最初由 JJ Allaire、Joe Cheng、Charles Teague 和 Spike Washburn 等工程師團隊開發。
+該團隊於 2006 年被 Microsoft 收購。2015 年 12 月，Microsoft 將程式碼捐贈給 .NET Foundation，成為 Open Live Writer。
 
-This fork removes all legacy blog platform support and XML-RPC, focusing exclusively on WordPress with the modern REST API.
+本分支移除了所有舊有部落格平台支援與 XML-RPC，專注於透過現代 REST API 連接 WordPress。
 
-## License
+## 授權條款
 
-Licensed under the [MIT License](license.txt).
+採用 [MIT 授權條款](license.txt)。
 
 ## .NET Foundation
 
-The original Open Live Writer project is supported by the [.NET Foundation](http://www.dotnetfoundation.org).
+原始 Open Live Writer 專案由 [.NET Foundation](http://www.dotnetfoundation.org) 支持。
