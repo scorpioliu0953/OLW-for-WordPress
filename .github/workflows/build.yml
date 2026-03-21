@@ -1,0 +1,86 @@
+name: Build OLW for WordPress
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # MSBuild is pre-installed on windows-latest, but we need to add it to PATH
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      # This project uses NuGet packages.config (not PackageReference)
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v2
+
+      - name: Restore NuGet packages
+        run: nuget restore src\managed\writer.sln
+
+      - name: Build solution
+        run: msbuild src\managed\writer.sln /p:Configuration=${{ matrix.configuration }} /nologo /maxcpucount /verbosity:minimal
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: OLW-for-WordPress-${{ matrix.configuration }}
+          path: src\managed\bin\${{ matrix.configuration }}\i386\Writer\
+          retention-days: 30
+
+  create-installer:
+    needs: build
+    runs-on: windows-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v2
+
+      - name: Restore NuGet packages
+        run: nuget restore src\managed\writer.sln
+
+      - name: Build Release
+        run: msbuild src\managed\writer.sln /p:Configuration=Release /nologo /maxcpucount /verbosity:minimal
+
+      - name: Read version
+        id: version
+        shell: pwsh
+        run: |
+          $version = Get-Content version.txt -Raw
+          $version = $version.Trim()
+          echo "VERSION=$version" >> $env:GITHUB_OUTPUT
+
+      - name: Create NuGet package
+        run: nuget pack OpenLiveWriter.nuspec -version ${{ steps.version.outputs.VERSION }} -basepath src\managed\bin\Release\i386\Writer
+
+      - name: Create installer with Squirrel
+        shell: cmd
+        run: |
+          src\managed\packages\squirrel.windows.1.4.4\tools\Squirrel.exe --no-msi --releasify OpenLiveWriter.${{ steps.version.outputs.VERSION }}.nupkg
+          IF EXIST Releases\Setup.exe MOVE Releases\Setup.exe Releases\OLWforWordPressSetup.exe
+
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: OLW-for-WordPress-Installer
+          path: Releases\
+          retention-days: 90
