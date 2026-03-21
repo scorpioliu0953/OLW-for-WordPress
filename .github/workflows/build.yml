@@ -76,12 +76,19 @@ jobs:
           echo "VERSION=$version" >> $env:GITHUB_OUTPUT
 
       - name: Create NuGet package
-        run: nuget pack OpenLiveWriter.nuspec -version ${{ steps.version.outputs.VERSION }} -basepath src\managed\bin\Release\i386\Writer
+        shell: pwsh
+        run: |
+          nuget pack OpenLiveWriter.nuspec -version ${{ steps.version.outputs.VERSION }} -basepath src\managed\bin\Release\i386\Writer
+          # Find the actual nupkg file (NuGet may normalize version)
+          $nupkg = Get-ChildItem -Filter "OpenLiveWriter.*.nupkg" | Select-Object -First 1
+          echo "NUPKG=$($nupkg.Name)" >> $env:GITHUB_OUTPUT
+          echo "Found package: $($nupkg.Name)"
+        id: nuget_pack
 
       - name: Create installer with Squirrel
         shell: cmd
         run: |
-          src\managed\packages\squirrel.windows.1.4.4\tools\Squirrel.exe --no-msi --releasify OpenLiveWriter.${{ steps.version.outputs.VERSION }}.nupkg
+          src\managed\packages\squirrel.windows.1.4.4\tools\Squirrel.exe --no-msi --releasify ${{ steps.nuget_pack.outputs.NUPKG }}
           IF EXIST Releases\Setup.exe MOVE Releases\Setup.exe Releases\OLWforWordPressSetup.exe
 
       - name: Upload installer
