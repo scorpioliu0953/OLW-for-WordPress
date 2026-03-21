@@ -19,11 +19,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # MSBuild is pre-installed on windows-latest, but we need to add it to PATH
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
-      # This project uses NuGet packages.config (not PackageReference)
+      # Install .NET Framework 4.6.1 Developer Pack (Targeting Pack)
+      - name: Install .NET Framework 4.6.1 Developer Pack
+        shell: pwsh
+        run: |
+          choco install netfx-4.6.1-devpack -y --no-progress
+          echo "Installed .NET Framework 4.6.1 Developer Pack"
+
+      # Install VS2015 C++ Build Tools (v140) for the Ribbon native project
+      - name: Install VS2015 Build Tools (v140)
+        shell: pwsh
+        run: |
+          choco install visualcpp-build-tools --version=14.0.25420.1 -y --no-progress
+          echo "Installed Visual C++ Build Tools 2015"
+
       - name: Setup NuGet
         uses: nuget/setup-nuget@v2
 
@@ -31,7 +43,7 @@ jobs:
         run: nuget restore src\managed\writer.sln
 
       - name: Build solution
-        run: msbuild src\managed\writer.sln /p:Configuration=${{ matrix.configuration }} /nologo /maxcpucount /verbosity:minimal
+        run: msbuild src\managed\writer.sln /p:Configuration=${{ matrix.configuration }} /p:PlatformToolset=v143 /nologo /maxcpucount /verbosity:minimal
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -43,7 +55,7 @@ jobs:
   create-installer:
     needs: build
     runs-on: windows-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout
@@ -52,6 +64,14 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
+      - name: Install .NET Framework 4.6.1 Developer Pack
+        shell: pwsh
+        run: choco install netfx-4.6.1-devpack -y --no-progress
+
+      - name: Install VS2015 Build Tools (v140)
+        shell: pwsh
+        run: choco install visualcpp-build-tools --version=14.0.25420.1 -y --no-progress
+
       - name: Setup NuGet
         uses: nuget/setup-nuget@v2
 
@@ -59,7 +79,7 @@ jobs:
         run: nuget restore src\managed\writer.sln
 
       - name: Build Release
-        run: msbuild src\managed\writer.sln /p:Configuration=Release /nologo /maxcpucount /verbosity:minimal
+        run: msbuild src\managed\writer.sln /p:Configuration=Release /p:PlatformToolset=v143 /nologo /maxcpucount /verbosity:minimal
 
       - name: Read version
         id: version
