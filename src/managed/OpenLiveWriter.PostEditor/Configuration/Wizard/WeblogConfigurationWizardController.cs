@@ -657,8 +657,6 @@ namespace OpenLiveWriter.PostEditor.Configuration.Wizard
         private bool _preventSwitchingToWeblog = false;
         private WizardStep _editWithStyleStep = null;
         private IBlogProviderAccountWizardDescription _providerAccountWizard;
-        private bool _authenticationRequired = false;
-        private bool _authenticationStepAdded;
 
         #endregion
 
