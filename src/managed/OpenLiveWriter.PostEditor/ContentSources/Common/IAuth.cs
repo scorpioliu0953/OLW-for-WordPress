@@ -41,19 +41,14 @@ namespace OpenLiveWriter.PostEditor.ContentSources.Common
     }
 
     #region YouTubeAuth : IAuth
+    // YouTube authentication via GData API is no longer supported.
+    // This stub preserves the interface for any remaining references.
     public class YouTubeAuth : IAuth
     {
         [ThreadStatic]
         private static YouTubeAuth _this;
 
-        private GDataCredentials _credentials;
-        private string _username;
-        private string _password;
-
-        private YouTubeAuth()
-        {
-
-        }
+        private YouTubeAuth() { }
 
         public static YouTubeAuth Instance
         {
@@ -61,165 +56,34 @@ namespace OpenLiveWriter.PostEditor.ContentSources.Common
             {
                 if (_this == null)
                     _this = new YouTubeAuth();
-
                 return _this;
             }
         }
 
-        public string Username
-        {
-            get
-            {
-                Debug.Assert(IsLoggedIn, "Should not try to get Username, if user is not logged in.");
-                return _credentials.GetUserName(_username, _password, GDataCredentials.YOUTUBE_SERVICE_NAME); ;
-            }
-        }
+        public string Username { get { return string.Empty; } }
+        public string AuthToken { get { return string.Empty; } }
+        public bool AllowSavePassword { get { return false; } }
+        public bool PasswordRequired(string username) { return false; }
+        public bool IsLoggedIn { get { return false; } }
 
-        public string AuthToken
-        {
-            get
-            {
-                Debug.Assert(IsLoggedIn, "Should not try to get AuthToken, if user is not logged in.");
-                return _credentials.GetCredentialsIfValid(_username, _password, GDataCredentials.YOUTUBE_SERVICE_NAME);
-            }
-        }
-
-        public bool AllowSavePassword
-        {
-            get { return false; }
-        }
-
-        public bool PasswordRequired(string username)
-        {
-            return true;
-        }
-
-        public bool AttemptAutoLogin(IWin32Window parent)
-        {
-            return false;
-        }
-
-        public bool IsLoggedIn
-        {
-            get
-            {
-                return _credentials != null && _credentials.IsValid(_username, _password, GDataCredentials.YOUTUBE_SERVICE_NAME);
-            }
-        }
-
-        public bool Login(string username, string password, bool savePassword, bool ignoreSavedPassword, IWin32Window parent)
-        {
-            return Login(username, password);
-        }
-
-        public bool Login(string username, string password)
-        {
-            using (new WaitCursor())
-            {
-                try
-                {
-                    _username = username;
-                    _password = password;
-                    TransientCredentials creds = new TransientCredentials(username, password, null);
-                    _credentials = GDataCredentials.FromCredentials(creds);
-                    _credentials.EnsureLoggedIn(username, password, GDataCredentials.YOUTUBE_SERVICE_NAME, true, GDataCredentials.YOUTUBE_CLIENT_LOGIN_URL);
-                }
-                catch (Exception)
-                {
-                    _credentials = null;
-                }
-            }
-
-            OnLoginStatusChanged();
-            return IsLoggedIn;
-        }
-
-        public bool Login(bool showUI, IWin32Window parent)
-        {
-            if (!showUI) return false;
-
-            BlogClientLoginDialog d = new BlogClientLoginDialog();
-            d.Domain = new CredentialsDomain(Res.Get(StringId.Plugin_Video_Youtube_Publish_Name), String.Empty, null, ImageHelper.GetBitmapBytes(ResourceHelper.LoadAssemblyResourceBitmap("Video.YouTube.Images.YouTubeTab.png")), false);
-            d.Closing += delegate (object sender, CancelEventArgs e)
-                             {
-                                 if (d.DialogResult == DialogResult.OK)
-                                 {
-                                     if (string.IsNullOrEmpty(d.UserName) || string.IsNullOrEmpty(d.Password))
-                                     {
-                                         DisplayMessage.Show(MessageId.UsernameAndPasswordRequired, this, null);
-                                         e.Cancel = true;
-                                     }
-                                     else if (!Login(d.UserName, d.Password))
-                                     {
-                                         e.Cancel = true;
-                                     }
-                                 }
-
-                             };
-
-            d.ShowDialog(parent);
-
-            OnLoginStatusChanged();
-            return IsLoggedIn;
-        }
-
-        public void Logout()
-        {
-            _username = null;
-            _password = null;
-            _credentials = null;
-            OnLoginStatusChanged();
-        }
-
-        public void SavePassword(string username, string password)
-        {
-            throw new NotImplementedException();
-        }
+        public bool Login(string username, string password, bool savePassword, bool ignoreSavedPassword, IWin32Window parent) { return false; }
+        public bool Login(bool showUI, IWin32Window parent) { return false; }
+        public void Logout() { OnLoginStatusChanged(); }
 
         public event EventHandler LoginStatusChanged;
 
-        public Bitmap LoginLogo
-        {
-            get
-            {
-                return ResourceHelper.LoadAssemblyResourceBitmap("Video.YouTube.Images.LoginLogo.png");
-            }
-        }
-
-        public string LoginText
-        {
-            get { return ""; }
-        }
-
-        public string LoginUsernameLabel
-        {
-            get { return Res.Get(StringId.UsernameLabel); }
-        }
-
-        public string LoginPasswordLabel
-        {
-            get { return Res.Get(StringId.PasswordLabel); }
-        }
-
-        public string LoginExampleText
-        {
-            get { return ""; }
-        }
-
-        public string LoginSavePasswordText
-        {
-            get { return Res.Get(StringId.RememberPassword); }
-        }
+        public Bitmap LoginLogo { get { return null; } }
+        public string LoginText { get { return ""; } }
+        public string LoginUsernameLabel { get { return Res.Get(StringId.UsernameLabel); } }
+        public string LoginPasswordLabel { get { return Res.Get(StringId.PasswordLabel); } }
+        public string LoginExampleText { get { return ""; } }
+        public string LoginSavePasswordText { get { return Res.Get(StringId.RememberPassword); } }
+        public string ServiceUrl { get { return "http://www.youtube.com"; } }
 
         protected virtual void OnLoginStatusChanged()
         {
             if (LoginStatusChanged != null)
                 LoginStatusChanged(this, EventArgs.Empty);
-        }
-
-        public string ServiceUrl
-        {
-            get { return "http://www.youtube.com"; }
         }
     }
     #endregion
