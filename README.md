@@ -4,6 +4,12 @@
 
 **核心改動：** 移除舊有的 XML-RPC 協定，改用更安全的 **WordPress REST API** 進行通訊。
 
+## 下載
+
+**[OLWforWordPressSetup.exe](https://github.com/scorpioliu0953/OLW-for-WordPress/releases/latest/download/OLWforWordPressSetup.exe)** — 最新版安裝檔，下載後直接執行即可安裝。
+
+所有版本請見 [Releases 頁面](https://github.com/scorpioliu0953/OLW-for-WordPress/releases)。
+
 ## 與原版差異
 
 | | Open Live Writer | OLW for WordPress |
