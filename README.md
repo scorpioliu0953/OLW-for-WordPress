@@ -6,7 +6,14 @@
 
 ## 下載
 
+### Windows 版
 **[OLWforWordPressSetup.exe](https://github.com/scorpioliu0953/OLW-for-WordPress/releases/latest/download/OLWforWordPressSetup.exe)** — 最新版安裝檔，下載後直接執行即可安裝。
+
+### macOS 版
+- **[OLWforWordPress-arm64.dmg](https://github.com/scorpioliu0953/OLW-for-WordPress-macOS/releases/latest/download/OLWforWordPress-arm64.dmg)** — Apple Silicon (M1/M2/M3/M4)
+- **[OLWforWordPress-x64.dmg](https://github.com/scorpioliu0953/OLW-for-WordPress-macOS/releases/latest/download/OLWforWordPress-x64.dmg)** — Intel Mac
+
+macOS 版原始碼：[OLW-for-WordPress-macOS](https://github.com/scorpioliu0953/OLW-for-WordPress-macOS)
 
 所有版本請見 [Releases 頁面](https://github.com/scorpioliu0953/OLW-for-WordPress/releases)。
 
