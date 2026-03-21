@@ -75,7 +75,7 @@ namespace OpenLiveWriter.BlogClient.Clients
 
         #region IBlogClient Properties
 
-        public string ProtocolName
+        public new string ProtocolName
         {
             get
             {
@@ -256,7 +256,7 @@ namespace OpenLiveWriter.BlogClient.Clients
             request.UserAgent = UserAgent;
             request.Headers["Authorization"] = GetAuthHeader(tc);
 
-            byte[] data = Encoding.UTF8.GetBytes(body.ToString(Formatting.None));
+            byte[] data = Encoding.UTF8.GetBytes(body.ToString(Newtonsoft.Json.Formatting.None));
             request.ContentLength = data.Length;
             using (Stream requestStream = request.GetRequestStream())
             {
