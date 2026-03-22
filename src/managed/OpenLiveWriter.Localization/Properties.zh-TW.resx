@@ -1,0 +1,3340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Command.Accounts.LabelTitle" xml:space="preserve">
+    <value>管理部落格帳戶(&amp;M)...</value>
+  </data>
+  <data name="Command.Accounts.MenuText" xml:space="preserve">
+    <value>帳戶(&amp;A)...</value>
+  </data>
+  <data name="Command.Accounts.TooltipDescription" xml:space="preserve">
+    <value>新增、移除及編輯部落格帳戶。</value>
+  </data>
+  <data name="Command.Accounts.TooltipTitle" xml:space="preserve">
+    <value>管理部落格帳戶</value>
+  </data>
+  <data name="Command.AddPlugin.Keytip" xml:space="preserve">
+    <value>PA</value>
+  </data>
+  <data name="Command.AddPlugin.LabelTitle" xml:space="preserve">
+    <value>新增外掛程式</value>
+  </data>
+  <data name="Command.AddPlugin.MenuText" xml:space="preserve">
+    <value>新增外掛程式...</value>
+  </data>
+  <data name="Command.AddPlugin.Text" xml:space="preserve">
+    <value>新增外掛程式...</value>
+  </data>
+  <data name="Command.AddPlugin.TooltipDescription" xml:space="preserve">
+    <value>線上取得更多 Writer 外掛程式。</value>
+  </data>
+  <data name="Command.AddTagProvider.LabelTitle" xml:space="preserve">
+    <value>新增標籤提供者</value>
+  </data>
+  <data name="Command.AddToDictionary.MenuText" xml:space="preserve">
+    <value>新增至字典(&amp;A)</value>
+  </data>
+  <data name="Command.AddToDictionary.Text" xml:space="preserve">
+    <value>將此字詞新增至本機字典</value>
+  </data>
+  <data name="Command.AddToGlossary.MenuText" xml:space="preserve">
+    <value>新增至自動連結清單(&amp;K)</value>
+  </data>
+  <data name="Command.AddToGlossary.Text" xml:space="preserve">
+    <value>新增至自動連結清單</value>
+  </data>
+  <data name="Command.AddWeblog.LabelTitle" xml:space="preserve">
+    <value>新增部落格帳戶(&amp;A)...</value>
+  </data>
+  <data name="Command.AddWeblog.MenuText" xml:space="preserve">
+    <value>新增部落格帳戶(&amp;A)...</value>
+  </data>
+  <data name="Command.AddWeblog.Text" xml:space="preserve">
+    <value>新增部落格帳戶...</value>
+  </data>
+  <data name="Command.AddWeblog.TooltipDescription" xml:space="preserve">
+    <value>將新的部落格帳戶新增至 Writer。</value>
+  </data>
+  <data name="Command.AddWeblog.TooltipTitle" xml:space="preserve">
+    <value>新增部落格帳戶</value>
+  </data>
+  <data name="Command.AdjustBottomMargin.LabelTitle" xml:space="preserve">
+    <value>下方</value>
+  </data>
+  <data name="Command.AdjustBottomMargin.TooltipDescription" xml:space="preserve">
+    <value>變更此物件下方的邊界。</value>
+  </data>
+  <data name="Command.AdjustLeftMargin.LabelTitle" xml:space="preserve">
+    <value>左方</value>
+  </data>
+  <data name="Command.AdjustLeftMargin.TooltipDescription" xml:space="preserve">
+    <value>變更此物件左方的邊界。</value>
+  </data>
+  <data name="Command.AdjustRightMargin.LabelTitle" xml:space="preserve">
+    <value>右方</value>
+  </data>
+  <data name="Command.AdjustRightMargin.TooltipDescription" xml:space="preserve">
+    <value>變更此物件右方的邊界。</value>
+  </data>
+  <data name="Command.AdjustTopMargin.LabelTitle" xml:space="preserve">
+    <value>上方</value>
+  </data>
+  <data name="Command.AdjustTopMargin.TooltipDescription" xml:space="preserve">
+    <value>變更此物件上方的邊界。</value>
+  </data>
+  <data name="Command.AlignCenter.Keytip" xml:space="preserve">
+    <value>AC</value>
+  </data>
+  <data name="Command.AlignCenter.LabelTitle" xml:space="preserve">
+    <value>置中對齊</value>
+  </data>
+  <data name="Command.AlignCenter.MenuText" xml:space="preserve">
+    <value>置中(&amp;C)</value>
+  </data>
+  <data name="Command.AlignCenter.Shortcut" xml:space="preserve">
+    <value>CtrlE</value>
+  </data>
+  <data name="Command.AlignCenter.Text" xml:space="preserve">
+    <value>置中對齊</value>
+  </data>
+  <data name="Command.AlignCenter.TooltipDescription" xml:space="preserve">
+    <value>將文字置中對齊。</value>
+  </data>
+  <data name="Command.AlignCenter.TooltipTitle" xml:space="preserve">
+    <value>置中對齊 (Ctrl+E)</value>
+  </data>
+  <data name="Command.AlignLeft.Keytip" xml:space="preserve">
+    <value>AL</value>
+  </data>
+  <data name="Command.AlignLeft.LabelTitle" xml:space="preserve">
+    <value>靠左對齊</value>
+  </data>
+  <data name="Command.AlignLeft.MenuText" xml:space="preserve">
+    <value>靠左(&amp;L)</value>
+  </data>
+  <data name="Command.AlignLeft.Shortcut" xml:space="preserve">
+    <value>CtrlL</value>
+  </data>
+  <data name="Command.AlignLeft.Text" xml:space="preserve">
+    <value>靠左對齊</value>
+  </data>
+  <data name="Command.AlignLeft.TooltipDescription" xml:space="preserve">
+    <value>將文字靠左對齊。</value>
+  </data>
+  <data name="Command.AlignLeft.TooltipTitle" xml:space="preserve">
+    <value>靠左對齊 (Ctrl+L)</value>
+  </data>
+  <data name="Command.AlignmentGallery.LabelTitle" xml:space="preserve">
+    <value>對齊方式</value>
+  </data>
+  <data name="Command.AlignmentGallery.TooltipDescription" xml:space="preserve">
+    <value>設定所選物件在頁面上的位置。文字會自動設為環繞物件。</value>
+  </data>
+  <data name="Command.AlignmentGroup.Keytip" xml:space="preserve">
+    <value>ZA</value>
+  </data>
+  <data name="Command.AlignmentGroup.LabelTitle" xml:space="preserve">
+    <value>對齊方式</value>
+  </data>
+  <data name="Command.AlignNone.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.AlignNone.LabelTitle" xml:space="preserve">
+    <value>與文字同行</value>
+  </data>
+  <data name="Command.AlignRight.Keytip" xml:space="preserve">
+    <value>AR</value>
+  </data>
+  <data name="Command.AlignRight.LabelTitle" xml:space="preserve">
+    <value>靠右對齊</value>
+  </data>
+  <data name="Command.AlignRight.MenuText" xml:space="preserve">
+    <value>靠右(&amp;R)</value>
+  </data>
+  <data name="Command.AlignRight.Shortcut" xml:space="preserve">
+    <value>CtrlR</value>
+  </data>
+  <data name="Command.AlignRight.Text" xml:space="preserve">
+    <value>靠右對齊</value>
+  </data>
+  <data name="Command.AlignRight.TooltipDescription" xml:space="preserve">
+    <value>將文字靠右對齊。</value>
+  </data>
+  <data name="Command.AlignRight.TooltipTitle" xml:space="preserve">
+    <value>靠右對齊 (Ctrl+R)</value>
+  </data>
+  <data name="Command.ApplySemanticParagraph.Shortcut" xml:space="preserve">
+    <value>CtrlShiftN</value>
+  </data>
+  <data name="Command.Blockquote.Keytip" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="Command.Blockquote.LabelTitle" xml:space="preserve">
+    <value>區塊引言</value>
+  </data>
+  <data name="Command.Blockquote.MenuText" xml:space="preserve">
+    <value>區塊引言(&amp;Q)</value>
+  </data>
+  <data name="Command.Blockquote.Text" xml:space="preserve">
+    <value>區塊引言</value>
+  </data>
+  <data name="Command.Blockquote.TooltipDescription" xml:space="preserve">
+    <value>將所選文字設為區塊引言。</value>
+  </data>
+  <data name="Command.BlogClientOptions.LabelTitle" xml:space="preserve">
+    <value>部落格用戶端選項</value>
+  </data>
+  <data name="Command.BlogClientOptions.MenuText" xml:space="preserve">
+    <value>[偵錯] 部落格用戶端選項(&amp;B)</value>
+  </data>
+  <data name="Command.BlogProviderBlogGroup.Keytip" xml:space="preserve">
+    <value>ZB</value>
+  </data>
+  <data name="Command.BlogProviderButtonsGallery.Keytip" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="Command.BlogProviderButtonsGallery.LabelTitle" xml:space="preserve">
+    <value>部落格捷徑</value>
+  </data>
+  <data name="Command.BlogProviderButtonsGallery.TooltipDescription" xml:space="preserve">
+    <value>由所選部落格服務提供的捷徑。</value>
+  </data>
+  <data name="Command.BlogProviderButtonsGallery.TooltipTitle" xml:space="preserve">
+    <value>部落格捷徑</value>
+  </data>
+  <data name="Command.BlogProviderShortcutsGroup.Keytip" xml:space="preserve">
+    <value>ZS</value>
+  </data>
+  <data name="Command.BlogProviderShortcutsGroup.LabelTitle" xml:space="preserve">
+    <value>捷徑</value>
+  </data>
+  <data name="Command.BlogProviderTab.Keytip" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="Command.BlogProviderTab.LabelTitle" xml:space="preserve">
+    <value>部落格帳戶</value>
+  </data>
+  <data name="Command.BlogProviderThemeGroup.Keytip" xml:space="preserve">
+    <value>ZT</value>
+  </data>
+  <data name="Command.BlogProviderThemeGroup.LabelTitle" xml:space="preserve">
+    <value>佈景主題</value>
+  </data>
+  <data name="Command.Bold.Keytip" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="Command.Bold.LabelTitle" xml:space="preserve">
+    <value>粗體</value>
+  </data>
+  <data name="Command.Bold.Shortcut" xml:space="preserve">
+    <value>CtrlB</value>
+  </data>
+  <data name="Command.Bold.Text" xml:space="preserve">
+    <value>粗體</value>
+  </data>
+  <data name="Command.Bold.TooltipDescription" xml:space="preserve">
+    <value>將所選文字設為粗體。</value>
+  </data>
+  <data name="Command.Bold.TooltipTitle" xml:space="preserve">
+    <value>粗體 (Ctrl+B)</value>
+  </data>
+  <data name="Command.BreaksGroup.Keytip" xml:space="preserve">
+    <value>ZB</value>
+  </data>
+  <data name="Command.BreaksGroup.LabelTitle" xml:space="preserve">
+    <value>分隔符號</value>
+  </data>
+  <data name="Command.Bullets.Keytip" xml:space="preserve">
+    <value>L1</value>
+  </data>
+  <data name="Command.Bullets.LabelTitle" xml:space="preserve">
+    <value>項目符號</value>
+  </data>
+  <data name="Command.Bullets.MenuText" xml:space="preserve">
+    <value>項目符號(&amp;B)</value>
+  </data>
+  <data name="Command.Bullets.Shortcut" xml:space="preserve">
+    <value>CtrlShiftL</value>
+  </data>
+  <data name="Command.Bullets.Text" xml:space="preserve">
+    <value>項目符號</value>
+  </data>
+  <data name="Command.Bullets.TooltipDescription" xml:space="preserve">
+    <value>開始項目符號清單。</value>
+  </data>
+  <data name="Command.Bullets.TooltipTitle" xml:space="preserve">
+    <value>項目符號 (Ctrl+Shift+L)</value>
+  </data>
+  <data name="Command.CellProperties.LabelTitle" xml:space="preserve">
+    <value>儲存格(&amp;E)...</value>
+  </data>
+  <data name="Command.CellProperties.MenuText" xml:space="preserve">
+    <value>儲存格屬性(&amp;O)...</value>
+  </data>
+  <data name="Command.CellProperties.Text" xml:space="preserve">
+    <value>儲存格屬性</value>
+  </data>
+  <data name="Command.CellProperties.TooltipDescription" xml:space="preserve">
+    <value>編輯儲存格屬性。</value>
+  </data>
+  <data name="Command.CellProperties.TooltipTitle" xml:space="preserve">
+    <value>儲存格</value>
+  </data>
+  <data name="Command.CheckSpelling.Keytip" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="Command.CheckSpelling.LabelTitle" xml:space="preserve">
+    <value>拼字</value>
+  </data>
+  <data name="Command.CheckSpelling.MenuText" xml:space="preserve">
+    <value>拼字檢查(&amp;S)...</value>
+  </data>
+  <data name="Command.CheckSpelling.Shortcut" xml:space="preserve">
+    <value>F7</value>
+  </data>
+  <data name="Command.CheckSpelling.Text" xml:space="preserve">
+    <value>拼字檢查...</value>
+  </data>
+  <data name="Command.CheckSpelling.TooltipDescription" xml:space="preserve">
+    <value>檢查這篇文章的拼字。</value>
+  </data>
+  <data name="Command.CheckSpelling.TooltipTitle" xml:space="preserve">
+    <value>拼字 (F7)</value>
+  </data>
+  <data name="Command.Clear.MenuText" xml:space="preserve">
+    <value>清除(&amp;L)</value>
+  </data>
+  <data name="Command.Clear.Shortcut" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="Command.Clear.Text" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Command.ClearCell.Keytip" xml:space="preserve">
+    <value>DE</value>
+  </data>
+  <data name="Command.ClearCell.LabelTitle" xml:space="preserve">
+    <value>清除儲存格</value>
+  </data>
+  <data name="Command.ClearCell.MenuText" xml:space="preserve">
+    <value>清除儲存格</value>
+  </data>
+  <data name="Command.ClearCell.Text" xml:space="preserve">
+    <value>清除儲存格</value>
+  </data>
+  <data name="Command.ClearCell.TooltipDescription" xml:space="preserve">
+    <value>清除所選的儲存格。</value>
+  </data>
+  <data name="Command.ClearFormatting.Keytip" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Command.ClearFormatting.LabelTitle" xml:space="preserve">
+    <value>清除格式設定</value>
+  </data>
+  <data name="Command.ClearFormatting.TooltipDescription" xml:space="preserve">
+    <value>清除所有格式設定，將所選內容變更為純文字。</value>
+  </data>
+  <data name="Command.ClipboardGroup.Keytip" xml:space="preserve">
+    <value>ZC</value>
+  </data>
+  <data name="Command.ClipboardGroup.LabelTitle" xml:space="preserve">
+    <value>剪貼簿</value>
+  </data>
+  <data name="Command.Close.LabelTitle" xml:space="preserve">
+    <value>結束(&amp;X)</value>
+  </data>
+  <data name="Command.Close.MenuText" xml:space="preserve">
+    <value>關閉(&amp;C)</value>
+  </data>
+  <data name="Command.Close.Shortcut" xml:space="preserve">
+    <value>AltF4</value>
+  </data>
+  <data name="Command.Close.Text" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Command.Close.TooltipDescription" xml:space="preserve">
+    <value>關閉 Open Live Writer。</value>
+  </data>
+  <data name="Command.ClosePreview.Keytip" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="Command.ClosePreview.LabelTitle" xml:space="preserve">
+    <value>關閉預覽</value>
+  </data>
+  <data name="Command.ClosePreview.TooltipDescription" xml:space="preserve">
+    <value>關閉網頁預覽並返回編輯。</value>
+  </data>
+  <data name="Command.ColumnProperties.LabelTitle" xml:space="preserve">
+    <value>欄(&amp;C)...</value>
+  </data>
+  <data name="Command.ColumnProperties.MenuText" xml:space="preserve">
+    <value>欄屬性(&amp;M)...</value>
+  </data>
+  <data name="Command.ColumnProperties.Text" xml:space="preserve">
+    <value>欄屬性</value>
+  </data>
+  <data name="Command.ColumnProperties.TooltipDescription" xml:space="preserve">
+    <value>編輯欄屬性。</value>
+  </data>
+  <data name="Command.ColumnProperties.TooltipTitle" xml:space="preserve">
+    <value>欄</value>
+  </data>
+  <data name="Command.ConfigureWeblog.Keytip" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="Command.ConfigureWeblog.LabelTitle" xml:space="preserve">
+    <value>部落格選項</value>
+  </data>
+  <data name="Command.ConfigureWeblog.MenuText" xml:space="preserve">
+    <value>編輯部落格設定(&amp;E)...</value>
+  </data>
+  <data name="Command.ConfigureWeblog.TooltipDescription" xml:space="preserve">
+    <value>變更此部落格帳戶的選項。</value>
+  </data>
+  <data name="Command.CopyCommand.Keytip" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="Command.CopyCommand.LabelTitle" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="Command.CopyCommand.MenuText" xml:space="preserve">
+    <value>複製(&amp;C)</value>
+  </data>
+  <data name="Command.CopyCommand.Shortcut" xml:space="preserve">
+    <value>CtrlC</value>
+  </data>
+  <data name="Command.CopyCommand.Text" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="Command.CopyCommand.TooltipDescription" xml:space="preserve">
+    <value>複製所選內容並放置到剪貼簿。</value>
+  </data>
+  <data name="Command.CopyCommand.TooltipTitle" xml:space="preserve">
+    <value>複製 (Ctrl+C)</value>
+  </data>
+  <data name="Command.CustomSizeGallery.Keytip" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="Command.CustomSizeGallery.LabelTitle" xml:space="preserve">
+    <value>自訂大小</value>
+  </data>
+  <data name="Command.CustomSizeGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片選擇自訂大小。</value>
+  </data>
+  <data name="Command.CustomSizeGallery.TooltipTitle" xml:space="preserve">
+    <value>自訂大小</value>
+  </data>
+  <data name="Command.CustomSizeLarge.LabelTitle" xml:space="preserve">
+    <value>大型(&amp;L)</value>
+  </data>
+  <data name="Command.CustomSizeLarge.TooltipTitle" xml:space="preserve">
+    <value>大型</value>
+  </data>
+  <data name="Command.CustomSizeMedium.LabelTitle" xml:space="preserve">
+    <value>中型(&amp;M)</value>
+  </data>
+  <data name="Command.CustomSizeMedium.TooltipTitle" xml:space="preserve">
+    <value>中型</value>
+  </data>
+  <data name="Command.CustomSizeOriginal.LabelTitle" xml:space="preserve">
+    <value>原始(&amp;O)</value>
+  </data>
+  <data name="Command.CustomSizeOriginal.TooltipTitle" xml:space="preserve">
+    <value>原始</value>
+  </data>
+  <data name="Command.CustomSizeSmall.LabelTitle" xml:space="preserve">
+    <value>小型(&amp;S)</value>
+  </data>
+  <data name="Command.CustomSizeSmall.TooltipTitle" xml:space="preserve">
+    <value>小型</value>
+  </data>
+  <data name="Command.Cut.Keytip" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="Command.Cut.LabelTitle" xml:space="preserve">
+    <value>剪下</value>
+  </data>
+  <data name="Command.Cut.MenuText" xml:space="preserve">
+    <value>剪下(&amp;T)</value>
+  </data>
+  <data name="Command.Cut.Shortcut" xml:space="preserve">
+    <value>CtrlX</value>
+  </data>
+  <data name="Command.Cut.Text" xml:space="preserve">
+    <value>剪下</value>
+  </data>
+  <data name="Command.Cut.TooltipDescription" xml:space="preserve">
+    <value>將所選內容從文件中剪下並放置到剪貼簿。</value>
+  </data>
+  <data name="Command.Cut.TooltipTitle" xml:space="preserve">
+    <value>剪下 (Ctrl+X)</value>
+  </data>
+  <data name="Command.DebugTab.Keytip" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="Command.DebugTab.LabelTitle" xml:space="preserve">
+    <value>偵錯</value>
+  </data>
+  <data name="Command.Delete.MenuText" xml:space="preserve">
+    <value>刪除(&amp;D)</value>
+  </data>
+  <data name="Command.Delete.Shortcut" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="Command.Delete.Text" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Command.DeleteColumn.Keytip" xml:space="preserve">
+    <value>DC</value>
+  </data>
+  <data name="Command.DeleteColumn.LabelTitle" xml:space="preserve">
+    <value>刪除欄</value>
+  </data>
+  <data name="Command.DeleteColumn.MenuText" xml:space="preserve">
+    <value>刪除欄(&amp;N)</value>
+  </data>
+  <data name="Command.DeleteColumn.Text" xml:space="preserve">
+    <value>刪除欄</value>
+  </data>
+  <data name="Command.DeleteColumn.TooltipDescription" xml:space="preserve">
+    <value>移除所選的欄。</value>
+  </data>
+  <data name="Command.DeleteDraft.CommandBarButtonText" xml:space="preserve">
+    <value>刪除草稿</value>
+  </data>
+  <data name="Command.DeleteDraft.LabelTitle" xml:space="preserve">
+    <value>刪除本機草稿(&amp;D)</value>
+  </data>
+  <data name="Command.DeleteDraft.MenuText" xml:space="preserve">
+    <value>刪除草稿(&amp;T)...</value>
+  </data>
+  <data name="Command.DeleteDraft.Text" xml:space="preserve">
+    <value>刪除本機草稿</value>
+  </data>
+  <data name="Command.DeleteDraft.TooltipDescription" xml:space="preserve">
+    <value>從您的電腦移除目前的草稿。</value>
+  </data>
+  <data name="Command.DeleteDraft.TooltipTitle" xml:space="preserve">
+    <value>刪除本機草稿</value>
+  </data>
+  <data name="Command.DeleteRow.Keytip" xml:space="preserve">
+    <value>DR</value>
+  </data>
+  <data name="Command.DeleteRow.LabelTitle" xml:space="preserve">
+    <value>刪除列</value>
+  </data>
+  <data name="Command.DeleteRow.MenuText" xml:space="preserve">
+    <value>刪除列(&amp;W)</value>
+  </data>
+  <data name="Command.DeleteRow.Text" xml:space="preserve">
+    <value>刪除列</value>
+  </data>
+  <data name="Command.DeleteRow.TooltipDescription" xml:space="preserve">
+    <value>移除所選的列。</value>
+  </data>
+  <data name="Command.DeleteTable.Keytip" xml:space="preserve">
+    <value>DT</value>
+  </data>
+  <data name="Command.DeleteTable.LabelTitle" xml:space="preserve">
+    <value>刪除表格</value>
+  </data>
+  <data name="Command.DeleteTable.MenuText" xml:space="preserve">
+    <value>刪除表格(&amp;D)...</value>
+  </data>
+  <data name="Command.DeleteTable.Text" xml:space="preserve">
+    <value>刪除表格</value>
+  </data>
+  <data name="Command.DeleteTable.TooltipDescription" xml:space="preserve">
+    <value>刪除表格。</value>
+  </data>
+  <data name="Command.DiagnosticsConsole.LabelTitle" xml:space="preserve">
+    <value>診斷主控台</value>
+  </data>
+  <data name="Command.DiagnosticsConsole.MenuText" xml:space="preserve">
+    <value>[偵錯] 顯示診斷主控台(&amp;D)</value>
+  </data>
+  <data name="Command.DialogDebugGroup.LabelTitle" xml:space="preserve">
+    <value>對話方塊</value>
+  </data>
+  <data name="Command.DialogDebugGroup.TooltipTitle" xml:space="preserve">
+    <value>對話方塊啟動</value>
+  </data>
+  <data name="Command.EditTags.LabelTitle" xml:space="preserve">
+    <value>自訂標籤</value>
+  </data>
+  <data name="Command.FileMenu.LabelTitle" xml:space="preserve">
+    <value>Live Writer</value>
+  </data>
+  <data name="Command.FileMenu.TooltipDescription" xml:space="preserve">
+    <value>按一下此處以開啟、儲存、列印及查看您可對此文章執行的其他操作。</value>
+  </data>
+  <data name="Command.FindAndReplace.LabelTitle" xml:space="preserve">
+    <value>尋找與取代</value>
+  </data>
+  <data name="Command.FindButton.Keytip" xml:space="preserve">
+    <value>FD</value>
+  </data>
+  <data name="Command.FindButton.LabelTitle" xml:space="preserve">
+    <value>尋找</value>
+  </data>
+  <data name="Command.FindButton.MenuText" xml:space="preserve">
+    <value>尋找文字(&amp;N)...</value>
+  </data>
+  <data name="Command.FindButton.Shortcut" xml:space="preserve">
+    <value>CtrlF</value>
+  </data>
+  <data name="Command.FindButton.Text" xml:space="preserve">
+    <value>尋找</value>
+  </data>
+  <data name="Command.FindButton.TooltipTitle" xml:space="preserve">
+    <value>尋找 (Ctrl+F)</value>
+  </data>
+  <data name="Command.FixWordSpelling.MenuText" xml:space="preserve">
+    <value>(無建議)</value>
+  </data>
+  <data name="Command.FixWordSpelling.Text" xml:space="preserve">
+    <value>(無建議)</value>
+  </data>
+  <data name="Command.FocusNextPane.Shortcut" xml:space="preserve">
+    <value>F6</value>
+  </data>
+  <data name="Command.FocusNextPane.Text" xml:space="preserve">
+    <value>下一個窗格</value>
+  </data>
+  <data name="Command.FocusPreviousPane.Shortcut" xml:space="preserve">
+    <value>ShiftF6</value>
+  </data>
+  <data name="Command.FocusPreviousPane.Text" xml:space="preserve">
+    <value>上一個窗格</value>
+  </data>
+  <data name="Command.Font.MenuText" xml:space="preserve">
+    <value>字型(&amp;F)...</value>
+  </data>
+  <data name="Command.Font.Text" xml:space="preserve">
+    <value>字型</value>
+  </data>
+  <data name="Command.FontBackgroundColor.Keytip" xml:space="preserve">
+    <value>FH</value>
+  </data>
+  <data name="Command.FontBackgroundColor.LabelTitle" xml:space="preserve">
+    <value>文字醒目提示色彩</value>
+  </data>
+  <data name="Command.FontBackgroundColor.TooltipDescription" xml:space="preserve">
+    <value>讓文字看起來像是用螢光筆標記過。</value>
+  </data>
+  <data name="Command.FontColor.MenuText" xml:space="preserve">
+    <value>字型色彩(&amp;C)...</value>
+  </data>
+  <data name="Command.FontColor.Text" xml:space="preserve">
+    <value>字型色彩</value>
+  </data>
+  <data name="Command.FontColorPicker.Keytip" xml:space="preserve">
+    <value>FC</value>
+  </data>
+  <data name="Command.FontColorPicker.LabelTitle" xml:space="preserve">
+    <value>字型色彩</value>
+  </data>
+  <data name="Command.FontColorPicker.TooltipDescription" xml:space="preserve">
+    <value>變更文字色彩。</value>
+  </data>
+  <data name="Command.FontFamily.Keytip" xml:space="preserve">
+    <value>FF</value>
+  </data>
+  <data name="Command.FontFamily.LabelTitle" xml:space="preserve">
+    <value>字型系列</value>
+  </data>
+  <data name="Command.FontFamily.TooltipDescription" xml:space="preserve">
+    <value>變更字型系列。</value>
+  </data>
+  <data name="Command.FontGroup.Keytip" xml:space="preserve">
+    <value>ZF</value>
+  </data>
+  <data name="Command.FontGroup.LabelTitle" xml:space="preserve">
+    <value>字型</value>
+  </data>
+  <data name="Command.FontSize.Keytip" xml:space="preserve">
+    <value>FS</value>
+  </data>
+  <data name="Command.FontSize.LabelTitle" xml:space="preserve">
+    <value>字型大小</value>
+  </data>
+  <data name="Command.FontSize.TooltipDescription" xml:space="preserve">
+    <value>變更字型大小。</value>
+  </data>
+  <data name="Command.ForceWatson.LabelTitle" xml:space="preserve">
+    <value>強制 Watson</value>
+  </data>
+  <data name="Command.ForceWatson.MenuText" xml:space="preserve">
+    <value>[偵錯] 強制 &amp;Watson</value>
+  </data>
+  <data name="Command.FormatImageAdjustHeight.Keytip" xml:space="preserve">
+    <value>SH</value>
+  </data>
+  <data name="Command.FormatImageAdjustHeight.LabelTitle" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Command.FormatImageAdjustHeight.TooltipDescription" xml:space="preserve">
+    <value>設定圖片高度。</value>
+  </data>
+  <data name="Command.FormatImageAdjustHeight.TooltipTitle" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Command.FormatImageAdjustWidth.Keytip" xml:space="preserve">
+    <value>SW</value>
+  </data>
+  <data name="Command.FormatImageAdjustWidth.LabelTitle" xml:space="preserve">
+    <value>寬度</value>
+  </data>
+  <data name="Command.FormatImageAdjustWidth.TooltipDescription" xml:space="preserve">
+    <value>設定圖片寬度。</value>
+  </data>
+  <data name="Command.FormatImageAdjustWidth.TooltipTitle" xml:space="preserve">
+    <value>寬度</value>
+  </data>
+  <data name="Command.FormatImageAltText.Keytip" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="Command.FormatImageAltText.LabelTitle" xml:space="preserve">
+    <value>替代文字</value>
+  </data>
+  <data name="Command.FormatImageAltText.TooltipDescription" xml:space="preserve">
+    <value>為此圖片新增標題和替代文字。</value>
+  </data>
+  <data name="Command.FormatImageAltText.TooltipTitle" xml:space="preserve">
+    <value>替代文字</value>
+  </data>
+  <data name="Command.FormatImageLinkOptions.Keytip" xml:space="preserve">
+    <value>KK</value>
+  </data>
+  <data name="Command.FormatImageLinkOptions.LabelTitle" xml:space="preserve">
+    <value>連結選項</value>
+  </data>
+  <data name="Command.FormatImageLinkOptions.TooltipDescription" xml:space="preserve">
+    <value>變更連結選項。</value>
+  </data>
+  <data name="Command.FormatImageLinkOptions.TooltipTitle" xml:space="preserve">
+    <value>連結選項</value>
+  </data>
+  <data name="Command.FormatImageLockAspectRatio.Keytip" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="Command.FormatImageLockAspectRatio.LabelTitle" xml:space="preserve">
+    <value>鎖定長寬比</value>
+  </data>
+  <data name="Command.FormatImageLockAspectRatio.TooltipDescription" xml:space="preserve">
+    <value>維持此圖片的長寬比。</value>
+  </data>
+  <data name="Command.FormatImageLockAspectRatio.TooltipTitle" xml:space="preserve">
+    <value>鎖定長寬比</value>
+  </data>
+  <data name="Command.FormatImagePropertiesGroup.LabelTitle" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="Command.FormatImagePropertiesGroup.TooltipTitle" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="Command.FormatImageRevertSettings.Keytip" xml:space="preserve">
+    <value>DR</value>
+  </data>
+  <data name="Command.FormatImageRevertSettings.LabelTitle" xml:space="preserve">
+    <value>還原為原始設定</value>
+  </data>
+  <data name="Command.FormatImageRevertSettings.TooltipDescription" xml:space="preserve">
+    <value>將此圖片還原為原始版本。</value>
+  </data>
+  <data name="Command.FormatImageRevertSettings.TooltipTitle" xml:space="preserve">
+    <value>還原為原始設定</value>
+  </data>
+  <data name="Command.FormatImageRotateGroup.LabelTitle" xml:space="preserve">
+    <value>旋轉</value>
+  </data>
+  <data name="Command.FormatImageRotateGroup.TooltipTitle" xml:space="preserve">
+    <value>向左或向右旋轉圖片。</value>
+  </data>
+  <data name="Command.FormatImageSelectLink.Keytip" xml:space="preserve">
+    <value>KL</value>
+  </data>
+  <data name="Command.FormatImageSelectLink.LabelTitle" xml:space="preserve">
+    <value>連結至：</value>
+  </data>
+  <data name="Command.FormatImageSelectLink.TooltipDescription" xml:space="preserve">
+    <value>選擇點選此圖片時連結的目標。</value>
+  </data>
+  <data name="Command.FormatImageSelectLink.TooltipTitle" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="Command.FormatImageSettingsGroup.LabelTitle" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Command.FormatImageSettingsGroup.TooltipTitle" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Command.FormatImageSizeGroup.LabelTitle" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="Command.FormatImageStyleGroup.LabelTitle" xml:space="preserve">
+    <value>圖片樣式</value>
+  </data>
+  <data name="Command.FormatImageStyleGroup.TooltipTitle" xml:space="preserve">
+    <value>圖片樣式</value>
+  </data>
+  <data name="Command.FormatImageTab.Keytip" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="Command.FormatImageTab.LabelTitle" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="Command.FormatMapEdit.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.FormatMapEdit.LabelTitle" xml:space="preserve">
+    <value>自訂地圖</value>
+  </data>
+  <data name="Command.FormatMapEdit.TooltipDescription" xml:space="preserve">
+    <value>變更地圖位置。</value>
+  </data>
+  <data name="Command.FormatMapGroup.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.FormatMapGroup.LabelTitle" xml:space="preserve">
+    <value>地圖</value>
+  </data>
+  <data name="Command.FormatMapPropertiesGroup.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.FormatMapPropertiesGroup.LabelTitle" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="Command.FormatMapTab.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.FormatMapTab.LabelTitle" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="Command.FormatTableEditingGroup.Keytip" xml:space="preserve">
+    <value>ZD</value>
+  </data>
+  <data name="Command.FormatTableEditingGroup.LabelTitle" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Command.FormatTableInsertGroup.Keytip" xml:space="preserve">
+    <value>ZI</value>
+  </data>
+  <data name="Command.FormatTableInsertGroup.LabelTitle" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="Command.FormatTableMoveGroup.Keytip" xml:space="preserve">
+    <value>ZM</value>
+  </data>
+  <data name="Command.FormatTableMoveGroup.LabelTitle" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="Command.FormatTablePropertiesGroup.Keytip" xml:space="preserve">
+    <value>ZP</value>
+  </data>
+  <data name="Command.FormatTablePropertiesSplit.Keytip" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="Command.FormatTablePropertiesSplit.LabelTitle" xml:space="preserve">
+    <value>自訂表格</value>
+  </data>
+  <data name="Command.FormatTablePropertiesSplit.TooltipDescription" xml:space="preserve">
+    <value>編輯表格內容。</value>
+  </data>
+  <data name="Command.FormatTableTab.Keytip" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="Command.FormatTableTab.LabelTitle" xml:space="preserve">
+    <value>版面配置</value>
+  </data>
+  <data name="Command.FormatTagPropertiesGroup.LabelTitle" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="Command.FormatTagProvidersGroup.LabelTitle" xml:space="preserve">
+    <value>提供者</value>
+  </data>
+  <data name="Command.FormatTagTab.Keytip" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="Command.FormatTagTab.LabelTitle" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="Command.FormatVideoGroup.Keytip" xml:space="preserve">
+    <value>ZV</value>
+  </data>
+  <data name="Command.FormatVideoTab.Keytip" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="Command.FormatVideoTab.LabelTitle" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="Command.GeneralDebugGroup.LabelTitle" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Command.GeneralDebugGroup.TooltipTitle" xml:space="preserve">
+    <value>一般偵錯</value>
+  </data>
+  <data name="Command.Glossary.MenuText" xml:space="preserve">
+    <value>自動連結項目(&amp;E)...</value>
+  </data>
+  <data name="Command.Glossary.Text" xml:space="preserve">
+    <value>自動連結項目...</value>
+  </data>
+  <data name="Command.Help.LabelTitle" xml:space="preserve">
+    <value>線上說明 (F1)</value>
+  </data>
+  <data name="Command.Help.MenuText" xml:space="preserve">
+    <value>{0} 說明(&amp;H)</value>
+  </data>
+  <data name="Command.Help.Shortcut" xml:space="preserve">
+    <value>F1</value>
+  </data>
+  <data name="Command.Help.Text" xml:space="preserve">
+    <value>說明</value>
+  </data>
+  <data name="Command.Help.TooltipDescription" xml:space="preserve">
+    <value>取得使用 Open Live Writer 的說明。</value>
+  </data>
+  <data name="Command.HomeTab.Keytip" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="Command.HomeTab.LabelTitle" xml:space="preserve">
+    <value>常用</value>
+  </data>
+  <data name="Command.IgnoreAll.MenuText" xml:space="preserve">
+    <value>全部忽略(&amp;I)</value>
+  </data>
+  <data name="Command.IgnoreAll.Text" xml:space="preserve">
+    <value>忽略此單字的所有實例</value>
+  </data>
+  <data name="Command.IgnoreOnce.MenuText" xml:space="preserve">
+    <value>忽略一次(&amp;O)</value>
+  </data>
+  <data name="Command.ImageArrangeGallery.LabelTitle" xml:space="preserve">
+    <value>文字換行</value>
+  </data>
+  <data name="Command.ImageBorderGallery.Keytip" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="Command.ImageBorderGallery.LabelTitle" xml:space="preserve">
+    <value>圖片框線</value>
+  </data>
+  <data name="Command.ImageBorderGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片套用框線樣式。</value>
+  </data>
+  <data name="Command.ImageBorderGallery.TooltipTitle" xml:space="preserve">
+    <value>圖片框線</value>
+  </data>
+  <data name="Command.ImageBrightness.LabelTitle" xml:space="preserve">
+    <value>對比 (ImageBrightness)</value>
+  </data>
+  <data name="Command.ImageContextTabGroup.Keytip" xml:space="preserve">
+    <value>IM</value>
+  </data>
+  <data name="Command.ImageContextTabGroup.LabelTitle" xml:space="preserve">
+    <value>圖片工具</value>
+  </data>
+  <data name="Command.ImageContrast.Keytip" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="Command.ImageContrast.LabelTitle" xml:space="preserve">
+    <value>對比</value>
+  </data>
+  <data name="Command.ImageContrast.TooltipDescription" xml:space="preserve">
+    <value>增加或降低此圖片的對比。</value>
+  </data>
+  <data name="Command.ImageContrast.TooltipTitle" xml:space="preserve">
+    <value>對比</value>
+  </data>
+  <data name="Command.ImageCrop.Keytip" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="Command.ImageCrop.LabelTitle" xml:space="preserve">
+    <value>裁剪</value>
+  </data>
+  <data name="Command.ImageCrop.TooltipDescription" xml:space="preserve">
+    <value>裁剪圖片，僅保留目前選取的範圍。</value>
+  </data>
+  <data name="Command.ImageCrop.TooltipTitle" xml:space="preserve">
+    <value>裁剪</value>
+  </data>
+  <data name="Command.ImageEffectsBlurGallery.LabelTitle" xml:space="preserve">
+    <value>模糊(&amp;B)</value>
+  </data>
+  <data name="Command.ImageEffectsBlurGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片加入模糊濾鏡。</value>
+  </data>
+  <data name="Command.ImageEffectsBlurGallery.TooltipTitle" xml:space="preserve">
+    <value>模糊</value>
+  </data>
+  <data name="Command.ImageEffectsEmbossGallery.LabelTitle" xml:space="preserve">
+    <value>浮雕(&amp;E)</value>
+  </data>
+  <data name="Command.ImageEffectsEmbossGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片加入浮雕效果。</value>
+  </data>
+  <data name="Command.ImageEffectsEmbossGallery.TooltipTitle" xml:space="preserve">
+    <value>浮雕</value>
+  </data>
+  <data name="Command.ImageEffectsGallery.Keytip" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="Command.ImageEffectsGallery.LabelTitle" xml:space="preserve">
+    <value>圖片效果</value>
+  </data>
+  <data name="Command.ImageEffectsGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片加入效果。</value>
+  </data>
+  <data name="Command.ImageEffectsGallery.TooltipTitle" xml:space="preserve">
+    <value>圖片效果</value>
+  </data>
+  <data name="Command.ImageEffectsRecolorGallery.LabelTitle" xml:space="preserve">
+    <value>重新著色(&amp;R)</value>
+  </data>
+  <data name="Command.ImageEffectsRecolorGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片加入色彩效果。</value>
+  </data>
+  <data name="Command.ImageEffectsRecolorGallery.TooltipTitle" xml:space="preserve">
+    <value>色彩</value>
+  </data>
+  <data name="Command.ImageEffectsSharpenGallery.LabelTitle" xml:space="preserve">
+    <value>銳利化(&amp;S)</value>
+  </data>
+  <data name="Command.ImageEffectsSharpenGallery.TooltipDescription" xml:space="preserve">
+    <value>為此圖片加入銳利化濾鏡。</value>
+  </data>
+  <data name="Command.ImageEffectsSharpenGallery.TooltipTitle" xml:space="preserve">
+    <value>銳利化</value>
+  </data>
+  <data name="Command.ImageLinkToNone.LabelTitle" xml:space="preserve">
+    <value>無連結(&amp;N)</value>
+  </data>
+  <data name="Command.ImageLinkToNone.TooltipTitle" xml:space="preserve">
+    <value>此圖片沒有連結。</value>
+  </data>
+  <data name="Command.ImageLinkToSource.LabelTitle" xml:space="preserve">
+    <value>來源圖片(&amp;S)</value>
+  </data>
+  <data name="Command.ImageLinkToSource.TooltipTitle" xml:space="preserve">
+    <value>點選此圖片時，前往來源圖片的網址。</value>
+  </data>
+  <data name="Command.ImageLinkToUrl.LabelTitle" xml:space="preserve">
+    <value>網址(&amp;W)...</value>
+  </data>
+  <data name="Command.ImageLinkToUrl.TooltipTitle" xml:space="preserve">
+    <value>選擇並輸入點選此圖片時要前往的網址。</value>
+  </data>
+  <data name="Command.ImageRotateCCW.Keytip" xml:space="preserve">
+    <value>RL</value>
+  </data>
+  <data name="Command.ImageRotateCCW.LabelTitle" xml:space="preserve">
+    <value>向左旋轉</value>
+  </data>
+  <data name="Command.ImageRotateCCW.TooltipDescription" xml:space="preserve">
+    <value>將此圖片向左旋轉 90°。</value>
+  </data>
+  <data name="Command.ImageRotateCCW.TooltipTitle" xml:space="preserve">
+    <value>向左旋轉 90°</value>
+  </data>
+  <data name="Command.ImageRotateCW.Keytip" xml:space="preserve">
+    <value>RR</value>
+  </data>
+  <data name="Command.ImageRotateCW.LabelTitle" xml:space="preserve">
+    <value>向右旋轉</value>
+  </data>
+  <data name="Command.ImageRotateCW.TooltipDescription" xml:space="preserve">
+    <value>將此圖片向右旋轉 90°。</value>
+  </data>
+  <data name="Command.ImageRotateCW.TooltipTitle" xml:space="preserve">
+    <value>向右旋轉 90°</value>
+  </data>
+  <data name="Command.ImageSaveDefaults.Keytip" xml:space="preserve">
+    <value>DS</value>
+  </data>
+  <data name="Command.ImageSaveDefaults.LabelTitle" xml:space="preserve">
+    <value>設為預設值</value>
+  </data>
+  <data name="Command.ImageSaveDefaults.TooltipDescription" xml:space="preserve">
+    <value>將此圖片的對齊方式、邊界、圖片樣式和內容設為其他圖片的預設值。</value>
+  </data>
+  <data name="Command.ImageSaveDefaults.TooltipTitle" xml:space="preserve">
+    <value>設為預設值</value>
+  </data>
+  <data name="Command.ImageTilt.Keytip" xml:space="preserve">
+    <value>RT</value>
+  </data>
+  <data name="Command.ImageTilt.LabelTitle" xml:space="preserve">
+    <value>傾斜...</value>
+  </data>
+  <data name="Command.ImageTilt.TooltipDescription" xml:space="preserve">
+    <value>將此圖片向左或向右傾斜。</value>
+  </data>
+  <data name="Command.ImageTilt.TooltipTitle" xml:space="preserve">
+    <value>傾斜</value>
+  </data>
+  <data name="Command.Indent.Keytip" xml:space="preserve">
+    <value>MI</value>
+  </data>
+  <data name="Command.Indent.LabelTitle" xml:space="preserve">
+    <value>增加縮排</value>
+  </data>
+  <data name="Command.Indent.MenuText" xml:space="preserve">
+    <value>增加縮排(&amp;I)</value>
+  </data>
+  <data name="Command.Indent.Shortcut" xml:space="preserve">
+    <value>CtrlM</value>
+  </data>
+  <data name="Command.Indent.Text" xml:space="preserve">
+    <value>增加縮排</value>
+  </data>
+  <data name="Command.Indent.TooltipDescription" xml:space="preserve">
+    <value>增加段落的縮排層級</value>
+  </data>
+  <data name="Command.Indent.TooltipTitle" xml:space="preserve">
+    <value>增加縮排 (Ctrl+M)</value>
+  </data>
+  <data name="Command.InsertClearBreak.Keytip" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="Command.InsertClearBreak.LabelTitle" xml:space="preserve">
+    <value>清除換行</value>
+  </data>
+  <data name="Command.InsertClearBreak.TooltipDescription" xml:space="preserve">
+    <value>在圖片後插入換行符號，以防止文字環繞。</value>
+  </data>
+  <data name="Command.InsertColumnLeft.Keytip" xml:space="preserve">
+    <value>IL</value>
+  </data>
+  <data name="Command.InsertColumnLeft.LabelTitle" xml:space="preserve">
+    <value>向左插入</value>
+  </data>
+  <data name="Command.InsertColumnLeft.MenuText" xml:space="preserve">
+    <value>在左側插入欄(&amp;L)</value>
+  </data>
+  <data name="Command.InsertColumnLeft.Text" xml:space="preserve">
+    <value>在左側插入欄</value>
+  </data>
+  <data name="Command.InsertColumnLeft.TooltipDescription" xml:space="preserve">
+    <value>在目前位置左側插入一欄。</value>
+  </data>
+  <data name="Command.InsertColumnRight.Keytip" xml:space="preserve">
+    <value>IR</value>
+  </data>
+  <data name="Command.InsertColumnRight.LabelTitle" xml:space="preserve">
+    <value>向右插入</value>
+  </data>
+  <data name="Command.InsertColumnRight.MenuText" xml:space="preserve">
+    <value>在右側插入欄(&amp;G)</value>
+  </data>
+  <data name="Command.InsertColumnRight.Text" xml:space="preserve">
+    <value>在右側插入欄</value>
+  </data>
+  <data name="Command.InsertColumnRight.TooltipDescription" xml:space="preserve">
+    <value>在目前位置右側插入一欄。</value>
+  </data>
+  <data name="Command.InsertEmoticon.LabelTitle" xml:space="preserve">
+    <value>表情符號</value>
+  </data>
+  <data name="Command.InsertEmoticon.TooltipDescription" xml:space="preserve">
+    <value>插入表情符號。</value>
+  </data>
+  <data name="Command.InsertEmoticon.TooltipTitle" xml:space="preserve">
+    <value>表情符號</value>
+  </data>
+  <data name="Command.InsertExtendedEntry.Keytip" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="Command.InsertExtendedEntry.LabelTitle" xml:space="preserve">
+    <value>分割文章</value>
+  </data>
+  <data name="Command.InsertExtendedEntry.MenuText" xml:space="preserve">
+    <value>分割文章(&amp;S)</value>
+  </data>
+  <data name="Command.InsertExtendedEntry.Text" xml:space="preserve">
+    <value>分割文章</value>
+  </data>
+  <data name="Command.InsertExtendedEntry.TooltipDescription" xml:space="preserve">
+    <value>插入中斷點以建立此文章的摘要。中斷點之前的內容將在部落格主頁上顯示為摘要。</value>
+  </data>
+  <data name="Command.InsertGroup.Keytip" xml:space="preserve">
+    <value>ZI</value>
+  </data>
+  <data name="Command.InsertGroup.LabelTitle" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="Command.InsertHorizontalLine.Keytip" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="Command.InsertHorizontalLine.LabelTitle" xml:space="preserve">
+    <value>水平線</value>
+  </data>
+  <data name="Command.InsertHorizontalLine.TooltipDescription" xml:space="preserve">
+    <value>插入水平線。</value>
+  </data>
+  <data name="Command.InsertImageSplit.Keytip" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="Command.InsertImageSplit.LabelTitle" xml:space="preserve">
+    <value>圖片</value>
+  </data>
+  <data name="Command.InsertImageSplit.TooltipDescription" xml:space="preserve">
+    <value>從您的電腦或線上來源將圖片新增至此文章。</value>
+  </data>
+  <data name="Command.InsertImageSplit.TooltipTitle" xml:space="preserve">
+    <value>圖片</value>
+  </data>
+  <data name="Command.InsertLink.Keytip" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="Command.InsertLink.LabelTitle" xml:space="preserve">
+    <value>超連結</value>
+  </data>
+  <data name="Command.InsertLink.MenuText" xml:space="preserve">
+    <value>超連結(&amp;H)...</value>
+  </data>
+  <data name="Command.InsertLink.Shortcut" xml:space="preserve">
+    <value>CtrlK</value>
+  </data>
+  <data name="Command.InsertLink.Text" xml:space="preserve">
+    <value>插入超連結</value>
+  </data>
+  <data name="Command.InsertLink.TooltipDescription" xml:space="preserve">
+    <value>建立連結至網頁、圖片、電子郵件地址或程式的連結。</value>
+  </data>
+  <data name="Command.InsertLink.TooltipTitle" xml:space="preserve">
+    <value>超連結 (Ctrl+K)</value>
+  </data>
+  <data name="Command.InsertLoremIpsum.LabelTitle" xml:space="preserve">
+    <value>Lorem Ipsum</value>
+  </data>
+  <data name="Command.InsertLoremIpsum.MenuText" xml:space="preserve">
+    <value>[偵錯] 插入 Lorem Ipsum</value>
+  </data>
+  <data name="Command.InsertLoremIpsum.Shortcut" xml:space="preserve">
+    <value>CtrlShiftF6</value>
+  </data>
+  <data name="Command.InsertMap.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.InsertMap.LabelTitle" xml:space="preserve">
+    <value>地圖</value>
+  </data>
+  <data name="Command.InsertMap.TooltipDescription" xml:space="preserve">
+    <value>在文章中選擇並顯示 Bing 地圖上的位置。</value>
+  </data>
+  <data name="Command.InsertMenu.CommandBarButtonText" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="Command.InsertMenu.Text" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="Command.InsertPictureFromFile.LabelTitle" xml:space="preserve">
+    <value>從您的電&amp;腦...</value>
+  </data>
+  <data name="Command.InsertPictureFromFile.MenuText" xml:space="preserve">
+    <value>&amp;圖片...</value>
+  </data>
+  <data name="Command.InsertPictureFromFile.Shortcut" xml:space="preserve">
+    <value>CtrlJ</value>
+  </data>
+  <data name="Command.InsertPictureFromFile.Text" xml:space="preserve">
+    <value>從檔案插入圖片</value>
+  </data>
+  <data name="Command.InsertPictureFromFile.TooltipDescription" xml:space="preserve">
+    <value>從您的電腦選擇圖片，並將其顯示在文章中。</value>
+  </data>
+  <data name="Command.InsertPictureFromFile.TooltipTitle" xml:space="preserve">
+    <value>從您的電腦 (Ctrl+J)</value>
+  </data>
+  <data name="Command.InsertRowAbove.Keytip" xml:space="preserve">
+    <value>IA</value>
+  </data>
+  <data name="Command.InsertRowAbove.LabelTitle" xml:space="preserve">
+    <value>在上方插入</value>
+  </data>
+  <data name="Command.InsertRowAbove.MenuText" xml:space="preserve">
+    <value>在上方插入列(&amp;A)</value>
+  </data>
+  <data name="Command.InsertRowAbove.Text" xml:space="preserve">
+    <value>在上方插入列</value>
+  </data>
+  <data name="Command.InsertRowAbove.TooltipDescription" xml:space="preserve">
+    <value>在目前位置上方插入一列。</value>
+  </data>
+  <data name="Command.InsertRowBelow.Keytip" xml:space="preserve">
+    <value>IB</value>
+  </data>
+  <data name="Command.InsertRowBelow.LabelTitle" xml:space="preserve">
+    <value>在下方插入</value>
+  </data>
+  <data name="Command.InsertRowBelow.MenuText" xml:space="preserve">
+    <value>在下方插入列(&amp;B)</value>
+  </data>
+  <data name="Command.InsertRowBelow.Text" xml:space="preserve">
+    <value>在下方插入列</value>
+  </data>
+  <data name="Command.InsertRowBelow.TooltipDescription" xml:space="preserve">
+    <value>在目前位置下方插入一列。</value>
+  </data>
+  <data name="Command.InsertTab.Keytip" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="Command.InsertTab.LabelTitle" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="Command.InsertTable.Keytip" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="Command.InsertTable.LabelTitle" xml:space="preserve">
+    <value>表格</value>
+  </data>
+  <data name="Command.InsertTable.MenuText" xml:space="preserve">
+    <value>插入表格(&amp;I)...</value>
+  </data>
+  <data name="Command.InsertTable.Text" xml:space="preserve">
+    <value>插入表格</value>
+  </data>
+  <data name="Command.InsertTable.TooltipDescription" xml:space="preserve">
+    <value>在文章中插入表格。</value>
+  </data>
+  <data name="Command.InsertTable2.MenuText" xml:space="preserve">
+    <value>表格(&amp;T)...</value>
+  </data>
+  <data name="Command.InsertTable2.Text" xml:space="preserve">
+    <value>插入表格</value>
+  </data>
+  <data name="Command.InsertTags.Keytip" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="Command.InsertTags.LabelTitle" xml:space="preserve">
+    <value>文章標籤</value>
+  </data>
+  <data name="Command.InsertTags.TooltipDescription" xml:space="preserve">
+    <value>為指定的標籤提供者插入標籤。</value>
+  </data>
+  <data name="Command.InsertVideoFromFile.LabelTitle" xml:space="preserve">
+    <value>從您的電&amp;腦...</value>
+  </data>
+  <data name="Command.InsertVideoFromFile.TooltipDescription" xml:space="preserve">
+    <value>選擇影片並上傳至線上服務，以在文章中顯示。</value>
+  </data>
+  <data name="Command.InsertVideoFromFile.TooltipTitle" xml:space="preserve">
+    <value>從您的電腦</value>
+  </data>
+  <data name="Command.InsertVideoFromService.LabelTitle" xml:space="preserve">
+    <value>從影片&amp;服務...</value>
+  </data>
+  <data name="Command.InsertVideoFromService.TooltipDescription" xml:space="preserve">
+    <value>從線上服務選擇影片，以在文章中顯示。</value>
+  </data>
+  <data name="Command.InsertVideoFromService.TooltipTitle" xml:space="preserve">
+    <value>從影片服務</value>
+  </data>
+  <data name="Command.InsertVideoFromWeb.LabelTitle" xml:space="preserve">
+    <value>從&amp;網路...</value>
+  </data>
+  <data name="Command.InsertVideoFromWeb.TooltipDescription" xml:space="preserve">
+    <value>輸入網路影片的網址，以在文章中顯示。</value>
+  </data>
+  <data name="Command.InsertVideoFromWeb.TooltipTitle" xml:space="preserve">
+    <value>從網路</value>
+  </data>
+  <data name="Command.InsertVideoSplit.Keytip" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="Command.InsertVideoSplit.LabelTitle" xml:space="preserve">
+    <value>影片</value>
+  </data>
+  <data name="Command.InsertVideoSplit.TooltipDescription" xml:space="preserve">
+    <value>從您的電腦或線上新增影片至文章。</value>
+  </data>
+  <data name="Command.Italic.Keytip" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="Command.Italic.LabelTitle" xml:space="preserve">
+    <value>斜體</value>
+  </data>
+  <data name="Command.Italic.Shortcut" xml:space="preserve">
+    <value>CtrlI</value>
+  </data>
+  <data name="Command.Italic.Text" xml:space="preserve">
+    <value>斜體</value>
+  </data>
+  <data name="Command.Italic.TooltipDescription" xml:space="preserve">
+    <value>將選取的文字設為斜體。</value>
+  </data>
+  <data name="Command.Italic.TooltipTitle" xml:space="preserve">
+    <value>斜體 (Ctrl+I)</value>
+  </data>
+  <data name="Command.Justify.Keytip" xml:space="preserve">
+    <value>AJ</value>
+  </data>
+  <data name="Command.Justify.LabelTitle" xml:space="preserve">
+    <value>左右對齊</value>
+  </data>
+  <data name="Command.Justify.MenuText" xml:space="preserve">
+    <value>左右對齊(&amp;J)</value>
+  </data>
+  <data name="Command.Justify.Text" xml:space="preserve">
+    <value>左右對齊</value>
+  </data>
+  <data name="Command.Justify.TooltipDescription" xml:space="preserve">
+    <value>將文字對齊左右邊界，視需要在文字間加入額外空格。</value>
+  </data>
+  <data name="Command.LargePhotoUploadSize.LabelTitle" xml:space="preserve">
+    <value>&amp;大 \r\n(1600 像素)\r\n</value>
+  </data>
+  <data name="Command.LTRTextBlock.Keytip" xml:space="preserve">
+    <value>R2</value>
+  </data>
+  <data name="Command.LTRTextBlock.LabelTitle" xml:space="preserve">
+    <value>由左至右</value>
+  </data>
+  <data name="Command.LTRTextBlock.MenuText" xml:space="preserve">
+    <value>由左至右區塊(&amp;L)</value>
+  </data>
+  <data name="Command.LTRTextBlock.Text" xml:space="preserve">
+    <value>由左至右區塊</value>
+  </data>
+  <data name="Command.LTRTextBlock.TooltipDescription" xml:space="preserve">
+    <value>將選取文字的方向設為由左至右。</value>
+  </data>
+  <data name="Command.ManagePlugins.Keytip" xml:space="preserve">
+    <value>PM</value>
+  </data>
+  <data name="Command.ManagePlugins.LabelTitle" xml:space="preserve">
+    <value>外掛程式選項</value>
+  </data>
+  <data name="Command.ManagePlugins.TooltipDescription" xml:space="preserve">
+    <value>變更外掛程式選項。</value>
+  </data>
+  <data name="Command.ManageTagProviders.LabelTitle" xml:space="preserve">
+    <value>管理標籤提供者</value>
+  </data>
+  <data name="Command.MapAddPushpin.MenuText" xml:space="preserve">
+    <value>新增圖釘(&amp;A)...</value>
+  </data>
+  <data name="Command.MapCenterMap.MenuText" xml:space="preserve">
+    <value>以此為中心(&amp;C)</value>
+  </data>
+  <data name="Command.MapContextTabGroup.LabelTitle" xml:space="preserve">
+    <value>地圖工具</value>
+  </data>
+  <data name="Command.MapDeletePushpin.MenuText" xml:space="preserve">
+    <value>刪除圖釘(&amp;D)</value>
+  </data>
+  <data name="Command.MapEditPushpin.MenuText" xml:space="preserve">
+    <value>編輯圖釘(&amp;E)...</value>
+  </data>
+  <data name="Command.MapWebPreview.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.MapWebPreview.LabelTitle" xml:space="preserve">
+    <value>網頁預覽</value>
+  </data>
+  <data name="Command.MapWebPreview.TooltipDescription" xml:space="preserve">
+    <value>在線上檢視地圖。</value>
+  </data>
+  <data name="Command.MapZoomCityLevel.MenuText" xml:space="preserve">
+    <value>縮放至城市層級(&amp;Z)</value>
+  </data>
+  <data name="Command.MapZoomRegionLevel.MenuText" xml:space="preserve">
+    <value>縮放至地區層級(&amp;R)</value>
+  </data>
+  <data name="Command.MapZoomStreetLevel.MenuText" xml:space="preserve">
+    <value>縮放至街道層級(&amp;S)</value>
+  </data>
+  <data name="Command.MarginsGroup.Keytip" xml:space="preserve">
+    <value>ZM</value>
+  </data>
+  <data name="Command.MarginsGroup.LabelTitle" xml:space="preserve">
+    <value>邊界</value>
+  </data>
+  <data name="Command.MarginsGroup.TooltipDescription" xml:space="preserve">
+    <value>變更選取物件的邊界。</value>
+  </data>
+  <data name="Command.MediaGroup.Keytip" xml:space="preserve">
+    <value>ZM</value>
+  </data>
+  <data name="Command.MediaGroup.LabelTitle" xml:space="preserve">
+    <value>媒體</value>
+  </data>
+  <data name="Command.MediumPhotoUploadSize.LabelTitle" xml:space="preserve">
+    <value>&amp;中 \r\n(600 像素)\r\n</value>
+  </data>
+  <data name="Command.MoveColumnLeft.Keytip" xml:space="preserve">
+    <value>ML</value>
+  </data>
+  <data name="Command.MoveColumnLeft.LabelTitle" xml:space="preserve">
+    <value>向左移動</value>
+  </data>
+  <data name="Command.MoveColumnLeft.MenuText" xml:space="preserve">
+    <value>將欄向左移動(&amp;F)</value>
+  </data>
+  <data name="Command.MoveColumnLeft.Text" xml:space="preserve">
+    <value>將欄向左移動</value>
+  </data>
+  <data name="Command.MoveColumnLeft.TooltipDescription" xml:space="preserve">
+    <value>將選取的欄與左側的欄交換。</value>
+  </data>
+  <data name="Command.MoveColumnRight.Keytip" xml:space="preserve">
+    <value>MR</value>
+  </data>
+  <data name="Command.MoveColumnRight.LabelTitle" xml:space="preserve">
+    <value>向右移動</value>
+  </data>
+  <data name="Command.MoveColumnRight.MenuText" xml:space="preserve">
+    <value>將欄向右移動(&amp;H)</value>
+  </data>
+  <data name="Command.MoveColumnRight.Text" xml:space="preserve">
+    <value>將欄向右移動</value>
+  </data>
+  <data name="Command.MoveColumnRight.TooltipDescription" xml:space="preserve">
+    <value>將選取的欄與右側的欄交換。</value>
+  </data>
+  <data name="Command.MoveRowDown.Keytip" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="Command.MoveRowDown.LabelTitle" xml:space="preserve">
+    <value>向下移動</value>
+  </data>
+  <data name="Command.MoveRowDown.MenuText" xml:space="preserve">
+    <value>將列向下移動(&amp;V)</value>
+  </data>
+  <data name="Command.MoveRowDown.Text" xml:space="preserve">
+    <value>將列向下移動</value>
+  </data>
+  <data name="Command.MoveRowDown.TooltipDescription" xml:space="preserve">
+    <value>將目前列與下方列交換。</value>
+  </data>
+  <data name="Command.MoveRowUp.Keytip" xml:space="preserve">
+    <value>MA</value>
+  </data>
+  <data name="Command.MoveRowUp.LabelTitle" xml:space="preserve">
+    <value>向上移動</value>
+  </data>
+  <data name="Command.MoveRowUp.MenuText" xml:space="preserve">
+    <value>將列向上移動(&amp;U)</value>
+  </data>
+  <data name="Command.MoveRowUp.Text" xml:space="preserve">
+    <value>將列向上移動</value>
+  </data>
+  <data name="Command.MoveRowUp.TooltipDescription" xml:space="preserve">
+    <value>將目前列與上方列交換。</value>
+  </data>
+  <data name="Command.MRUList.LabelTitle" xml:space="preserve">
+    <value>最近的文章與草稿</value>
+  </data>
+  <data name="Command.NewPage.CommandBarButtonText" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Command.NewPage.LabelDescription" xml:space="preserve">
+    <value>建立新頁面。</value>
+  </data>
+  <data name="Command.NewPage.LabelTitle" xml:space="preserve">
+    <value>新頁面(&amp;G)</value>
+  </data>
+  <data name="Command.NewPage.MenuText" xml:space="preserve">
+    <value>新增頁面(&amp;W)</value>
+  </data>
+  <data name="Command.NewPage.Shortcut" xml:space="preserve">
+    <value>CtrlG</value>
+  </data>
+  <data name="Command.NewPage.Text" xml:space="preserve">
+    <value>新頁面</value>
+  </data>
+  <data name="Command.NewPage.TooltipDescription" xml:space="preserve">
+    <value>並非所有部落格服務提供者都支援此功能。</value>
+  </data>
+  <data name="Command.NewPage.TooltipTitle" xml:space="preserve">
+    <value>新頁面 (Ctrl+G)</value>
+  </data>
+  <data name="Command.NewPost.CommandBarButtonText" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Command.NewPost.LabelDescription" xml:space="preserve">
+    <value>建立新的部落格文章。</value>
+  </data>
+  <data name="Command.NewPost.LabelTitle" xml:space="preserve">
+    <value>新增文章(&amp;N)</value>
+  </data>
+  <data name="Command.NewPost.MenuText" xml:space="preserve">
+    <value>新增文章(&amp;N)</value>
+  </data>
+  <data name="Command.NewPost.Shortcut" xml:space="preserve">
+    <value>CtrlN</value>
+  </data>
+  <data name="Command.NewPost.Text" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Command.NewPost.TooltipDescription" xml:space="preserve">
+    <value>建立新文章。</value>
+  </data>
+  <data name="Command.NewPost.TooltipTitle" xml:space="preserve">
+    <value>新增文章 (Ctrl+N)</value>
+  </data>
+  <data name="Command.Numbers.Keytip" xml:space="preserve">
+    <value>L2</value>
+  </data>
+  <data name="Command.Numbers.LabelTitle" xml:space="preserve">
+    <value>編號</value>
+  </data>
+  <data name="Command.Numbers.MenuText" xml:space="preserve">
+    <value>編號(&amp;N)</value>
+  </data>
+  <data name="Command.Numbers.Text" xml:space="preserve">
+    <value>編號</value>
+  </data>
+  <data name="Command.Numbers.TooltipDescription" xml:space="preserve">
+    <value>開始編號清單。</value>
+  </data>
+  <data name="Command.OpenDraftMRU0.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU1.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU2.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU3.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU4.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU5.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU6.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU7.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU8.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftMRU9.LabelTitle" xml:space="preserve">
+    <value>開啟草稿</value>
+  </data>
+  <data name="Command.OpenDraftSplit.Keytip" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="Command.OpenDraftSplit.LabelTitle" xml:space="preserve">
+    <value>開啟本機草稿(&amp;O)</value>
+  </data>
+  <data name="Command.OpenDraftSplit.TooltipDescription" xml:space="preserve">
+    <value>開啟本機草稿</value>
+  </data>
+  <data name="Command.OpenDraftSplit.TooltipTitle" xml:space="preserve">
+    <value>開啟本機草稿</value>
+  </data>
+  <data name="Command.OpenLink.MenuText" xml:space="preserve">
+    <value>開啟超連結(&amp;O)</value>
+  </data>
+  <data name="Command.OpenLink.Text" xml:space="preserve">
+    <value>開啟連結</value>
+  </data>
+  <data name="Command.OpenPost.CommandBarButtonText" xml:space="preserve">
+    <value>開啟</value>
+  </data>
+  <data name="Command.OpenPost.LabelTitle" xml:space="preserve">
+    <value>開啟</value>
+  </data>
+  <data name="Command.OpenPost.MenuText" xml:space="preserve">
+    <value>開啟(&amp;O)...</value>
+  </data>
+  <data name="Command.OpenPost.Text" xml:space="preserve">
+    <value>開啟</value>
+  </data>
+  <data name="Command.OpenPost.TooltipDescription" xml:space="preserve">
+    <value>開啟草稿或最近發佈的文章。</value>
+  </data>
+  <data name="Command.OpenPost.TooltipTitle" xml:space="preserve">
+    <value>開啟 (Ctrl+O)</value>
+  </data>
+  <data name="Command.OpenPostMRU0.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU1.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU2.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU3.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU4.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU5.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU6.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU7.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU8.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostMRU9.LabelTitle" xml:space="preserve">
+    <value>開啟文章</value>
+  </data>
+  <data name="Command.OpenPostSplit.CommandBarButtonText" xml:space="preserve">
+    <value>開啟最近文章</value>
+  </data>
+  <data name="Command.OpenPostSplit.Keytip" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Command.OpenPostSplit.LabelTitle" xml:space="preserve">
+    <value>開啟最近文章(&amp;R)</value>
+  </data>
+  <data name="Command.OpenPostSplit.MenuText" xml:space="preserve">
+    <value>開啟最近文章(&amp;R)</value>
+  </data>
+  <data name="Command.OpenPostSplit.Shortcut" xml:space="preserve">
+    <value>CtrlO</value>
+  </data>
+  <data name="Command.OpenPostSplit.Text" xml:space="preserve">
+    <value>開啟最近文章</value>
+  </data>
+  <data name="Command.OpenPostSplit.TooltipDescription" xml:space="preserve">
+    <value>開啟最近發佈的文章</value>
+  </data>
+  <data name="Command.OpenPostSplit.TooltipTitle" xml:space="preserve">
+    <value>開啟最近文章</value>
+  </data>
+  <data name="Command.OpenSpellingForm.MenuText" xml:space="preserve">
+    <value>開啟拼字對話方塊(&amp;D)</value>
+  </data>
+  <data name="Command.OpenSpellingForm.Text" xml:space="preserve">
+    <value>開啟拼字對話方塊</value>
+  </data>
+  <data name="Command.Options.LabelTitle" xml:space="preserve">
+    <value>選項(&amp;I)</value>
+  </data>
+  <data name="Command.Options.MenuText" xml:space="preserve">
+    <value>選項(&amp;O)...</value>
+  </data>
+  <data name="Command.Options.TooltipDescription" xml:space="preserve">
+    <value>變更 Open Live Writer 的選項。</value>
+  </data>
+  <data name="Command.Options.TooltipTitle" xml:space="preserve">
+    <value>選項</value>
+  </data>
+  <data name="Command.OriginalPhotoUploadSize.LabelTitle" xml:space="preserve">
+    <value>原始大小(&amp;O)</value>
+  </data>
+  <data name="Command.Outdent.Keytip" xml:space="preserve">
+    <value>MO</value>
+  </data>
+  <data name="Command.Outdent.LabelTitle" xml:space="preserve">
+    <value>減少縮排</value>
+  </data>
+  <data name="Command.Outdent.MenuText" xml:space="preserve">
+    <value>減少縮排(&amp;D)</value>
+  </data>
+  <data name="Command.Outdent.Shortcut" xml:space="preserve">
+    <value>CtrlShiftM</value>
+  </data>
+  <data name="Command.Outdent.Text" xml:space="preserve">
+    <value>減少縮排</value>
+  </data>
+  <data name="Command.Outdent.TooltipDescription" xml:space="preserve">
+    <value>減少段落的縮排層級</value>
+  </data>
+  <data name="Command.Outdent.TooltipTitle" xml:space="preserve">
+    <value>減少縮排 (Ctrl+Shift+M)</value>
+  </data>
+  <data name="Command.ParagraphGroup.Keytip" xml:space="preserve">
+    <value>ZP</value>
+  </data>
+  <data name="Command.ParagraphGroup.LabelTitle" xml:space="preserve">
+    <value>段落</value>
+  </data>
+  <data name="Command.Paste.LabelTitle" xml:space="preserve">
+    <value>貼上(&amp;P)</value>
+  </data>
+  <data name="Command.Paste.MenuText" xml:space="preserve">
+    <value>貼上(&amp;P)</value>
+  </data>
+  <data name="Command.Paste.Shortcut" xml:space="preserve">
+    <value>CtrlV</value>
+  </data>
+  <data name="Command.Paste.Text" xml:space="preserve">
+    <value>貼上</value>
+  </data>
+  <data name="Command.Paste.TooltipDescription" xml:space="preserve">
+    <value>貼上剪貼簿的內容。</value>
+  </data>
+  <data name="Command.Paste.TooltipTitle" xml:space="preserve">
+    <value>貼上 (Ctrl+V)</value>
+  </data>
+  <data name="Command.PasteSpecial.LabelTitle" xml:space="preserve">
+    <value>選擇性貼上(&amp;S)...</value>
+  </data>
+  <data name="Command.PasteSpecial.MenuText" xml:space="preserve">
+    <value>選擇性貼上(&amp;S)...</value>
+  </data>
+  <data name="Command.PasteSpecial.Text" xml:space="preserve">
+    <value>選擇性貼上...</value>
+  </data>
+  <data name="Command.PasteSpecial.TooltipDescription" xml:space="preserve">
+    <value>選擇是否保留格式進行貼上。</value>
+  </data>
+  <data name="Command.PasteSpecial.TooltipTitle" xml:space="preserve">
+    <value>選擇性貼上 (Ctrl+Alt+V)</value>
+  </data>
+  <data name="Command.PasteSplit.Keytip" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="Command.PasteSplit.LabelTitle" xml:space="preserve">
+    <value>貼上</value>
+  </data>
+  <data name="Command.PasteSplit.TooltipDescription" xml:space="preserve">
+    <value>選擇貼上選項。</value>
+  </data>
+  <data name="Command.PasteSplit.TooltipTitle" xml:space="preserve">
+    <value>貼上</value>
+  </data>
+  <data name="Command.PhotoUploadSize.Keytip" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="Command.PhotoUploadSize.LabelTitle" xml:space="preserve">
+    <value>相片上傳大小</value>
+  </data>
+  <data name="Command.PhotoUploadSize.TooltipDescription" xml:space="preserve">
+    <value>選擇相片的上傳大小。</value>
+  </data>
+  <data name="Command.PhotoUploadSize.TooltipTitle" xml:space="preserve">
+    <value>相片上傳大小</value>
+  </data>
+  <data name="Command.PluginsGallery.Keytip" xml:space="preserve">
+    <value>PP</value>
+  </data>
+  <data name="Command.PluginsGallery.LabelTitle" xml:space="preserve">
+    <value>外掛程式</value>
+  </data>
+  <data name="Command.PluginsGallery.TooltipDescription" xml:space="preserve">
+    <value>存取已安裝的 Writer 外掛程式。</value>
+  </data>
+  <data name="Command.PluginsGroup.Keytip" xml:space="preserve">
+    <value>ZP</value>
+  </data>
+  <data name="Command.PluginsGroup.LabelTitle" xml:space="preserve">
+    <value>外掛程式</value>
+  </data>
+  <data name="Command.PostAndPublish.CommandBarButtonText" xml:space="preserve">
+    <value>發佈</value>
+  </data>
+  <data name="Command.PostAndPublish.Keytip" xml:space="preserve">
+    <value>P1</value>
+  </data>
+  <data name="Command.PostAndPublish.LabelDescription" xml:space="preserve">
+    <value>將此文章發佈到選定的部落格。</value>
+  </data>
+  <data name="Command.PostAndPublish.LabelTitle" xml:space="preserve">
+    <value>發&amp;佈</value>
+  </data>
+  <data name="Command.PostAndPublish.MenuText" xml:space="preserve">
+    <value>發佈到部落&amp;格</value>
+  </data>
+  <data name="Command.PostAndPublish.Shortcut" xml:space="preserve">
+    <value>CtrlShiftP</value>
+  </data>
+  <data name="Command.PostAndPublish.Text" xml:space="preserve">
+    <value>發佈到部落格</value>
+  </data>
+  <data name="Command.PostAndPublish.TooltipDescription" xml:space="preserve">
+    <value>將此文章發佈到您的部落格。</value>
+  </data>
+  <data name="Command.PostAndPublish.TooltipTitle" xml:space="preserve">
+    <value>發佈 (Ctrl+Shift+P)</value>
+  </data>
+  <data name="Command.PostAsDraft.Keytip" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="Command.PostAsDraft.LabelDescription" xml:space="preserve">
+    <value>將目前文章以草稿形式傳送到部落格，不對外公開。</value>
+  </data>
+  <data name="Command.PostAsDraft.LabelTitle" xml:space="preserve">
+    <value>將草稿發&amp;佈到部落格</value>
+  </data>
+  <data name="Command.PostAsDraft.MenuText" xml:space="preserve">
+    <value>將草稿發&amp;佈到部落格</value>
+  </data>
+  <data name="Command.PostAsDraft.Shortcut" xml:space="preserve">
+    <value>CtrlShiftD</value>
+  </data>
+  <data name="Command.PostAsDraft.Text" xml:space="preserve">
+    <value>將草稿發佈到部落格</value>
+  </data>
+  <data name="Command.PostAsDraft.TooltipDescription" xml:space="preserve">
+    <value>將目前文章以草稿形式傳送到部落格。</value>
+  </data>
+  <data name="Command.PostAsDraft.TooltipTitle" xml:space="preserve">
+    <value>將草稿發佈到部落格 (Ctrl+Shift+D)</value>
+  </data>
+  <data name="Command.PostAsDraftAndEditOnline.LabelDescription" xml:space="preserve">
+    <value>將文章以草稿形式傳送到部落格（不對外公開），並開啟網頁瀏覽器線上編輯草稿。</value>
+  </data>
+  <data name="Command.PostAsDraftAndEditOnline.LabelTitle" xml:space="preserve">
+    <value>發佈草稿並線上&amp;編輯</value>
+  </data>
+  <data name="Command.PostAsDraftAndEditOnline.MenuText" xml:space="preserve">
+    <value>發佈草稿並線上&amp;編輯</value>
+  </data>
+  <data name="Command.PostAsDraftAndEditOnline.Text" xml:space="preserve">
+    <value>發佈草稿並線上編輯</value>
+  </data>
+  <data name="Command.PostAsDraftAndEditOnline.TooltipDescription" xml:space="preserve">
+    <value>將目前文章以草稿形式傳送到部落格，並線上編輯。</value>
+  </data>
+  <data name="Command.PostProperties.MenuText" xml:space="preserve">
+    <value>屬&amp;性</value>
+  </data>
+  <data name="Command.PostProperties.Shortcut" xml:space="preserve">
+    <value>F2</value>
+  </data>
+  <data name="Command.PostProperties.Text" xml:space="preserve">
+    <value>屬性</value>
+  </data>
+  <data name="Command.PreviewTab.Keytip" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Command.PreviewTab.LabelTitle" xml:space="preserve">
+    <value>網頁預覽</value>
+  </data>
+  <data name="Command.Print.LabelDescription" xml:space="preserve">
+    <value>列印此文章。</value>
+  </data>
+  <data name="Command.Print.LabelTitle" xml:space="preserve">
+    <value>列&amp;印</value>
+  </data>
+  <data name="Command.Print.MenuText" xml:space="preserve">
+    <value>列&amp;印...</value>
+  </data>
+  <data name="Command.Print.Shortcut" xml:space="preserve">
+    <value>CtrlP</value>
+  </data>
+  <data name="Command.Print.Text" xml:space="preserve">
+    <value>列印...</value>
+  </data>
+  <data name="Command.Print.TooltipDescription" xml:space="preserve">
+    <value>列印此文章。</value>
+  </data>
+  <data name="Command.Print.TooltipTitle" xml:space="preserve">
+    <value>列印 (Ctrl+P)</value>
+  </data>
+  <data name="Command.PrintPreview.LabelDescription" xml:space="preserve">
+    <value>預覽此文章。</value>
+  </data>
+  <data name="Command.PrintPreview.LabelTitle" xml:space="preserve">
+    <value>列印預&amp;覽</value>
+  </data>
+  <data name="Command.PrintPreview.MenuText" xml:space="preserve">
+    <value>列印預&amp;覽...</value>
+  </data>
+  <data name="Command.PrintPreview.Text" xml:space="preserve">
+    <value>列印預覽...</value>
+  </data>
+  <data name="Command.PrintPreview.TooltipDescription" xml:space="preserve">
+    <value>預覽此文章。</value>
+  </data>
+  <data name="Command.PublishGroup.Keytip" xml:space="preserve">
+    <value>ZP1</value>
+  </data>
+  <data name="Command.PublishGroup.LabelTitle" xml:space="preserve">
+    <value>發佈</value>
+  </data>
+  <data name="Command.RaiseAssertion.LabelTitle" xml:space="preserve">
+    <value>Assert</value>
+  </data>
+  <data name="Command.RaiseAssertion.MenuText" xml:space="preserve">
+    <value>[Debug] Force Assertion</value>
+  </data>
+  <data name="Command.RecentPost.MenuText" xml:space="preserve">
+    <value>上&amp;一篇文章...</value>
+  </data>
+  <data name="Command.RecentPost.Text" xml:space="preserve">
+    <value>連結到先前的部落格文章</value>
+  </data>
+  <data name="Command.Redo.LabelTitle" xml:space="preserve">
+    <value>取消復原</value>
+  </data>
+  <data name="Command.Redo.MenuText" xml:space="preserve">
+    <value>取消復原(&amp;R)</value>
+  </data>
+  <data name="Command.Redo.Shortcut" xml:space="preserve">
+    <value>CtrlY</value>
+  </data>
+  <data name="Command.Redo.Text" xml:space="preserve">
+    <value>取消復原</value>
+  </data>
+  <data name="Command.Redo.TooltipTitle" xml:space="preserve">
+    <value>取消復原 (Ctrl+Y)</value>
+  </data>
+  <data name="Command.RemoveLink.MenuText" xml:space="preserve">
+    <value>移除超連&amp;結</value>
+  </data>
+  <data name="Command.RemoveLink.Text" xml:space="preserve">
+    <value>移除連結</value>
+  </data>
+  <data name="Command.RowProperties.LabelTitle" xml:space="preserve">
+    <value>列(&amp;R)...</value>
+  </data>
+  <data name="Command.RowProperties.MenuText" xml:space="preserve">
+    <value>列屬&amp;性...</value>
+  </data>
+  <data name="Command.RowProperties.Text" xml:space="preserve">
+    <value>列屬性</value>
+  </data>
+  <data name="Command.RowProperties.TooltipDescription" xml:space="preserve">
+    <value>編輯列屬性。</value>
+  </data>
+  <data name="Command.RowProperties.TooltipTitle" xml:space="preserve">
+    <value>列</value>
+  </data>
+  <data name="Command.RTLTextBlock.Keytip" xml:space="preserve">
+    <value>R1</value>
+  </data>
+  <data name="Command.RTLTextBlock.LabelTitle" xml:space="preserve">
+    <value>由右至左</value>
+  </data>
+  <data name="Command.RTLTextBlock.MenuText" xml:space="preserve">
+    <value>由右至左區塊(&amp;R)</value>
+  </data>
+  <data name="Command.RTLTextBlock.Text" xml:space="preserve">
+    <value>由右至左區塊</value>
+  </data>
+  <data name="Command.RTLTextBlock.TooltipDescription" xml:space="preserve">
+    <value>將選取文字的方向設為由右至左。</value>
+  </data>
+  <data name="Command.SavePost.CommandBarButtonText" xml:space="preserve">
+    <value>儲存草稿</value>
+  </data>
+  <data name="Command.SavePost.LabelDescription" xml:space="preserve">
+    <value>將此文章儲存為本機草稿。</value>
+  </data>
+  <data name="Command.SavePost.LabelTitle" xml:space="preserve">
+    <value>儲&amp;存</value>
+  </data>
+  <data name="Command.SavePost.MenuText" xml:space="preserve">
+    <value>儲&amp;存本機草稿</value>
+  </data>
+  <data name="Command.SavePost.Shortcut" xml:space="preserve">
+    <value>CtrlS</value>
+  </data>
+  <data name="Command.SavePost.Text" xml:space="preserve">
+    <value>儲存本機草稿</value>
+  </data>
+  <data name="Command.SavePost.TooltipDescription" xml:space="preserve">
+    <value>將此文章儲存為本機草稿。</value>
+  </data>
+  <data name="Command.SavePost.TooltipTitle" xml:space="preserve">
+    <value>儲存 (Ctrl+S)</value>
+  </data>
+  <data name="Command.SelectAll.Keytip" xml:space="preserve">
+    <value>AS</value>
+  </data>
+  <data name="Command.SelectAll.LabelTitle" xml:space="preserve">
+    <value>全選</value>
+  </data>
+  <data name="Command.SelectAll.MenuText" xml:space="preserve">
+    <value>全&amp;選</value>
+  </data>
+  <data name="Command.SelectAll.Shortcut" xml:space="preserve">
+    <value>CtrlA</value>
+  </data>
+  <data name="Command.SelectAll.Text" xml:space="preserve">
+    <value>全選</value>
+  </data>
+  <data name="Command.SelectAll.TooltipTitle" xml:space="preserve">
+    <value>全選 (Ctrl+A)</value>
+  </data>
+  <data name="Command.SelectBlog.Keytip" xml:space="preserve">
+    <value>P2</value>
+  </data>
+  <data name="Command.SelectBlog.TooltipDescription" xml:space="preserve">
+    <value>變更、新增及管理部落格帳號。</value>
+  </data>
+  <data name="Command.SelectBlog.TooltipTitle" xml:space="preserve">
+    <value>部落格帳號</value>
+  </data>
+  <data name="Command.SemanticHtmlGallery.Keytip" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Command.SemanticHtmlGallery.LabelTitle" xml:space="preserve">
+    <value>HTML 樣式</value>
+  </data>
+  <data name="Command.SemanticHtmlGallery.TooltipDescription" xml:space="preserve">
+    <value>使用部落格佈景主題所定義的文字格式預設值。</value>
+  </data>
+  <data name="Command.SemanticHtmlGroup.Keytip" xml:space="preserve">
+    <value>ZS</value>
+  </data>
+  <data name="Command.SemanticHtmlGroup.LabelTitle" xml:space="preserve">
+    <value>HTML 樣式</value>
+  </data>
+  <data name="Command.SemanticHtmlGroup.TooltipDescription" xml:space="preserve">
+    <value>使用部落格佈景主題所定義的文字格式預設值。</value>
+  </data>
+  <data name="Command.SetCustomSizeDefaults.LabelTitle" xml:space="preserve">
+    <value>設定預設大小(&amp;D)...</value>
+  </data>
+  <data name="Command.SetCustomSizeDefaults.TooltipDescription" xml:space="preserve">
+    <value>變更內嵌圖片的大小預設值。</value>
+  </data>
+  <data name="Command.SetCustomSizeDefaults.TooltipTitle" xml:space="preserve">
+    <value>預設圖片大小</value>
+  </data>
+  <data name="Command.ShowAtomImageEndpointSelector.LabelTitle" xml:space="preserve">
+    <value>Atom Image Endpoint Selector</value>
+  </data>
+  <data name="Command.ShowAtomImageEndpointSelector.MenuText" xml:space="preserve">
+    <value>[Debug] Show Atom image endpoint selector</value>
+  </data>
+  <data name="Command.ShowBetaExpiredDialogs.LabelTitle" xml:space="preserve">
+    <value>Beta Expired Dialogs</value>
+  </data>
+  <data name="Command.ShowBetaExpiredDialogs.MenuText" xml:space="preserve">
+    <value>[Debug] Show Expired Dialogs</value>
+  </data>
+  <data name="Command.ShowCategoryPopup.MenuText" xml:space="preserve">
+    <value>類&amp;別</value>
+  </data>
+  <data name="Command.ShowCategoryPopup.Shortcut" xml:space="preserve">
+    <value>CtrlShiftC</value>
+  </data>
+  <data name="Command.ShowDisplayMessageTestForm.LabelTitle" xml:space="preserve">
+    <value>Display Message Test Form</value>
+  </data>
+  <data name="Command.ShowDisplayMessageTestForm.MenuText" xml:space="preserve">
+    <value>[Debug] Show Display &amp;Messages</value>
+  </data>
+  <data name="Command.ShowErrorDialog.LabelTitle" xml:space="preserve">
+    <value>Error Dialog</value>
+  </data>
+  <data name="Command.ShowErrorDialog.MenuText" xml:space="preserve">
+    <value>[Debug] Show Error &amp;Dialog</value>
+  </data>
+  <data name="Command.ShowGoogleCaptcha.LabelTitle" xml:space="preserve">
+    <value>Google Captcha</value>
+  </data>
+  <data name="Command.ShowGoogleCaptcha.MenuText" xml:space="preserve">
+    <value>[Debug] Show Unlock Google Account Dialog</value>
+  </data>
+  <data name="Command.ShowImageUploadError.MenuText" xml:space="preserve">
+    <value>[Debug] Show Image Upload Error Message</value>
+  </data>
+  <data name="Command.ShowMenu.MenuText" xml:space="preserve">
+    <value>功能表列(&amp;M)</value>
+  </data>
+  <data name="Command.ShowMenu.Text" xml:space="preserve">
+    <value>顯示功能表列</value>
+  </data>
+  <data name="Command.ShowSupportingFilesForm.LabelTitle" xml:space="preserve">
+    <value>Supporting Files Form</value>
+  </data>
+  <data name="Command.ShowSupportingFilesForm.MenuText" xml:space="preserve">
+    <value>[Debug] Show &amp;Supporting Files</value>
+  </data>
+  <data name="Command.ShowUpdateMessage.LabelTitle" xml:space="preserve">
+    <value>Update Message</value>
+  </data>
+  <data name="Command.ShowUpdateMessage.MenuText" xml:space="preserve">
+    <value>[Debug] Show &amp;Updates Available Message</value>
+  </data>
+  <data name="Command.ShowVideoErrorMessage.MenuText" xml:space="preserve">
+    <value>[Debug] Show Video Publish Error Message</value>
+  </data>
+  <data name="Command.ShowWebLayoutWarning.LabelTitle" xml:space="preserve">
+    <value>Web Layout Warning</value>
+  </data>
+  <data name="Command.ShowWebLayoutWarning.MenuText" xml:space="preserve">
+    <value>[Debug] Show Web Layout Warning</value>
+  </data>
+  <data name="Command.SplitNew.LabelTitle" xml:space="preserve">
+    <value>&amp;F</value>
+  </data>
+  <data name="Command.SplitPrint.LabelTitle" xml:space="preserve">
+    <value>&amp;W</value>
+  </data>
+  <data name="Command.SplitSave.LabelTitle" xml:space="preserve">
+    <value>&amp;V</value>
+  </data>
+  <data name="Command.Strikethrough.Keytip" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="Command.Strikethrough.LabelTitle" xml:space="preserve">
+    <value>刪除線</value>
+  </data>
+  <data name="Command.Strikethrough.Shortcut" xml:space="preserve">
+    <value>CtrlH</value>
+  </data>
+  <data name="Command.Strikethrough.Text" xml:space="preserve">
+    <value>刪除線</value>
+  </data>
+  <data name="Command.Strikethrough.TooltipDescription" xml:space="preserve">
+    <value>在選取文字的中間畫一條線。</value>
+  </data>
+  <data name="Command.Strikethrough.TooltipTitle" xml:space="preserve">
+    <value>刪除線 (Ctrl+H)</value>
+  </data>
+  <data name="Command.Style.Text" xml:space="preserve">
+    <value>樣式</value>
+  </data>
+  <data name="Command.Subscript.Keytip" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="Command.Subscript.LabelTitle" xml:space="preserve">
+    <value>下標</value>
+  </data>
+  <data name="Command.Subscript.Text" xml:space="preserve">
+    <value>下標</value>
+  </data>
+  <data name="Command.Subscript.TooltipDescription" xml:space="preserve">
+    <value>在文字基準線下方建立小型文字。</value>
+  </data>
+  <data name="Command.Subscript.TooltipTitle" xml:space="preserve">
+    <value>下標 (Ctrl+=)</value>
+  </data>
+  <data name="Command.Superscript.Keytip" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Command.Superscript.LabelTitle" xml:space="preserve">
+    <value>上標</value>
+  </data>
+  <data name="Command.Superscript.Text" xml:space="preserve">
+    <value>上標</value>
+  </data>
+  <data name="Command.Superscript.TooltipDescription" xml:space="preserve">
+    <value>在文字行上方建立小型文字。</value>
+  </data>
+  <data name="Command.Superscript.TooltipTitle" xml:space="preserve">
+    <value>上標 (Ctrl+Shift+=)</value>
+  </data>
+  <data name="Command.TableContextTabGroup.LabelTitle" xml:space="preserve">
+    <value>表格工具</value>
+  </data>
+  <data name="Command.TableMenu.MenuText" xml:space="preserve">
+    <value>表格</value>
+  </data>
+  <data name="Command.TableMenu.Text" xml:space="preserve">
+    <value>表格</value>
+  </data>
+  <data name="Command.TableProperties.LabelTitle" xml:space="preserve">
+    <value>自訂表格(&amp;T)</value>
+  </data>
+  <data name="Command.TableProperties.MenuText" xml:space="preserve">
+    <value>表格屬性(&amp;E)...</value>
+  </data>
+  <data name="Command.TableProperties.Text" xml:space="preserve">
+    <value>表格屬性</value>
+  </data>
+  <data name="Command.TableProperties.TooltipDescription" xml:space="preserve">
+    <value>編輯表格屬性。</value>
+  </data>
+  <data name="Command.TablesGroup.Keytip" xml:space="preserve">
+    <value>ZT</value>
+  </data>
+  <data name="Command.TagContextTabGroup.LabelTitle" xml:space="preserve">
+    <value>標籤工具</value>
+  </data>
+  <data name="Command.TerminateProcess.LabelTitle" xml:space="preserve">
+    <value>Terminate Process</value>
+  </data>
+  <data name="Command.TerminateProcess.MenuText" xml:space="preserve">
+    <value>[Debug] Terminate Process</value>
+  </data>
+  <data name="Command.TextDebugGroup.LabelTitle" xml:space="preserve">
+    <value>文字</value>
+  </data>
+  <data name="Command.TextDebugGroup.TooltipTitle" xml:space="preserve">
+    <value>文字偵錯</value>
+  </data>
+  <data name="Command.TextEditingGroup.Keytip" xml:space="preserve">
+    <value>ZE</value>
+  </data>
+  <data name="Command.TextEditingGroup.LabelTitle" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Command.Underline.Keytip" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="Command.Underline.LabelTitle" xml:space="preserve">
+    <value>底線</value>
+  </data>
+  <data name="Command.Underline.Shortcut" xml:space="preserve">
+    <value>CtrlU</value>
+  </data>
+  <data name="Command.Underline.Text" xml:space="preserve">
+    <value>底線</value>
+  </data>
+  <data name="Command.Underline.TooltipDescription" xml:space="preserve">
+    <value>為選取文字加上底線。</value>
+  </data>
+  <data name="Command.Underline.TooltipTitle" xml:space="preserve">
+    <value>底線 (Ctrl+U)</value>
+  </data>
+  <data name="Command.Undo.LabelTitle" xml:space="preserve">
+    <value>復原</value>
+  </data>
+  <data name="Command.Undo.MenuText" xml:space="preserve">
+    <value>復原(&amp;U)</value>
+  </data>
+  <data name="Command.Undo.Shortcut" xml:space="preserve">
+    <value>CtrlZ</value>
+  </data>
+  <data name="Command.Undo.Text" xml:space="preserve">
+    <value>復原</value>
+  </data>
+  <data name="Command.Undo.TooltipTitle" xml:space="preserve">
+    <value>復原 (Ctrl+Z)</value>
+  </data>
+  <data name="Command.UpdateWeblogStyle.Keytip" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Command.UpdateWeblogStyle.LabelTitle" xml:space="preserve">
+    <value>更新佈景主題</value>
+  </data>
+  <data name="Command.UpdateWeblogStyle.MenuText" xml:space="preserve">
+    <value>重新整理佈景主題(&amp;R)</value>
+  </data>
+  <data name="Command.UpdateWeblogStyle.TooltipDescription" xml:space="preserve">
+    <value>取得此部落格的最新佈景主題。</value>
+  </data>
+  <data name="Command.ValidateDebugGroup.LabelTitle" xml:space="preserve">
+    <value>驗證</value>
+  </data>
+  <data name="Command.ValidateDebugGroup.TooltipTitle" xml:space="preserve">
+    <value>驗證</value>
+  </data>
+  <data name="Command.ValidateHtml.LabelTitle" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="Command.ValidateHtml.MenuText" xml:space="preserve">
+    <value>[Debug] Validate HTML</value>
+  </data>
+  <data name="Command.ValidateLocalizedResources.LabelTitle" xml:space="preserve">
+    <value>Localized Resource</value>
+  </data>
+  <data name="Command.ValidateLocalizedResources.MenuText" xml:space="preserve">
+    <value>[Debug] Validate Localized Resources</value>
+  </data>
+  <data name="Command.ValidateXhtml.LabelTitle" xml:space="preserve">
+    <value>XHTML</value>
+  </data>
+  <data name="Command.ValidateXhtml.MenuText" xml:space="preserve">
+    <value>[Debug] Validate XHTML</value>
+  </data>
+  <data name="Command.ValidateXhtml.Shortcut" xml:space="preserve">
+    <value>CtrlShiftF7</value>
+  </data>
+  <data name="Command.VideoAspectRatioGroup.Keytip" xml:space="preserve">
+    <value>ZR</value>
+  </data>
+  <data name="Command.VideoAspectRatioGroup.LabelTitle" xml:space="preserve">
+    <value>長寬比</value>
+  </data>
+  <data name="Command.VideoContextTabGroup.LabelTitle" xml:space="preserve">
+    <value>視訊工具</value>
+  </data>
+  <data name="Command.VideoStandardAspectRatio.Keytip" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="Command.VideoStandardAspectRatio.LabelTitle" xml:space="preserve">
+    <value>標準 (4:3)</value>
+  </data>
+  <data name="Command.VideoStandardAspectRatio.TooltipDescription" xml:space="preserve">
+    <value>為此視訊使用標準長寬比。</value>
+  </data>
+  <data name="Command.VideoWebPreview.Keytip" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="Command.VideoWebPreview.LabelTitle" xml:space="preserve">
+    <value>線上檢視</value>
+  </data>
+  <data name="Command.VideoWebPreview.TooltipDescription" xml:space="preserve">
+    <value>以網頁瀏覽器線上觀看此視訊。</value>
+  </data>
+  <data name="Command.VideoWidescreenAspectRatio.Keytip" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="Command.VideoWidescreenAspectRatio.LabelTitle" xml:space="preserve">
+    <value>寬螢幕 (16:9)</value>
+  </data>
+  <data name="Command.VideoWidescreenAspectRatio.TooltipDescription" xml:space="preserve">
+    <value>為此視訊使用寬螢幕長寬比。</value>
+  </data>
+  <data name="Command.ViewCode.MenuText" xml:space="preserve">
+    <value>原始碼(&amp;S)</value>
+  </data>
+  <data name="Command.ViewCode.Shortcut" xml:space="preserve">
+    <value>ShiftF11</value>
+  </data>
+  <data name="Command.ViewCode.Text" xml:space="preserve">
+    <value>原始碼</value>
+  </data>
+  <data name="Command.ViewNormal.MenuText" xml:space="preserve">
+    <value>編輯(&amp;E)</value>
+  </data>
+  <data name="Command.ViewNormal.Shortcut" xml:space="preserve">
+    <value>F11</value>
+  </data>
+  <data name="Command.ViewNormal.Text" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Command.ViewPlainText.LabelTitle" xml:space="preserve">
+    <value>純文字</value>
+  </data>
+  <data name="Command.ViewPlainText.MenuText" xml:space="preserve">
+    <value>純文字模式</value>
+  </data>
+  <data name="Command.ViewPreview.MenuText" xml:space="preserve">
+    <value>預覽(&amp;P)</value>
+  </data>
+  <data name="Command.ViewPreview.Shortcut" xml:space="preserve">
+    <value>F12</value>
+  </data>
+  <data name="Command.ViewPreview.Text" xml:space="preserve">
+    <value>預覽</value>
+  </data>
+  <data name="Command.ViewSidebar.MenuText" xml:space="preserve">
+    <value>工&amp;作窗格</value>
+  </data>
+  <data name="Command.ViewSidebar.Shortcut" xml:space="preserve">
+    <value>F9</value>
+  </data>
+  <data name="Command.ViewSource.LabelTitle" xml:space="preserve">
+    <value>檢視 HTML 原始碼</value>
+  </data>
+  <data name="Command.ViewSource.Shortcut" xml:space="preserve">
+    <value>CtrlF3</value>
+  </data>
+  <data name="Command.ViewUseStyles.Keytip" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="Command.ViewUseStyles.LabelTitle" xml:space="preserve">
+    <value>部落格佈景主題</value>
+  </data>
+  <data name="Command.ViewUseStyles.MenuText" xml:space="preserve">
+    <value>使用&amp;佈景主題編輯</value>
+  </data>
+  <data name="Command.ViewUseStyles.Shortcut" xml:space="preserve">
+    <value>CtrlF11</value>
+  </data>
+  <data name="Command.ViewUseStyles.TooltipDescription" xml:space="preserve">
+    <value>在編輯此文章時套用您的部落格佈景主題。</value>
+  </data>
+  <data name="Command.ViewUseStyles.TooltipTitle" xml:space="preserve">
+    <value>部落格佈景主題 (Ctrl+F11)</value>
+  </data>
+  <data name="Command.ViewWeblog.LabelTitle" xml:space="preserve">
+    <value>檢視部落格</value>
+  </data>
+  <data name="Command.ViewWeblog.MenuText" xml:space="preserve">
+    <value>檢視部落格(&amp;V)</value>
+  </data>
+  <data name="Command.ViewWeblog.Text" xml:space="preserve">
+    <value>檢視部落格</value>
+  </data>
+  <data name="Command.ViewWeblogAdmin.MenuText" xml:space="preserve">
+    <value>管理部落格(&amp;M)</value>
+  </data>
+  <data name="Command.ViewWeblogAdmin.Text" xml:space="preserve">
+    <value>管理部落格</value>
+  </data>
+  <data name="Command.Watermark.Keytip" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="Command.Watermark.LabelTitle" xml:space="preserve">
+    <value>浮水印</value>
+  </data>
+  <data name="Command.Watermark.TooltipDescription" xml:space="preserve">
+    <value>為此圖片加入浮水印。</value>
+  </data>
+  <data name="Command.Watermark.TooltipTitle" xml:space="preserve">
+    <value>浮水印</value>
+  </data>
+  <data name="Command.WebImage.LabelTitle" xml:space="preserve">
+    <value>從&amp;網路...</value>
+  </data>
+  <data name="Command.WebImage.MenuText" xml:space="preserve">
+    <value>&amp;網路圖片...</value>
+  </data>
+  <data name="Command.WebImage.Shortcut" xml:space="preserve">
+    <value>CtrlShiftJ</value>
+  </data>
+  <data name="Command.WebImage.TooltipDescription" xml:space="preserve">
+    <value>輸入圖片的網址以在文章中顯示。</value>
+  </data>
+  <data name="Command.WebImage.TooltipTitle" xml:space="preserve">
+    <value>從網路插入 (Ctrl+Shift+J)</value>
+  </data>
+  <data name="Command.WeblogMenu.CommandBarButtonText" xml:space="preserve">
+    <value>Weblog</value>
+  </data>
+  <data name="Command.WeblogMenu.Text" xml:space="preserve">
+    <value>部落格</value>
+  </data>
+  <data name="Command.WeblogPicker.Text" xml:space="preserve">
+    <value>部落格</value>
+  </data>
+  <data name="Command.WordCount.Keytip" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="Command.WordCount.LabelTitle" xml:space="preserve">
+    <value>字數統計</value>
+  </data>
+  <data name="Command.WordCount.MenuText" xml:space="preserve">
+    <value>字數統計(&amp;W)</value>
+  </data>
+  <data name="Command.WordCount.TooltipDescription" xml:space="preserve">
+    <value>查看字數、字元數、段落數及行數。</value>
+  </data>
+  <data name="ConfigurationWizard.Height" xml:space="preserve">
+    <value>380</value>
+  </data>
+  <data name="Culture.UseItalics" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="DisplayMessage.AddBlogUrlFormatError.Text" xml:space="preserve">
+    <value>請為您的部落格首頁輸入有效的網址（{0} 不是有效的網址）。</value>
+  </data>
+  <data name="DisplayMessage.AddBlogUrlFormatError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.AutoRecoverPromptDiscardConfirm.Text" xml:space="preserve">
+    <value>確定要永久捨棄已復原的變更嗎？</value>
+  </data>
+  <data name="DisplayMessage.AutoRecoverPromptDiscardConfirm.Title" xml:space="preserve">
+    <value>捨棄變更</value>
+  </data>
+  <data name="DisplayMessage.AutoreplaceAlreadyExists.Text" xml:space="preserve">
+    <value>此詞組已在自動取代清單中。是否要覆寫現有的詞組？</value>
+  </data>
+  <data name="DisplayMessage.AutoreplaceAlreadyExists.Title" xml:space="preserve">
+    <value>覆寫現有詞組</value>
+  </data>
+  <data name="DisplayMessage.AutoreplacePhraseRequired.Text" xml:space="preserve">
+    <value>請輸入要取代的詞組。</value>
+  </data>
+  <data name="DisplayMessage.AutoreplacePhraseRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.AutoreplaceReplacementRequired.Text" xml:space="preserve">
+    <value>請輸入取代值。</value>
+  </data>
+  <data name="DisplayMessage.AutoreplaceReplacementRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.BetaError.Text" xml:space="preserve">
+    <value>此帳戶不在 Beta 計畫中。請使用已獲授權的帳戶再試一次。</value>
+  </data>
+  <data name="DisplayMessage.BetaError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.BloggerError.Text" xml:space="preserve">
+    <value>Blogger 傳回以下錯誤：</value>
+  </data>
+  <data name="DisplayMessage.CannotInsert.Text" xml:space="preserve">
+    <value>無法在此位置插入 {0}。請在文章中選擇其他位置後再試一次。</value>
+  </data>
+  <data name="DisplayMessage.CannotInsert.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.CategoryReminder.Text" xml:space="preserve">
+    <value>您尚未為此文章指定分類。</value>
+  </data>
+  <data name="DisplayMessage.CategoryReminder.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteAutoReplaceEntry.Text" xml:space="preserve">
+    <value>確定要刪除此自動取代項目嗎？</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteAutoReplaceEntry.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteDraft.Text" xml:space="preserve">
+    <value>確定要刪除草稿 {0}「{1}」嗎？</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteDraft.Title" xml:space="preserve">
+    <value>確認刪除</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteEntry.Text" xml:space="preserve">
+    <value>確定要刪除此自動連結項目嗎？</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteEntry.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeletePost.Text" xml:space="preserve">
+    <value>此 {0} 將從您的部落格及本機電腦上一併刪除。</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeletePost.Title" xml:space="preserve">
+    <value>確認刪除</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteTable.Text" xml:space="preserve">
+    <value>確定要刪除此表格嗎？</value>
+  </data>
+  <data name="DisplayMessage.ConfirmDeleteTable.Title" xml:space="preserve">
+    <value>確認刪除</value>
+  </data>
+  <data name="DisplayMessage.ConfirmOverwrite.Text" xml:space="preserve">
+    <value>根據伺服器資訊，此文章自您開始編輯後已被修改。</value>
+  </data>
+  <data name="DisplayMessage.ConfirmOverwrite.Title" xml:space="preserve">
+    <value>確認覆寫</value>
+  </data>
+  <data name="DisplayMessage.ConfirmRemoveWeblog.Text" xml:space="preserve">
+    <value>確定要從 Writer 中移除此部落格嗎？</value>
+  </data>
+  <data name="DisplayMessage.ConfirmRemoveWeblog.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ConfirmReplaceEntry.Text" xml:space="preserve">
+    <value>確定要取代該文字的現有項目嗎？</value>
+  </data>
+  <data name="DisplayMessage.ConfirmReplaceEntry.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ConnectionTimeout.Text" xml:space="preserve">
+    <value>無法與 FTP 伺服器建立連線。</value>
+  </data>
+  <data name="DisplayMessage.ConnectionTimeout.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.DirectoryFail.Text" xml:space="preserve">
+    <value>無法存取：</value>
+  </data>
+  <data name="DisplayMessage.DirectoryFail.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.EntryFound.Text" xml:space="preserve">
+    <value>找到相同的連結文字「{0}」和 URL {1}。</value>
+  </data>
+  <data name="DisplayMessage.EntryFound.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ErrorConnecting.Text" xml:space="preserve">
+    <value>嘗試連線至遠端伺服器時發生問題。</value>
+  </data>
+  <data name="DisplayMessage.ErrorConnecting.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ErrorConnectingPromptContinue.Text" xml:space="preserve">
+    <value>無法連絡遠端伺服器以驗證設定。是否仍要繼續？</value>
+  </data>
+  <data name="DisplayMessage.ErrorConnectingPromptContinue.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.FileInUse.Text" xml:space="preserve">
+    <value>另一個程式正在使用 {0}。</value>
+  </data>
+  <data name="DisplayMessage.FileInUse.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.FileNotFound.Text" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DisplayMessage.FileNotFound.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.FinishedSearchingDocument.Text" xml:space="preserve">
+    <value>已完成文件搜尋。</value>
+  </data>
+  <data name="DisplayMessage.FinishedSearchingDocument.Title" xml:space="preserve">
+    <value>尋找</value>
+  </data>
+  <data name="DisplayMessage.FtpServerUnavailable.Text" xml:space="preserve">
+    <value>指定的主機名稱似乎沒有執行 FTP 伺服器。</value>
+  </data>
+  <data name="DisplayMessage.FtpServerUnavailable.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.FtpSettingsRequired.Text" xml:space="preserve">
+    <value>若您選擇將圖片上傳至 FTP 網站，請指定目的伺服器的設定。</value>
+  </data>
+  <data name="DisplayMessage.FtpSettingsRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.GoogleAuthTokenNotFound.Text" xml:space="preserve">
+    <value>伺服器未回應預期的授權權杖。</value>
+  </data>
+  <data name="DisplayMessage.GoogleBloggerLoginRequired.Text" xml:space="preserve">
+    <value>請登入 Google Blogger 以繼續。</value>
+  </data>
+  <data name="DisplayMessage.GoogleBloggerLoginRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.GuestNotSupported.Text" xml:space="preserve">
+    <value>不支援從訪客帳戶使用 Open Live Writer。</value>
+  </data>
+  <data name="DisplayMessage.GuestNotSupported.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.HomepageUrlInvalid.Text" xml:space="preserve">
+    <value>請為您的部落格首頁輸入有效的網址。</value>
+  </data>
+  <data name="DisplayMessage.HomepageUrlInvalid.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.HomepageUrlRequired.Text" xml:space="preserve">
+    <value>請輸入您的部落格首頁網址。</value>
+  </data>
+  <data name="DisplayMessage.HomepageUrlRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.HostNameRequired.Text" xml:space="preserve">
+    <value>請輸入主機名稱以繼續。</value>
+  </data>
+  <data name="DisplayMessage.HostNameRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.IncompatiblePostInfoType.Text" xml:space="preserve">
+    <value>發生內部錯誤（部落格文章資訊類型不相容）。無法開啟選取的文章。</value>
+  </data>
+  <data name="DisplayMessage.IncompatiblePostInfoType.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InputIsNotUrl.Text" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DisplayMessage.InputIsNotUrl.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InternetConnectionWarning.Text" xml:space="preserve">
+    <value>因為沒有網際網路連線，無法顯示內容。</value>
+  </data>
+  <data name="DisplayMessage.InternetConnectionWarning.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InvalidHostname.Text" xml:space="preserve">
+    <value>指定的主機名稱不存在。</value>
+  </data>
+  <data name="DisplayMessage.InvalidHostname.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InvalidInsertionPoint.Text" xml:space="preserve">
+    <value>此位置不是插入內容的有效位置</value>
+  </data>
+  <data name="DisplayMessage.InvalidInsertionPoint.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InvalidNumberNonNegative.Text" xml:space="preserve">
+    <value>請輸入大於或等於零的數字。</value>
+  </data>
+  <data name="DisplayMessage.InvalidNumberNonNegative.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InvalidNumberPositiveOnly.Text" xml:space="preserve">
+    <value>請輸入大於零的數字。</value>
+  </data>
+  <data name="DisplayMessage.InvalidNumberPositiveOnly.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.InvalidPingUrl.Text" xml:space="preserve">
+    <value>您輸入的 Ping 網址無效。</value>
+  </data>
+  <data name="DisplayMessage.InvalidWebImage.Text" xml:space="preserve">
+    <value>請輸入格式正確的 URL。</value>
+  </data>
+  <data name="DisplayMessage.InvalidWebImage.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.LocalDeleteConfirmation.Text" xml:space="preserve">
+    <value>嘗試刪除部落格上的 {0} 時發生錯誤。</value>
+  </data>
+  <data name="DisplayMessage.LocalDeleteConfirmation.Title" xml:space="preserve">
+    <value>確認刪除</value>
+  </data>
+  <data name="DisplayMessage.LoginFailed.Text" xml:space="preserve">
+    <value>{0} 無法使用該使用者名稱和密碼登入遠端伺服器。</value>
+  </data>
+  <data name="DisplayMessage.LoginFailed.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.MalformedHtmlIgnored.Text" xml:space="preserve">
+    <value>外掛程式 {0} 產生了無效的 HTML，為避免損壞您的文章，此內容將被捨棄。</value>
+  </data>
+  <data name="DisplayMessage.MalformedHtmlIgnored.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.MappingVerificationFailed.Text" xml:space="preserve">
+    <value>無法驗證 URL 對應。是否仍要繼續？</value>
+  </data>
+  <data name="DisplayMessage.MappingVerificationFailed.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.MapsNoInternetConnection.Text" xml:space="preserve">
+    <value>請連線至網際網路以插入和編輯地圖。</value>
+  </data>
+  <data name="DisplayMessage.MapsNoInternetConnection.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.MultipleCategoriesNotSupported.Text" xml:space="preserve">
+    <value>部落格伺服器未設定為接受多個文章分類。</value>
+  </data>
+  <data name="DisplayMessage.MultipleCategoriesNotSupported.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.MultipleLinks.Text" xml:space="preserve">
+    <value>選取範圍包含多個連結，請選擇其中一個進行編輯。</value>
+  </data>
+  <data name="DisplayMessage.MultipleLinks.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.MustAcceptTermsOfUse.Text" xml:space="preserve">
+    <value>若要發佈影片，請接受服務使用條款和安全提示。請點擊連結閱讀，並在同意後勾選核取方塊。</value>
+  </data>
+  <data name="DisplayMessage.MustAcceptTermsOfUse.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoImageSelected.Text" xml:space="preserve">
+    <value>請選取圖片。</value>
+  </data>
+  <data name="DisplayMessage.NoImageSelected.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoLinkTextSpecified.Text" xml:space="preserve">
+    <value>請輸入超連結的顯示文字。</value>
+  </data>
+  <data name="DisplayMessage.NoLinkTextSpecified.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoMapAddressSpecified.Text" xml:space="preserve">
+    <value>請指定位置。</value>
+  </data>
+  <data name="DisplayMessage.NoMapAddressSpecified.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NonImageTypeFileSelected.Text" xml:space="preserve">
+    <value>檔案 {0} 無法辨識為有效的圖片檔。</value>
+  </data>
+  <data name="DisplayMessage.NonImageTypeFileSelected.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoPostSelected.Text" xml:space="preserve">
+    <value>請先選取要開啟的文章再繼續。</value>
+  </data>
+  <data name="DisplayMessage.NoPostSelected.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoPreviewAvailable.Text" xml:space="preserve">
+    <value>目前無法預覽。請確認輸入的 URL 及網路連線。</value>
+  </data>
+  <data name="DisplayMessage.NoPreviewAvailable.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoSoapboxVideoSelected.Text" xml:space="preserve">
+    <value>請選取要插入的影片。</value>
+  </data>
+  <data name="DisplayMessage.NoSoapboxVideoSelected.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoSuchImageFile.Text" xml:space="preserve">
+    <value>{0} 不是有效的 URL。</value>
+  </data>
+  <data name="DisplayMessage.NoSuchPublishFolder.Text" xml:space="preserve">
+    <value>指定的發佈資料夾不存在：</value>
+  </data>
+  <data name="DisplayMessage.NoSuchPublishFolder.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoTags.Text" xml:space="preserve">
+    <value>請至少輸入一個標籤。</value>
+  </data>
+  <data name="DisplayMessage.NoTags.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoTitleSpecified.Text" xml:space="preserve">
+    <value>此部落格的文章必須有標題。</value>
+  </data>
+  <data name="DisplayMessage.NoTitleSpecified.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NotLinkable.Text" xml:space="preserve">
+    <value>無法為此選取範圍插入超連結。請選取文字或點擊圖片後再試一次。</value>
+  </data>
+  <data name="DisplayMessage.NotLinkable.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoUpdateAvailable.Text" xml:space="preserve">
+    <value>目前沒有可用的更新。</value>
+  </data>
+  <data name="DisplayMessage.NoUpdateAvailable.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoValidHyperlinkSpecified.Text" xml:space="preserve">
+    <value>請輸入有效的超連結。</value>
+  </data>
+  <data name="DisplayMessage.NoValidHyperlinkSpecified.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.NoVideoFound.Text" xml:space="preserve">
+    <value>輸入的資訊無法比對至已知的影片提供者。請輸入有效的 URL 或嵌入程式碼。</value>
+  </data>
+  <data name="DisplayMessage.NoVideoFound.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PassportUsernameAndPasswordRequired.Text" xml:space="preserve">
+    <value>請輸入 Microsoft 帳戶 ID 和密碼以繼續。</value>
+  </data>
+  <data name="DisplayMessage.PassportUsernameAndPasswordRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PasteSpecialInvalidData.Text" xml:space="preserve">
+    <value>選擇性貼上只能用於 HTML 和文字資料。請選取其他文字後再試一次</value>
+  </data>
+  <data name="DisplayMessage.PasteSpecialInvalidData.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PersonalDirectoryFail.Text" xml:space="preserve">
+    <value>無法存取您的文件資料夾。</value>
+  </data>
+  <data name="DisplayMessage.PersonalDirectoryFail.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PicasawebSignup.Text" xml:space="preserve">
+    <value>若要將圖片上傳至 Blogger 部落格，請前往 Picasa Web Albums 首頁，使用您的 Blogger 帳戶登入並同意服務條款。</value>
+  </data>
+  <data name="DisplayMessage.PicasawebSignup.Title" xml:space="preserve">
+    <value>Picasa Web Albums</value>
+  </data>
+  <data name="DisplayMessage.PingUrlRequired.Text" xml:space="preserve">
+    <value>若要啟用 Ping，請至少提供一個有效的網址。</value>
+  </data>
+  <data name="DisplayMessage.PluginBitmapLoadError.Text" xml:space="preserve">
+    <value>警告：無法從指定路徑 ({1}) 載入外掛程式 {0} 的點陣圖。</value>
+  </data>
+  <data name="DisplayMessage.PluginInvalidAttribute.Text" xml:space="preserve">
+    <value>載入外掛程式 {0} 時發生錯誤</value>
+  </data>
+  <data name="DisplayMessage.PluginInvalidAttribute.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PluginStatusChanged.Text" xml:space="preserve">
+    <value>您已選擇啟用或停用外掛程式。若要使這些變更生效，請重新啟動 Writer。</value>
+  </data>
+  <data name="DisplayMessage.PluginStatusChanged.Title" xml:space="preserve">
+    <value>外掛程式狀態</value>
+  </data>
+  <data name="DisplayMessage.PluginUnexpectedLoadError.Text" xml:space="preserve">
+    <value>載入外掛程式 {0} 時發生錯誤</value>
+  </data>
+  <data name="DisplayMessage.PluginUnexpectedLoadError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PostFileInvalid.Text" xml:space="preserve">
+    <value>指定的文章檔案 ({0}) 不是有效的部落格文章，因此無法開啟。</value>
+  </data>
+  <data name="DisplayMessage.PostFileInvalid.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PostFileNoExist.Text" xml:space="preserve">
+    <value>指定的文章檔案 ({0}) 不存在。</value>
+  </data>
+  <data name="DisplayMessage.PostFileNoExist.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PostTitleTooLong.Text" xml:space="preserve">
+    <value>文章標題過長，請縮短標題後再試著發佈文章。</value>
+  </data>
+  <data name="DisplayMessage.PostTitleTooLong.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PublishCanceledByPlugin.Text" xml:space="preserve">
+    <value>發佈已被 {0} 外掛程式取消。</value>
+  </data>
+  <data name="DisplayMessage.PublishCanceledByPlugin.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PublishFailed.Text" xml:space="preserve">
+    <value>發生發佈錯誤：{0}</value>
+  </data>
+  <data name="DisplayMessage.PublishFailed.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.PushpinValidationError.Text" xml:space="preserve">
+    <value>無法驗證您輸入的圖釘 URL 是否指向網路上的有效圖片檔案。請注意，該 URL 可能仍然正確，但目前無法存取。</value>
+  </data>
+  <data name="DisplayMessage.QueryForCreateEditorTemplate.Text" xml:space="preserve">
+    <value>您是否要產生符合部落格佈景主題的撰寫範本？</value>
+  </data>
+  <data name="DisplayMessage.QueryForCreateEditorTemplate.Title" xml:space="preserve">
+    <value>產生撰寫範本</value>
+  </data>
+  <data name="DisplayMessage.QueryForUnpostedEntry.Text" xml:space="preserve">
+    <value>您正在編輯的部落格文章尚未發佈。</value>
+  </data>
+  <data name="DisplayMessage.QueryForUnpostedEntry.Title" xml:space="preserve">
+    <value>將文章儲存為草稿</value>
+  </data>
+  <data name="DisplayMessage.QueryForUnpublishedEntry.Text" xml:space="preserve">
+    <value>您已將此部落格文章儲存為草稿。</value>
+  </data>
+  <data name="DisplayMessage.QueryForUnpublishedEntry.Title" xml:space="preserve">
+    <value>發佈文章</value>
+  </data>
+  <data name="DisplayMessage.QueryForUnsavedChanges.Text" xml:space="preserve">
+    <value>此文章有未儲存的變更。</value>
+  </data>
+  <data name="DisplayMessage.QueryForUnsavedChanges.Title" xml:space="preserve">
+    <value>儲存變更</value>
+  </data>
+  <data name="DisplayMessage.ReadOnlyPostFile.Text" xml:space="preserve">
+    <value>文章檔案「{0}」被標記為唯讀。</value>
+  </data>
+  <data name="DisplayMessage.ReadOnlyPostFile.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.RepublishAsDraftUnsupported.Text" xml:space="preserve">
+    <value>目前的部落格不支援將已發佈文章重新儲存為草稿。</value>
+  </data>
+  <data name="DisplayMessage.RepublishAsDraftUnsupported.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.RequiredFieldOmitted.Text" xml:space="preserve">
+    <value>請在 {0} 欄位輸入值，以設定部落格發佈。</value>
+  </data>
+  <data name="DisplayMessage.RequiredFieldOmitted.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.SelectEntry.Text" xml:space="preserve">
+    <value>請選取一個連結。</value>
+  </data>
+  <data name="DisplayMessage.SelectEntry.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ServerParameterNotSpecified.Text" xml:space="preserve">
+    <value>繼續之前，請先自訂部落格 API URL。</value>
+  </data>
+  <data name="DisplayMessage.ServerParameterNotSpecified.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ShouldUsePlugin.Text" xml:space="preserve">
+    <value>您是否要為此部落格啟用 {0} 外掛程式？</value>
+  </data>
+  <data name="DisplayMessage.ShouldUsePlugin.Title" xml:space="preserve">
+    <value>偵測到新外掛程式</value>
+  </data>
+  <data name="DisplayMessage.SoapboxLoginError.Text" xml:space="preserve">
+    <value>{0} 登入時發生問題：</value>
+  </data>
+  <data name="DisplayMessage.SoapboxLoginError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.SpacesPublishingNotEnabled.Text" xml:space="preserve">
+    <value>無法再將文章發佈到 Windows Live Spaces 上的部落格。請前往 http://spaces.live.com 登入，以了解如何將部落格移轉至 WordPress.com。</value>
+  </data>
+  <data name="DisplayMessage.SpacesPublishingNotEnabled.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.SpellCheckCancelledStillPost.Text" xml:space="preserve">
+    <value>拼字檢查尚未完成。</value>
+  </data>
+  <data name="DisplayMessage.SpellCheckCancelledStillPost.Title" xml:space="preserve">
+    <value>拼字檢查已取消</value>
+  </data>
+  <data name="DisplayMessage.SpellCheckComplete.Text" xml:space="preserve">
+    <value>拼字檢查完成。</value>
+  </data>
+  <data name="DisplayMessage.TagConfirmDeleteProvider.Text" xml:space="preserve">
+    <value>您確定要刪除「{0}」嗎？</value>
+  </data>
+  <data name="DisplayMessage.TagConfirmDeleteProvider.Title" xml:space="preserve">
+    <value>確認刪除</value>
+  </data>
+  <data name="DisplayMessage.TagConfirmRestoreProviders.Text" xml:space="preserve">
+    <value>您確定要還原預設提供者嗎？</value>
+  </data>
+  <data name="DisplayMessage.TagConfirmRestoreProviders.Title" xml:space="preserve">
+    <value>確認還原預設值</value>
+  </data>
+  <data name="DisplayMessage.TagFormatRequired.Text" xml:space="preserve">
+    <value>請為每個標籤輸入 HTML 範本。</value>
+  </data>
+  <data name="DisplayMessage.TagMissingToken.Text" xml:space="preserve">
+    <value>HTML 說明文字必須包含語彙基元「{0}」。</value>
+  </data>
+  <data name="DisplayMessage.TagProviderNameRequired.Text" xml:space="preserve">
+    <value>請為此提供者輸入名稱。</value>
+  </data>
+  <data name="DisplayMessage.TagProviderNameRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.TagReminder.Text" xml:space="preserve">
+    <value>您尚未為此文章新增標籤。</value>
+  </data>
+  <data name="DisplayMessage.TagReminder.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.TagSelectProvider.Text" xml:space="preserve">
+    <value>請選取標籤提供者以繼續。</value>
+  </data>
+  <data name="DisplayMessage.TagSelectProvider.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.TemplateDownloadFailed.Text" xml:space="preserve">
+    <value>無法下載部落格佈景主題。</value>
+  </data>
+  <data name="DisplayMessage.TemplateDownloadFailed.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.TempPostDeleteFailed.Text" xml:space="preserve">
+    <value>為擷取部落格佈景主題而建立的暫時文章未被刪除。</value>
+  </data>
+  <data name="DisplayMessage.TempPostDeleteFailed.Title" xml:space="preserve">
+    <value>Open Live Worker</value>
+  </data>
+  <data name="DisplayMessage.TempPostPermission.Text" xml:space="preserve">
+    <value>您是否要透過發佈暫時文章來下載部落格佈景主題？擷取佈景主題後，該文章將立即被移除。</value>
+  </data>
+  <data name="DisplayMessage.TempPostPermission.Title" xml:space="preserve">
+    <value>下載部落格佈景主題</value>
+  </data>
+  <data name="DisplayMessage.TitleNotLinkable.Text" xml:space="preserve">
+    <value>無法在文章標題中插入超連結。請選取其他文字後再試一次。</value>
+  </data>
+  <data name="DisplayMessage.TitleNotLinkable.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.UnableToRetrieve.Text" xml:space="preserve">
+    <value>無法從部落格服務擷取 {0}。</value>
+  </data>
+  <data name="DisplayMessage.UnexpectedErrorLogin.Text" xml:space="preserve">
+    <value>嘗試登入時發生意外錯誤：</value>
+  </data>
+  <data name="DisplayMessage.UnknownLoginError.Text" xml:space="preserve">
+    <value>嘗試登入伺服器時發生意外錯誤。</value>
+  </data>
+  <data name="DisplayMessage.UnknownLoginError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.UnspecifiedValue.Text" xml:space="preserve">
+    <value>請為 {0} 欄位輸入有效的值。</value>
+  </data>
+  <data name="DisplayMessage.UnspecifiedValue.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.UrlMappingRequired.Text" xml:space="preserve">
+    <value>請輸入 URL 對應以繼續。</value>
+  </data>
+  <data name="DisplayMessage.UrlMappingRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.UsernameAndPasswordRequired.Text" xml:space="preserve">
+    <value>請輸入使用者名稱和密碼以繼續。</value>
+  </data>
+  <data name="DisplayMessage.UsernameAndPasswordRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ValueExceedsMaximum.Text" xml:space="preserve">
+    <value>請為 {1} 欄位輸入小於 {0} 的值。</value>
+  </data>
+  <data name="DisplayMessage.ValueExceedsMaximum.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.ValueLessThanMinimum.Text" xml:space="preserve">
+    <value>請為 {1} 欄位輸入至少 {0} 的值。</value>
+  </data>
+  <data name="DisplayMessage.ValueLessThanMinimum.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoAccessError.Text" xml:space="preserve">
+    <value>因服務使用量過高，無法從服務存取所選影片，請稍後再試。</value>
+  </data>
+  <data name="DisplayMessage.VideoAccessError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoFailedPublish.Text" xml:space="preserve">
+    <value>一個或多個影片發佈失敗，請移除失敗的影片後再試一次。</value>
+  </data>
+  <data name="DisplayMessage.VideoFailedPublish.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoLoginRequired.Text" xml:space="preserve">
+    <value>請登入並選取影片以繼續。</value>
+  </data>
+  <data name="DisplayMessage.VideoLoginRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoPathInvalid.Text" xml:space="preserve">
+    <value>影片檔案的路徑無效，請確認檔案存在於磁碟上。</value>
+  </data>
+  <data name="DisplayMessage.VideoPathInvalid.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoPublisherFailed.Text" xml:space="preserve">
+    <value>所選影片發佈程式因未知原因發佈失敗。</value>
+  </data>
+  <data name="DisplayMessage.VideoPublisherFailed.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoRequiredFields.Text" xml:space="preserve">
+    <value>發佈影片需填寫所有欄位，請確認所有欄位均已填寫。</value>
+  </data>
+  <data name="DisplayMessage.VideoRequiredFields.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.VideoUnexpectedDownloadError.Text" xml:space="preserve">
+    <value>存取影片 {0} 時發生錯誤</value>
+  </data>
+  <data name="DisplayMessage.VideoUnexpectedDownloadError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WeblogAuthenticationError.Text" xml:space="preserve">
+    <value>使用者名稱或密碼不正確。</value>
+  </data>
+  <data name="DisplayMessage.WeblogAuthenticationError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WeblogConnectionError.Text" xml:space="preserve">
+    <value>無法連線到您的部落格服務：</value>
+  </data>
+  <data name="DisplayMessage.WeblogConnectionError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WeblogDetectionUnexpectedError.Text" xml:space="preserve">
+    <value>偵測部落格設定時發生問題：</value>
+  </data>
+  <data name="DisplayMessage.WeblogDetectionUnexpectedError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WeblogNoAccountsOnServer.Text" xml:space="preserve">
+    <value>您已成功以部落格帳戶登入，但此服務供應商下沒有您的部落格。</value>
+  </data>
+  <data name="DisplayMessage.WeblogNoAccountsOnServer.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WeblogUrlNotFound.Text" xml:space="preserve">
+    <value>找不到下列網站位址：</value>
+  </data>
+  <data name="DisplayMessage.WeblogUrlNotFound.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WidthHeightRequired.Text" xml:space="preserve">
+    <value>請輸入寬度和高度。</value>
+  </data>
+  <data name="DisplayMessage.WidthHeightRequired.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WordpressHomepageWrong.Text" xml:space="preserve">
+    <value>若要將 {0} 設定為發佈至 WordPress，請輸入您部落格的首頁 URL（例如 http://myblog.wordpress.com）。</value>
+  </data>
+  <data name="DisplayMessage.WordpressHomepageWrong.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.WriterCannotStart.Text" xml:space="preserve">
+    <value>Open Live Writer 無法啟動，因為必要檔案遺失或損毀。若要修正此問題，請在控制台前往「程式和功能」，然後修復 Open Live Writer。</value>
+  </data>
+  <data name="DisplayMessage.WriterCannotStart.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.YouTubeError.Text" xml:space="preserve">
+    <value>擷取影片時發生問題，請再試一次。</value>
+  </data>
+  <data name="DisplayMessage.YouTubeError.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="DisplayMessage.YouTubeSignup.Text" xml:space="preserve">
+    <value>若要將影片上傳至 YouTube，請將 YouTube 暱稱與帳戶 {0} 連結。</value>
+  </data>
+  <data name="DisplayMessage.YouTubeSignup.Title" xml:space="preserve">
+    <value>Open Live Writer</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Microsoft JhengHei UI</value>
+  </data>
+  <data name="Font.Size.GiantHeading" xml:space="preserve">
+    <value>15.75</value>
+  </data>
+  <data name="Font.Size.Heading" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Font.Size.Large" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Font.Size.Normal" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Font.Size.PostSplitCaption" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Font.Size.Small" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Font.Size.ToolbarFormatButton" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Font.Size.XLarge" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Font.Size.XXLarge" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Sidebar.WidthInPixels" xml:space="preserve">
+    <value>200</value>
+  </data>
+</root>

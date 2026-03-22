@@ -62,7 +62,7 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
         {
             get
             {
-                return typeof(ApplicationStyleSkyBlue);
+                return typeof(ApplicationStyleModern);
 
                 // JJA: Decided to only support SkyBlue so we could make the
                 // design of the sidebar more straightforward
@@ -88,7 +88,7 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
         protected override void LoadPreferences()
         {
             //	Obtain the type name of the application style.  If it's null, use SkyBlue.
-            string name = SettingsPersisterHelper.GetString(APPLICATION_STYLE_TYPE_NAME, "ApplicationStyleSkyBlue");
+            string name = SettingsPersisterHelper.GetString(APPLICATION_STYLE_TYPE_NAME, "ApplicationStyleModern");
 
             // strip "AplicationStyle" preface (for legacy settings format support)
             const string APPLICATION_STYLE = "ApplicationStyle";
@@ -97,6 +97,9 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
 
             switch(name)
             {
+                case "Modern":
+                    applicationStyleType = typeof(ApplicationStyleModern);
+                    break;
                 case "SkyBlue":
                     applicationStyleType = typeof(ApplicationStyleSkyBlue);
                     break;
@@ -113,8 +116,7 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
                     applicationStyleType = typeof(ApplicationStyleWintergreen);
                     break;
                 default:
-                    Trace.Fail("Unexpected application style type: " + name);
-                    applicationStyleType = typeof(ApplicationStyleSkyBlue);
+                    applicationStyleType = typeof(ApplicationStyleModern);
                     break;
             }
 

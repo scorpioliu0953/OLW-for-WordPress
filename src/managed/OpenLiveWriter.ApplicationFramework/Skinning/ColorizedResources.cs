@@ -219,7 +219,7 @@ namespace OpenLiveWriter.ApplicationFramework.Skinning
                 SwapAndDispose(ref _viewSwitchingTabSelected, new BorderPaint(imgSelectedTab, true, BorderPaintMode.StretchToFill | BorderPaintMode.Cached | BorderPaintMode.PaintMiddleCenter, 1, 8, 2, 8));
                 SwapAndDispose(ref _viewSwitchingTabUnselected, new BorderPaint(imgUnselectedTab, true, BorderPaintMode.StretchToFill | BorderPaintMode.Cached | BorderPaintMode.PaintMiddleCenter, 1, 9, 1, 9));
 
-                _sidebarLinkColor = SystemInformation.HighContrast ? SystemColors.HotTrack : Color.FromArgb(0, 134, 198);
+                _sidebarLinkColor = SystemInformation.HighContrast ? SystemColors.HotTrack : Color.FromArgb(37, 99, 235); // blue-600
 
                 /*
                 SwapAndDispose(ref _imgAppVapor,
@@ -249,24 +249,19 @@ namespace OpenLiveWriter.ApplicationFramework.Skinning
 
             RefreshImages();
 
-            _borderDark = useThemeColors ? Color.FromArgb(188, 188, 188) : SystemColors.ControlDark;
-            _borderLight = useThemeColors ? Color.FromArgb(218, 229, 242) : SystemColors.ControlLight;
-            //_borderLight = Colorize(Color.FromArgb(62, 152, 180));
-            //_sidebarGradientTopColor = useThemeColors ? Colorize(Color.FromArgb(134, 209, 240)) : SystemColors.Control;
+            _borderDark = useThemeColors ? Color.FromArgb(203, 213, 225) : SystemColors.ControlDark;        // slate-300
+            _borderLight = useThemeColors ? Color.FromArgb(226, 232, 240) : SystemColors.ControlLight;     // slate-200
             _sidebarGradientTopColor = useThemeColors ? Colorize(Color.FromArgb(255, 255, 255)) : SystemColors.Control;
-            _sidebarGradientBottomColor = useThemeColors ? Colorize(Color.FromArgb(255, 255, 255)) : SystemColors.Control;
-            _sidebarTextColor = SystemColors.HotTrack;
-            _sidebarHeaderBackgroundColor = !useThemeColors ? SystemColors.Control : Colorize(Color.FromArgb(255, 255, 255));
-            _sidebarHeaderTextColor = Color.FromArgb(53, 90, 136);
+            _sidebarGradientBottomColor = useThemeColors ? Colorize(Color.FromArgb(248, 250, 252)) : SystemColors.Control; // slate-50
+            _sidebarTextColor = useThemeColors ? Color.FromArgb(37, 99, 235) : SystemColors.HotTrack;      // blue-600
+            _sidebarHeaderBackgroundColor = !useThemeColors ? SystemColors.Control : Colorize(Color.FromArgb(248, 250, 252)); // slate-50
+            _sidebarHeaderTextColor = Color.FromArgb(30, 64, 175);                                          // blue-800
             _frameGradientLightColor = useThemeColors ? Colorize(Color.FromArgb(255, 255, 255)) : SystemColors.Control;
-            _workspaceBackgroundColor = useThemeColors ? Colorize(coolGray) : SystemColors.Control;
+            _workspaceBackgroundColor = useThemeColors ? Colorize(Color.FromArgb(248, 250, 252)) : SystemColors.Control; // slate-50
             _menuGradientTopColor = !useThemeColors ? SystemColors.Control :
-                DisplayHelper.IsCompositionEnabled(false) ? Colorize(Color.FromArgb(229, 238, 248)) :
-                Colorize(Color.FromArgb(229, 238, 248));
-            _menuGradientBottomColor = !useThemeColors ? SystemColors.Control :
-                DisplayHelper.IsCompositionEnabled(false) ? Colorize(Color.FromArgb(229, 238, 248)) :
-                _menuGradientTopColor;
-            _secondaryToolbarColor = useThemeColors ? Colorize(coolGray) : SystemColors.Control;
+                Colorize(Color.FromArgb(241, 245, 249));                                                     // slate-100
+            _menuGradientBottomColor = !useThemeColors ? SystemColors.Control : _menuGradientTopColor;
+            _secondaryToolbarColor = useThemeColors ? Colorize(Color.FromArgb(241, 245, 249)) : SystemColors.Control; // slate-100
 
         }
 

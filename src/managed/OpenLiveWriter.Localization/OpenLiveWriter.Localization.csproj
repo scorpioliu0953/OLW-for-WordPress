@@ -313,6 +313,8 @@
     <EmbeddedResource Include="Strings.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Strings.zh-TW.resx" />
+    <EmbeddedResource Include="Properties.zh-TW.resx" />
     <None Include="Strings.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

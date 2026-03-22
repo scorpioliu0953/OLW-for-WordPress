@@ -51,6 +51,9 @@
     <Compile Include="ApplicationStyles\ApplicationStyleSkyBlue.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ApplicationStyles\ApplicationStyleModern.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BorderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
