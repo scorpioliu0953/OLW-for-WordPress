@@ -50,6 +50,7 @@
         <file src="OpenLiveWriter.Interop.Mshtml.dll" target="lib\net451\OpenLiveWriter.Interop.Mshtml.dll" />
         <file src="OpenLiveWriter.Interop.SHDocVw.dll" target="lib\net451\OpenLiveWriter.Interop.SHDocVw.dll" />
         <file src="OpenLiveWriter.Localization.dll" target="lib\net451\OpenLiveWriter.Localization.dll" />
+        <file src="zh-TW\**" target="lib\net451\zh-TW\" />
         <file src="OpenLiveWriter.Mshtml.dll" target="lib\net451\OpenLiveWriter.Mshtml.dll" />
         <file src="OpenLiveWriter.PostEditor.dll" target="lib\net451\OpenLiveWriter.PostEditor.dll" />
         <file src="OpenLiveWriter.Ribbon.dll" target="lib\net451\OpenLiveWriter.Ribbon.dll" />
