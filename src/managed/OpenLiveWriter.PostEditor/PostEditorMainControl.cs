@@ -1125,8 +1125,8 @@ namespace OpenLiveWriter.PostEditor
             string title = _htmlEditor.Title;
             string postDescription = (title != String.Empty) ? title : Res.Get(StringId.Untitled);
 
-            // update frame window
-            _mainFrameWindow.Caption = String.Format(CultureInfo.CurrentCulture, Res.Get(StringId.WindowTitleFormat), postDescription, ApplicationEnvironment.ProductNameQualified);
+            // update frame window — append version to confirm updates are working
+            _mainFrameWindow.Caption = String.Format(CultureInfo.CurrentCulture, Res.Get(StringId.WindowTitleFormat), postDescription, ApplicationEnvironment.ProductNameQualified) + " [v0.6.12]";
 
             UpdatePostStatusUI();
         }
@@ -1578,16 +1578,6 @@ namespace OpenLiveWriter.PostEditor
                 {
                     case ViewVerb.Create:
                         LoadRibbonSettings();
-                        // Set Ribbon background color here (after LoadRibbonSettings so it takes priority)
-                        // Per Windows Ribbon SDK: colors must be set in OnViewChanged(Create), not after LoadUI
-                        try
-                        {
-                            var bgKey = PropertyKeys.GlobalBackgroundColor;
-                            var bgValue = new PropVariant((uint)0x00000000); // black: R=0, G=0, B=0
-                            int hr = _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
-                            Trace.WriteLine("OnViewChanged: SetUICommandProperty(GlobalBackgroundColor) HRESULT: 0x" + hr.ToString("X8"));
-                        }
-                        catch (Exception ex) { Trace.WriteLine("OnViewChanged Ribbon color error: " + ex.Message); }
                         break;
                     case ViewVerb.Destroy:
                         break;
