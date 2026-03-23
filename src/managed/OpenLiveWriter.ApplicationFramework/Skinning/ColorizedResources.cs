@@ -244,8 +244,9 @@ namespace OpenLiveWriter.ApplicationFramework.Skinning
             Color coolGray = Color.FromArgb(243, 243, 247);
 
             bool useThemeColors = !UseSystemColors;
-            _colorizeColor = AppColor;
-            _colorizeScale = AppColorScale;
+            // Force amber-700 colorization for Editorial warm theme; ignore saved AppColor
+            _colorizeColor = UseSystemColors ? AppColor : Color.FromArgb(180, 83, 9);
+            _colorizeScale = UseSystemColors ? AppColorScale : 110;
 
             RefreshImages();
 

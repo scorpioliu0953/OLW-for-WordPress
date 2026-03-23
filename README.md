@@ -19,7 +19,10 @@ macOS 版原始碼：[OLW-for-WordPress-macOS](https://github.com/scorpioliu0953
 
 ## 最近更新
 
-### v0.6.5（最新）
+### v0.6.6（最新）
+- **修正工具列配色真正生效** — 工具列 chrome 實際上是透過圖片 colorization 繪製，現在強制套用 amber-700 色調，而非讀取 registry 的舊設定
+
+### v0.6.5
 - **全新 UI 主題：Editorial 暖色調** — 奶油色/琥珀色工具列、Segoe UI 字體
 - **Google Material Design 圖示** — 工具列按鈕全面換用 Material Icons（石灰色/琥珀色）
 - 修正圖示未正確打包進 DLL 的問題（EmbeddedResource）
