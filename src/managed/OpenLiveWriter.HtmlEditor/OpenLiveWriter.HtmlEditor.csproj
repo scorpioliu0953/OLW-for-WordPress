@@ -235,6 +235,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>WordCountForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Commands\Images\CommandSpellCheckCommandBarButtonBitmapDisabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandSpellCheckCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandSpellCheckCommandBarButtonBitmapSelected.png" />
+    <EmbeddedResource Include="Linking\Commands\Images\CommandGlossaryCommandBarButtonBitmapEnabled.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RepoRoot)\writer.build.targets" />

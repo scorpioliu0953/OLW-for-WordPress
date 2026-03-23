@@ -1629,6 +1629,44 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="OpenPost\Images\BlogAccount.png" />
+    <EmbeddedResource Include="Commands\Images\CommandAddWeblogCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandConfigureWeblogCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandInsertMenuCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandNewPostCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandOpenPostCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandPostAndPublishCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandPostPropertiesCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandSavePostCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandToolsMenuCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandViewWeblogCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Commands\Images\CommandWeblogMenuCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandClipboardMenuCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandImageBrightnessCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandImageDecoratorAddMenuCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandImageDecoratorRemoveCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandImageResetCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandImageRotateCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandImageSaveDefaultsCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandInsertExtendedEntryCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandInsertLinkToOnfolioItemCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandInsertPictureCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandRemoveLinkCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandViewCodeCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="PostHtmlEditing\Commands\Images\CommandViewNormalCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandClearCellCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandDeleteTableCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandInsertColumnLeftCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandInsertColumnRightCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandInsertRowAboveCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandInsertRowBelowCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandInsertTable2CommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandInsertTableCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandMoveColumnLeftCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandMoveColumnRightCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandMoveRowDownCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandMoveRowUpCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandTableMenuCommandBarButtonBitmapEnabled.png" />
+    <EmbeddedResource Include="Tables\Commands\Images\CommandTablePropertiesCommandBarButtonBitmapEnabled.png" />
     <Content Include="PostHtmlEditing\Images\loading.png" />
   </ItemGroup>
   <ItemGroup>
