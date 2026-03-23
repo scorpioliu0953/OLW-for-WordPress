@@ -169,10 +169,10 @@ namespace OpenLiveWriter.Interop.Com.Ribbon
             // Contextual tabset properties
             ContextAvailable = new PropertyKey(1100, VarEnum.VT_UI4);
 
-            // Global properties
-            GlobalBackgroundColor = new PropertyKey(2000, VarEnum.VT_UI4);
-            GlobalHighlightColor = new PropertyKey(2001, VarEnum.VT_UI4);
-            GlobalTextColor = new PropertyKey(2002, VarEnum.VT_UI4);
+            // Global properties (indices from Windows SDK UIRibbon.h)
+            GlobalBackgroundColor = new PropertyKey(201, VarEnum.VT_UI4);
+            GlobalHighlightColor = new PropertyKey(202, VarEnum.VT_UI4);
+            GlobalTextColor = new PropertyKey(203, VarEnum.VT_UI4);
         }
 
         //

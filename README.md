@@ -19,8 +19,11 @@ macOS 版原始碼：[OLW-for-WordPress-macOS](https://github.com/scorpioliu0953
 
 ## 最近更新
 
-### v0.6.7（最新）
-- **修正主工具列顏色** — 主工具列為 Windows Ribbon Framework，改用 `IUIFramework.SetUICommandProperty` API 設定背景色，舊的 GDI+ 著色方式對 Ribbon 無效
+### v0.6.8（最新）
+- **修正 Ribbon 顏色 PropertyKey 錯誤** — `UI_PKEY_GlobalBackgroundColor` 的 index 應為 201，先前誤用 2000，導致 `SetUICommandProperty` 呼叫完全無效；同時修正 HighlightColor(202) 和 TextColor(203)
+
+### v0.6.7
+- **主工具列改用 Windows Ribbon API 設定顏色** — 主工具列為 Windows Ribbon Framework，改用 `IUIFramework.SetUICommandProperty` API，舊的 GDI+ 著色方式對 Ribbon 無效
 
 ### v0.6.6
 - **修正工具列配色真正生效** — 工具列 chrome 實際上是透過圖片 colorization 繪製，現在強制套用 amber-700 色調，而非讀取 registry 的舊設定
