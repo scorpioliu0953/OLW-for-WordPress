@@ -475,19 +475,6 @@ namespace OpenLiveWriter.PostEditor
                 Trace.Assert(loadResult == HRESULT.S_OK, "Ribbon failed to load: " + loadResult);
             }
 
-            // Set Ribbon background to light yellow (test: R=255, G=255, B=200)
-            // COLORREF = R | (G << 8) | (B << 16) = 0x00C8FFFF
-            // Must call FlushPendingInvalidations() after SetUICommandProperty for changes to take effect.
-            try
-            {
-                var bgKey = PropertyKeys.GlobalBackgroundColor;
-                var bgValue = new PropVariant((uint)0x00C8FFFF);
-                int hr = _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
-                Trace.WriteLine("SetUICommandProperty(GlobalBackgroundColor) HRESULT: 0x" + hr.ToString("X8"));
-                _framework.FlushPendingInvalidations();
-            }
-            catch (Exception ex) { Trace.WriteLine("Ribbon color error: " + ex.Message); }
-
             _framework.SetModes(mode);
 
             CommandManager.Invalidate(CommandId.MRUList);
@@ -1591,6 +1578,16 @@ namespace OpenLiveWriter.PostEditor
                 {
                     case ViewVerb.Create:
                         LoadRibbonSettings();
+                        // Set Ribbon background color here (after LoadRibbonSettings so it takes priority)
+                        // Per Windows Ribbon SDK: colors must be set in OnViewChanged(Create), not after LoadUI
+                        try
+                        {
+                            var bgKey = PropertyKeys.GlobalBackgroundColor;
+                            var bgValue = new PropVariant((uint)0x00C8FFFF); // light yellow: R=255, G=255, B=200
+                            int hr = _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
+                            Trace.WriteLine("OnViewChanged: SetUICommandProperty(GlobalBackgroundColor) HRESULT: 0x" + hr.ToString("X8"));
+                        }
+                        catch (Exception ex) { Trace.WriteLine("OnViewChanged Ribbon color error: " + ex.Message); }
                         break;
                     case ViewVerb.Destroy:
                         break;
