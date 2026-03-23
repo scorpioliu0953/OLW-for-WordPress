@@ -105,5 +105,6 @@ jobs:
           name: v${{ steps.version.outputs.VERSION }}
           files: Releases\OLWforWordPressSetup.exe
           generate_release_notes: false
+          overwrite: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
