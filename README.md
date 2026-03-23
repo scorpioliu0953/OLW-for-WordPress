@@ -19,7 +19,12 @@ macOS 版原始碼：[OLW-for-WordPress-macOS](https://github.com/scorpioliu0953
 
 ## 最近更新
 
-### v0.6.4（最新）
+### v0.6.5（最新）
+- **全新 UI 主題：Editorial 暖色調** — 奶油色/琥珀色工具列、Segoe UI 字體
+- **Google Material Design 圖示** — 工具列按鈕全面換用 Material Icons（石灰色/琥珀色）
+- 修正圖示未正確打包進 DLL 的問題（EmbeddedResource）
+
+### v0.6.4
 - **修復：連續發佈多篇文章後出現「指定值具有無效的 control 字元」錯誤** — 修正儲存文章檔案時，來自伺服器回應（如 ETag、媒體連結、分類名稱）的控制字元未經過濾就寫入 XML，導致無法發佈的問題
 - 修復 `BlogPost.Keywords` setter 的 bug（`RemoveInvalidXmlChars` 的回傳值被捨棄，關鍵字仍保留無效字元）
 - 載入 UI 語言改為從系統語言讀取，不再硬編碼為英文
