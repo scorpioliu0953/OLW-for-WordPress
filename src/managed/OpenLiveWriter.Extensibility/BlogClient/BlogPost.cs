@@ -242,7 +242,7 @@ namespace OpenLiveWriter.Extensibility.BlogClient
         public string Keywords
         {
             get { return XmlCharacterHelper.RemoveInvalidXmlChars(_keywords); }
-            set { XmlCharacterHelper.RemoveInvalidXmlChars(_keywords = value); }
+            set { _keywords = XmlCharacterHelper.RemoveInvalidXmlChars(value); }
         }
         private string _keywords = String.Empty;
 

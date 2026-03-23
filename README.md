@@ -17,6 +17,15 @@ macOS 版原始碼：[OLW-for-WordPress-macOS](https://github.com/scorpioliu0953
 
 所有版本請見 [Releases 頁面](https://github.com/scorpioliu0953/OLW-for-WordPress/releases)。
 
+## 最近更新
+
+### v0.6.3（最新）
+- **修復：連續發佈多篇文章後出現「指定值具有無效的 control 字元」錯誤** — 修正儲存文章檔案時，來自伺服器回應（如 ETag、媒體連結、分類名稱）的控制字元未經過濾就寫入 XML，導致無法發佈的問題
+- 修復 `BlogPost.Keywords` setter 的 bug（`RemoveInvalidXmlChars` 的回傳值被捨棄，關鍵字仍保留無效字元）
+- 載入 UI 語言改為從系統語言讀取，不再硬編碼為英文
+- 繁體中文全介面翻譯
+- Modern 主題美化
+
 ## 與原版差異
 
 | | Open Live Writer | OLW for WordPress |

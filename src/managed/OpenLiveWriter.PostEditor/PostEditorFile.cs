@@ -928,7 +928,7 @@ namespace OpenLiveWriter.PostEditor
             foreach (string pingUrl in (pingUrls as string[]))
             {
                 writer.WriteStartElement(PING_URL_ELEMENT);
-                writer.WriteString(pingUrl);
+                writer.WriteString(XmlCharacterHelper.RemoveInvalidXmlChars(pingUrl));
                 writer.WriteEndElement();
             }
             writer.WriteEndElement();
@@ -951,9 +951,9 @@ namespace OpenLiveWriter.PostEditor
             foreach (BlogPostCategory category in (categories as BlogPostCategory[]))
             {
                 writer.WriteStartElement(CATEGORY_ELEMENT);
-                writer.WriteAttributeString(CATEGORY_ID_ATTRIBUTE, category.Id);
-                writer.WriteAttributeString(CATEGORY_NAME_ATTRIBUTE, category.Name);
-                writer.WriteAttributeString(CATEGORY_PARENT_ATTRIBUTE, category.Parent);
+                WriteSafeAttributeString(writer, CATEGORY_ID_ATTRIBUTE, category.Id);
+                WriteSafeAttributeString(writer, CATEGORY_NAME_ATTRIBUTE, category.Name);
+                WriteSafeAttributeString(writer, CATEGORY_PARENT_ATTRIBUTE, category.Parent);
                 writer.WriteEndElement();
             }
             writer.WriteEndElement();
@@ -1208,7 +1208,7 @@ namespace OpenLiveWriter.PostEditor
                 foreach (BlogPostExtensionData exData in extensionDatas)
                 {
                     writer.WriteStartElement(EXTENSION_DATA_ELEMENT);
-                    writer.WriteAttributeString("id", exData.Id);
+                    WriteSafeAttributeString(writer, "id", exData.Id);
                     WriteBlogPostSettingsBag(writer, exData.Settings, EXTENSION_DATA_SETTINGSBAG_NAME);
 
                     foreach (string fileId in exData.FileIds)
@@ -1370,23 +1370,23 @@ namespace OpenLiveWriter.PostEditor
                     if (_referenceList.IsReferenced(fileFactory))
                     {
                         writer.WriteStartElement(ATTACHED_FILE_ELEMENT);
-                        writer.WriteAttributeString(ATTACHED_FILE_ID, fileFactory.FileId);
-                        writer.WriteAttributeString(ATTACHED_FILE_NAME, fileFactory.FileName);
+                        WriteSafeAttributeString(writer, ATTACHED_FILE_ID, fileFactory.FileId);
+                        WriteSafeAttributeString(writer, ATTACHED_FILE_NAME, fileFactory.FileName);
                         writer.WriteAttributeString(ATTACHED_FILE_NEXT_VERSION_ATTRIBUTE, fileFactory.NextVersion.ToString(CultureInfo.InvariantCulture));
                         foreach (SupportingFileFactory.VersionedSupportingFile supportingFile in fileFactory.GetVersionedFiles())
                         {
                             if (_referenceList.IsReferenced(supportingFile))
                             {
                                 writer.WriteStartElement(ATTACHED_FILE_VERSION_ELEMENT);
-                                writer.WriteAttributeString(ATTACHED_FILE_NAME, supportingFile.FileName);
-                                writer.WriteAttributeString(ATTACHED_FILE_NAME_UNIQUETOKEN, supportingFile.FileNameUniqueToken);
+                                WriteSafeAttributeString(writer, ATTACHED_FILE_NAME, supportingFile.FileName);
+                                WriteSafeAttributeString(writer, ATTACHED_FILE_NAME_UNIQUETOKEN, supportingFile.FileNameUniqueToken);
 
                                 writer.WriteAttributeString(ATTACHED_FILE_VERSION_ATTRIBUTE, supportingFile.FileVersion.ToString(CultureInfo.InvariantCulture));
                                 writer.WriteAttributeString(ATTACHED_FILE_EMBEDDED_ATTRIBUTE, supportingFile.Embedded.ToString());
                                 string storagePath = UrlHelper.SafeToAbsoluteUri(supportingFile.FileUri);
                                 if (supportingFile.Embedded)
                                     storagePath = _supportingFilePersister.SaveFilesAndFixupReferences(new string[] { storagePath })[0];
-                                writer.WriteAttributeString(ATTACHED_FILE_URI_ATTRIBUTE, storagePath);
+                                WriteSafeAttributeString(writer, ATTACHED_FILE_URI_ATTRIBUTE, storagePath);
                                 WriteBlogPostSettingsBag(writer, supportingFile.Settings, null);
 
                                 writer.WriteEndElement(); //end ATTACHED_FILE_VERSION_ELEMENT
@@ -1398,9 +1398,9 @@ namespace OpenLiveWriter.PostEditor
                             ISupportingFileUploadInfo uploadInfo = fileFactory.GetUploadInfo(uploadContext);
                             writer.WriteStartElement(ATTACHED_FILE_UPLOAD_ELEMENT);
 
-                            writer.WriteAttributeString(ATTACHED_FILE_UPLOAD_CONTEXT_ATTRIBUTE, uploadContext);
+                            WriteSafeAttributeString(writer, ATTACHED_FILE_UPLOAD_CONTEXT_ATTRIBUTE, uploadContext);
                             if (uploadInfo.UploadUri != null)
-                                writer.WriteAttributeString(ATTACHED_FILE_UPLOAD_URI_ATTRIBUTE, UrlHelper.SafeToAbsoluteUri(uploadInfo.UploadUri));
+                                WriteSafeAttributeString(writer, ATTACHED_FILE_UPLOAD_URI_ATTRIBUTE, UrlHelper.SafeToAbsoluteUri(uploadInfo.UploadUri));
                             if (uploadInfo.UploadedFileVersion != -1)
                                 writer.WriteAttributeString(ATTACHED_FILE_UPLOAD_VERSION_ATTRIBUTE, uploadInfo.UploadedFileVersion.ToString(CultureInfo.InvariantCulture));
 
@@ -1632,7 +1632,7 @@ namespace OpenLiveWriter.PostEditor
             foreach (string key in settings.Names)
             {
                 writer.WriteStartElement(SETTINGS_BAG_SETTING_ELEMENT);
-                writer.WriteAttributeString(SETTINGS_BAG_NAME_ATTRIBUTE, key);
+                WriteSafeAttributeString(writer, SETTINGS_BAG_NAME_ATTRIBUTE, key);
                 WriteNonNullAttribute(writer, SETTINGS_BAG_VALUE_ATTRIBUTE, settings[key]);
                 writer.WriteEndElement(); //end SETTINGS_BAG_SETTING_ELEMENT
             }
@@ -1724,7 +1724,12 @@ namespace OpenLiveWriter.PostEditor
         private static void WriteNonNullAttribute(XmlTextWriter writer, string name, string value)
         {
             if (value != null)
-                writer.WriteAttributeString(name, value);
+                writer.WriteAttributeString(name, XmlCharacterHelper.RemoveInvalidXmlChars(value));
+        }
+
+        private static void WriteSafeAttributeString(XmlTextWriter writer, string name, string value)
+        {
+            writer.WriteAttributeString(name, XmlCharacterHelper.RemoveInvalidXmlChars(value));
         }
 
         private const string DESTINATION_BLOG_ID = "DestinationBlogId";
