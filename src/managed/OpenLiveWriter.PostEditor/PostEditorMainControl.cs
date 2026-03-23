@@ -477,13 +477,16 @@ namespace OpenLiveWriter.PostEditor
 
             // Set Ribbon background to light yellow (test: R=255, G=255, B=200)
             // COLORREF = R | (G << 8) | (B << 16) = 0x00C8FFFF
+            // Must call FlushPendingInvalidations() after SetUICommandProperty for changes to take effect.
             try
             {
                 var bgKey = PropertyKeys.GlobalBackgroundColor;
                 var bgValue = new PropVariant((uint)0x00C8FFFF);
-                _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
+                int hr = _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
+                Trace.WriteLine("SetUICommandProperty(GlobalBackgroundColor) HRESULT: 0x" + hr.ToString("X8"));
+                _framework.FlushPendingInvalidations();
             }
-            catch (Exception) { }
+            catch (Exception ex) { Trace.WriteLine("Ribbon color error: " + ex.Message); }
 
             _framework.SetModes(mode);
 

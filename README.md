@@ -19,7 +19,10 @@ macOS 版原始碼：[OLW-for-WordPress-macOS](https://github.com/scorpioliu0953
 
 ## 最近更新
 
-### v0.6.8（最新）
+### v0.6.9（最新）
+- **修正 Ribbon 顏色未刷新** — `SetUICommandProperty` 設色後必須呼叫 `FlushPendingInvalidations()` 才會生效，先前遺漏此步驟
+
+### v0.6.8
 - **修正 Ribbon 顏色 PropertyKey 錯誤** — `UI_PKEY_GlobalBackgroundColor` 的 index 應為 201，先前誤用 2000，導致 `SetUICommandProperty` 呼叫完全無效；同時修正 HighlightColor(202) 和 TextColor(203)
 
 ### v0.6.7
