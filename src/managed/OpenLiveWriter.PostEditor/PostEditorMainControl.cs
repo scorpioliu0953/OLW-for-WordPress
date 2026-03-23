@@ -475,6 +475,16 @@ namespace OpenLiveWriter.PostEditor
                 Trace.Assert(loadResult == HRESULT.S_OK, "Ribbon failed to load: " + loadResult);
             }
 
+            // Set Ribbon background to light yellow (test: R=255, G=255, B=200)
+            // COLORREF = R | (G << 8) | (B << 16) = 0x00C8FFFF
+            try
+            {
+                var bgKey = PropertyKeys.GlobalBackgroundColor;
+                var bgValue = new PropVariant((uint)0x00C8FFFF);
+                _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
+            }
+            catch (Exception) { }
+
             _framework.SetModes(mode);
 
             CommandManager.Invalidate(CommandId.MRUList);
