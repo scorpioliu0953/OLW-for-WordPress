@@ -1583,7 +1583,7 @@ namespace OpenLiveWriter.PostEditor
                         try
                         {
                             var bgKey = PropertyKeys.GlobalBackgroundColor;
-                            var bgValue = new PropVariant((uint)0x00C8FFFF); // light yellow: R=255, G=255, B=200
+                            var bgValue = new PropVariant((uint)0x00000000); // black: R=0, G=0, B=0
                             int hr = _framework.SetUICommandProperty(0, ref bgKey, ref bgValue);
                             Trace.WriteLine("OnViewChanged: SetUICommandProperty(GlobalBackgroundColor) HRESULT: 0x" + hr.ToString("X8"));
                         }
