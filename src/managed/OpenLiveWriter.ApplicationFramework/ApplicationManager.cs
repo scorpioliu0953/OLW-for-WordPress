@@ -27,7 +27,7 @@ namespace OpenLiveWriter.ApplicationFramework
             get
             {
                 if (applicationStyle == null)
-                    applicationStyle = new ApplicationStyleSkyBlue();
+                    applicationStyle = new ApplicationStyleModern();
                 return applicationStyle;
             }
             set

@@ -87,38 +87,8 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
         /// </summary>
         protected override void LoadPreferences()
         {
-            //	Obtain the type name of the application style.  If it's null, use SkyBlue.
-            string name = SettingsPersisterHelper.GetString(APPLICATION_STYLE_TYPE_NAME, "ApplicationStyleModern");
-
-            // strip "AplicationStyle" preface (for legacy settings format support)
-            const string APPLICATION_STYLE = "ApplicationStyle";
-            if ( name.StartsWith(APPLICATION_STYLE) )
-                name = name.Substring(APPLICATION_STYLE.Length) ;
-
-            switch(name)
-            {
-                case "Modern":
-                    applicationStyleType = typeof(ApplicationStyleModern);
-                    break;
-                case "SkyBlue":
-                    applicationStyleType = typeof(ApplicationStyleSkyBlue);
-                    break;
-                case "Lavender":
-                    applicationStyleType = typeof(ApplicationStyleLavender);
-                    break;
-                case "Sienna":
-                    applicationStyleType = typeof(ApplicationStyleSienna);
-                    break;
-                case "Sterling":
-                    applicationStyleType = typeof(ApplicationStyleSterling);
-                    break;
-                case "Wintergreen":
-                    applicationStyleType = typeof(ApplicationStyleWintergreen);
-                    break;
-                default:
-                    applicationStyleType = typeof(ApplicationStyleModern);
-                    break;
-            }
+            // Always use Modern (Editorial warm theme)
+            applicationStyleType = typeof(ApplicationStyleModern);
 
             //	Set the new application style.
             if (ApplicationManager.ApplicationStyle.GetType() != applicationStyleType)
