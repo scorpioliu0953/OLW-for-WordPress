@@ -8,7 +8,7 @@ using OpenLiveWriter.CoreServices;
 namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
 {
     /// <summary>
-    /// Modern clean application style with softer colors and improved readability.
+    /// Editorial warm style - cream and amber tones for a publishing-focused feel.
     /// </summary>
     public class ApplicationStyleModern : ApplicationStyle
     {
@@ -31,61 +31,66 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
             base.Dispose(disposing);
         }
 
+        public override Font NormalApplicationFont
+        {
+            get { return new Font("Segoe UI", 9f, FontStyle.Regular, GraphicsUnit.Point); }
+        }
+
         #region Component Designer generated code
         private void InitializeComponent()
         {
-            // Modern clean style - softer blues with better contrast
-            this.ActiveSelectionColor = Color.FromArgb(59, 130, 246);       // Tailwind blue-500
-            this.ActiveTabBottomColor = Color.FromArgb(239, 246, 255);      // blue-50
-            this.ActiveTabHighlightColor = Color.FromArgb(255, 255, 255);   // white
-            this.ActiveTabLowlightColor = Color.FromArgb(191, 219, 254);    // blue-200
-            this.ActiveTabTextColor = Color.FromArgb(30, 64, 175);          // blue-800
-            this.ActiveTabTopColor = Color.FromArgb(219, 234, 254);         // blue-100
-            this.AlertControlColor = Color.FromArgb(254, 252, 232);         // yellow-50
-            this.BorderColor = Color.FromArgb(203, 213, 225);               // slate-300
+            // Editorial warm palette - cream, beige, amber
+            this.ActiveSelectionColor = Color.FromArgb(180, 83, 9);          // amber-700
+            this.ActiveTabBottomColor = Color.FromArgb(254, 243, 199);       // amber-100
+            this.ActiveTabHighlightColor = Color.FromArgb(255, 255, 255);    // white
+            this.ActiveTabLowlightColor = Color.FromArgb(253, 230, 138);     // amber-200
+            this.ActiveTabTextColor = Color.FromArgb(92, 45, 1);             // amber-900
+            this.ActiveTabTopColor = Color.FromArgb(254, 251, 235);          // amber-50
+            this.AlertControlColor = Color.FromArgb(254, 243, 199);          // amber-100
+            this.BorderColor = Color.FromArgb(212, 196, 176);                // warm border
 
             this.DisplayName = "Modern";
 
-            this.InactiveSelectionColor = Color.FromArgb(241, 245, 249);    // slate-100
-            this.InactiveTabBottomColor = Color.FromArgb(248, 250, 252);    // slate-50
+            this.InactiveSelectionColor = Color.FromArgb(245, 237, 224);     // warm beige
+            this.InactiveTabBottomColor = Color.FromArgb(253, 246, 236);     // warm cream
             this.InactiveTabHighlightColor = Color.FromArgb(255, 255, 255);
-            this.InactiveTabLowlightColor = Color.FromArgb(226, 232, 240);  // slate-200
-            this.InactiveTabTextColor = Color.FromArgb(71, 85, 105);        // slate-600
-            this.InactiveTabTopColor = Color.FromArgb(241, 245, 249);       // slate-100
+            this.InactiveTabLowlightColor = Color.FromArgb(237, 228, 215);   // panel
+            this.InactiveTabTextColor = Color.FromArgb(120, 113, 108);       // stone-500
+            this.InactiveTabTopColor = Color.FromArgb(245, 237, 224);        // warm beige
 
-            this.MenuBitmapAreaColor = Color.FromArgb(241, 245, 249);       // slate-100
-            this.MenuSelectionColor = Color.FromArgb(128, 59, 130, 246);    // blue-500 semi-transparent
+            this.MenuBitmapAreaColor = Color.FromArgb(237, 228, 215);        // panel
+            this.MenuSelectionColor = Color.FromArgb(100, 180, 83, 9);       // amber semi-transparent
 
-            // Primary workspace (main area gradients)
-            this.PrimaryWorkspaceBottomColor = Color.FromArgb(226, 232, 240);    // slate-200
-            this.PrimaryWorkspaceCommandBarBottomBevelFirstLineColor = Color.FromArgb(203, 213, 225); // slate-300
-            this.PrimaryWorkspaceCommandBarBottomBevelSecondLineColor = Color.FromArgb(226, 232, 240); // slate-200
-            this.PrimaryWorkspaceCommandBarBottomColor = Color.FromArgb(241, 245, 249); // slate-100
+            // Primary workspace (toolbar / chrome area)
+            this.PrimaryWorkspaceBottomColor = Color.FromArgb(237, 228, 215);                  // panel
+            this.PrimaryWorkspaceCommandBarBottomBevelFirstLineColor = Color.FromArgb(212, 196, 176);  // warm border
+            this.PrimaryWorkspaceCommandBarBottomBevelSecondLineColor = Color.FromArgb(237, 228, 215); // panel
+            this.PrimaryWorkspaceCommandBarBottomColor = Color.FromArgb(245, 237, 224);        // beige
             this.PrimaryWorkspaceCommandBarBottomLayoutMargin = 3;
-            this.PrimaryWorkspaceCommandBarDisabledTextColor = Color.FromArgb(148, 163, 184); // slate-400
+            this.PrimaryWorkspaceCommandBarDisabledTextColor = Color.FromArgb(188, 175, 160);  // muted warm
             this.PrimaryWorkspaceCommandBarLeftLayoutMargin = 2;
             this.PrimaryWorkspaceCommandBarRightLayoutMargin = 2;
             this.PrimaryWorkspaceCommandBarSeparatorLayoutMargin = 2;
-            this.PrimaryWorkspaceCommandBarTextColor = Color.FromArgb(30, 41, 59); // slate-800
+            this.PrimaryWorkspaceCommandBarTextColor = Color.FromArgb(28, 25, 23);             // stone-900
             this.PrimaryWorkspaceCommandBarTopBevelFirstLineColor = Color.Transparent;
             this.PrimaryWorkspaceCommandBarTopBevelSecondLineColor = Color.Transparent;
-            this.PrimaryWorkspaceCommandBarTopColor = Color.FromArgb(248, 250, 252); // slate-50
+            this.PrimaryWorkspaceCommandBarTopColor = Color.FromArgb(253, 246, 236);           // cream
             this.PrimaryWorkspaceCommandBarTopLayoutMargin = 2;
-            this.PrimaryWorkspaceTopColor = Color.FromArgb(241, 245, 249);  // slate-100
+            this.PrimaryWorkspaceTopColor = Color.FromArgb(245, 237, 224);                     // beige
 
             // Secondary workspace
-            this.SecondaryWorkspaceBottomColor = Color.FromArgb(248, 250, 252); // slate-50
-            this.SecondaryWorkspaceTopColor = Color.FromArgb(248, 250, 252);
+            this.SecondaryWorkspaceBottomColor = Color.FromArgb(253, 246, 236);    // cream
+            this.SecondaryWorkspaceTopColor = Color.FromArgb(253, 246, 236);       // cream
 
-            // Tool windows
-            this.ToolWindowBackgroundColor = Color.FromArgb(37, 99, 235);    // blue-600
-            this.ToolWindowBorderColor = Color.FromArgb(29, 78, 216);        // blue-700
-            this.ToolWindowTitleBarBottomColor = Color.FromArgb(37, 99, 235); // blue-600
+            // Tool windows (floating panels)
+            this.ToolWindowBackgroundColor = Color.FromArgb(180, 83, 9);      // amber-700
+            this.ToolWindowBorderColor = Color.FromArgb(146, 64, 14);         // amber-800
+            this.ToolWindowTitleBarBottomColor = Color.FromArgb(180, 83, 9);  // amber-700
             this.ToolWindowTitleBarTextColor = Color.White;
-            this.ToolWindowTitleBarTopColor = Color.FromArgb(59, 130, 246);   // blue-500
+            this.ToolWindowTitleBarTopColor = Color.FromArgb(217, 119, 6);    // amber-600
 
-            this.WindowColor = Color.White;
-            this.WorkspacePaneControlColor = Color.FromArgb(241, 245, 249);   // slate-100
+            this.WindowColor = Color.FromArgb(255, 251, 242);                 // light cream (editor bg)
+            this.WorkspacePaneControlColor = Color.FromArgb(245, 237, 224);   // beige
         }
         #endregion
 
@@ -93,7 +98,6 @@ namespace OpenLiveWriter.ApplicationFramework.ApplicationStyles
         {
             get
             {
-                // Reuse SkyBlue preview for now
                 return ResourceHelper.LoadAssemblyResourceBitmap("ApplicationStyles.Images.SkyBlue.png");
             }
         }
