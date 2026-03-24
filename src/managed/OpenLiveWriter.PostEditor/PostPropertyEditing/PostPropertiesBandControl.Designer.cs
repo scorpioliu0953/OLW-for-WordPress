@@ -20,104 +20,110 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
 
         private void InitializeComponent()
         {
-            this.categoryDropDown = new OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl.CategoryDropDownControlM1();
-            this.textTags = new OpenLiveWriter.Controls.AutoCompleteTextbox();
-            this.datePublishDate = new OpenLiveWriter.PostEditor.PostPropertyEditing.PublishDateTimePicker();
-            this.labelPageOrder = new System.Windows.Forms.Label();
-            this.labelPageParent = new System.Windows.Forms.Label();
-            this.comboPageParent = new OpenLiveWriter.PostEditor.PostPropertyEditing.PageParentComboBox();
-            this.textPageOrder = new OpenLiveWriter.Controls.NumericTextBox();
-            this.linkViewAll = new System.Windows.Forms.LinkLabel();
-            this.buttonPublish = new System.Windows.Forms.Button();
-            this.buttonDraft = new System.Windows.Forms.Button();
-            this.table = new System.Windows.Forms.TableLayoutPanel();
-            this.panelShadow = new System.Windows.Forms.Panel();
-
-            // Section panels for card-style layout
-            this.panelPublish = new System.Windows.Forms.Panel();
-            this.panelCategories = new System.Windows.Forms.Panel();
-            this.panelTags = new System.Windows.Forms.Panel();
-            this.labelPublish = new System.Windows.Forms.Label();
-            this.labelCategories = new System.Windows.Forms.Label();
-            this.labelTags = new System.Windows.Forms.Label();
-            this.labelDate = new System.Windows.Forms.Label();
+            this.categoryDropDown = new CategoryDropDownControlM1();
+            this.textTags = new AutoCompleteTextbox();
+            this.datePublishDate = new PublishDateTimePicker();
+            this.labelPageOrder = new Label();
+            this.labelPageParent = new Label();
+            this.comboPageParent = new PageParentComboBox();
+            this.textPageOrder = new NumericTextBox();
+            this.linkViewAll = new LinkLabel();
+            this.buttonPublish = new Button();
+            this.buttonDraft = new Button();
+            this.table = new TableLayoutPanel();
+            this.panelShadow = new Panel();
+            this.panelPublish = new Panel();
+            this.panelCategories = new Panel();
+            this.panelTags = new Panel();
+            this.labelPublish = new Label();
+            this.labelCategories = new Label();
+            this.labelTags = new Label();
+            this.labelDate = new Label();
 
             this.SuspendLayout();
 
-            // ─── Publish Card ───
-            this.panelPublish.BackColor = Color.White;
-            this.panelPublish.Padding = new Padding(12);
-            this.panelPublish.Margin = new Padding(0, 0, 0, 10);
+            var cardBg = Color.White;
+            var sidebarBg = Color.FromArgb(243, 244, 246);
+            var headingColor = Color.FromArgb(31, 41, 55);
+            var subtextColor = Color.FromArgb(107, 114, 128);
+            var accentBlue = Color.FromArgb(37, 99, 235);
+            var borderColor = Color.FromArgb(209, 213, 219);
+            var headingFont = new Font("Segoe UI", 11F, FontStyle.Bold);
+            var bodyFont = new Font("Segoe UI", 9.5F);
+            var smallFont = new Font("Segoe UI", 8.5F);
+
+            // ═══════ 發佈卡片 ═══════
+            this.panelPublish.BackColor = cardBg;
+            this.panelPublish.Padding = new Padding(14, 12, 14, 14);
             this.panelPublish.Dock = DockStyle.Top;
-            this.panelPublish.Height = 160;
+            this.panelPublish.Height = 180;
 
-            this.labelPublish.Text = "Publish";
-            this.labelPublish.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            this.labelPublish.ForeColor = Color.FromArgb(31, 41, 55);
+            this.labelPublish.Text = "發佈";
+            this.labelPublish.Font = headingFont;
+            this.labelPublish.ForeColor = headingColor;
             this.labelPublish.Dock = DockStyle.Top;
-            this.labelPublish.Height = 28;
-            this.labelPublish.Padding = new Padding(0, 0, 0, 4);
+            this.labelPublish.Height = 30;
 
-            this.buttonPublish.BackColor = Color.FromArgb(37, 99, 235);
+            this.buttonPublish.BackColor = accentBlue;
             this.buttonPublish.Dock = DockStyle.Top;
             this.buttonPublish.FlatStyle = FlatStyle.Flat;
             this.buttonPublish.FlatAppearance.BorderSize = 0;
-            this.buttonPublish.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            this.buttonPublish.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             this.buttonPublish.ForeColor = Color.White;
-            this.buttonPublish.Height = 34;
+            this.buttonPublish.Height = 38;
             this.buttonPublish.Name = "buttonPublish";
-            this.buttonPublish.Text = "Publish";
+            this.buttonPublish.Text = "  \u2191  發佈文章";
+            this.buttonPublish.TextAlign = ContentAlignment.MiddleCenter;
             this.buttonPublish.UseVisualStyleBackColor = false;
             this.buttonPublish.Cursor = Cursors.Hand;
-            this.buttonPublish.Margin = new Padding(0, 0, 0, 6);
 
-            this.buttonDraft.BackColor = Color.White;
+            this.buttonDraft.BackColor = cardBg;
             this.buttonDraft.Dock = DockStyle.Top;
             this.buttonDraft.FlatStyle = FlatStyle.Flat;
-            this.buttonDraft.FlatAppearance.BorderColor = Color.FromArgb(209, 213, 219);
+            this.buttonDraft.FlatAppearance.BorderColor = borderColor;
             this.buttonDraft.FlatAppearance.BorderSize = 1;
-            this.buttonDraft.Font = new Font("Segoe UI", 9F);
+            this.buttonDraft.Font = bodyFont;
             this.buttonDraft.ForeColor = Color.FromArgb(55, 65, 81);
-            this.buttonDraft.Height = 30;
+            this.buttonDraft.Height = 34;
             this.buttonDraft.Name = "buttonDraft";
-            this.buttonDraft.Text = "Save as Draft";
+            this.buttonDraft.Text = "  \u270E  儲存草稿";
+            this.buttonDraft.TextAlign = ContentAlignment.MiddleCenter;
             this.buttonDraft.UseVisualStyleBackColor = false;
             this.buttonDraft.Cursor = Cursors.Hand;
+            this.buttonDraft.Margin = new Padding(0, 6, 0, 0);
 
-            this.labelDate.Text = "Publish Date";
-            this.labelDate.Font = new Font("Segoe UI", 8.25F);
-            this.labelDate.ForeColor = Color.FromArgb(107, 114, 128);
+            this.labelDate.Text = "發佈日期";
+            this.labelDate.Font = smallFont;
+            this.labelDate.ForeColor = subtextColor;
             this.labelDate.Dock = DockStyle.Top;
-            this.labelDate.Height = 22;
-            this.labelDate.Padding = new Padding(0, 6, 0, 2);
+            this.labelDate.Height = 26;
+            this.labelDate.Padding = new Padding(0, 10, 0, 2);
 
             this.datePublishDate.Dock = DockStyle.Top;
             this.datePublishDate.Format = DateTimePickerFormat.Custom;
+            this.datePublishDate.CustomFormat = "yyyy/MM/dd  HH:mm";
+            this.datePublishDate.Font = bodyFont;
             this.datePublishDate.Name = "datePublishDate";
-            this.datePublishDate.RightToLeftLayout = true;
             this.datePublishDate.ShowCheckBox = true;
-            this.datePublishDate.Height = 24;
+            this.datePublishDate.Height = 28;
 
-            // Add to panelPublish (reverse order for Dock.Top stacking)
             this.panelPublish.Controls.Add(this.datePublishDate);
             this.panelPublish.Controls.Add(this.labelDate);
             this.panelPublish.Controls.Add(this.buttonDraft);
             this.panelPublish.Controls.Add(this.buttonPublish);
             this.panelPublish.Controls.Add(this.labelPublish);
 
-            // ─── Categories Card ───
-            this.panelCategories.BackColor = Color.White;
-            this.panelCategories.Padding = new Padding(12);
-            this.panelCategories.Margin = new Padding(0, 0, 0, 10);
+            // ═══════ 分類卡片 ═══════
+            this.panelCategories.BackColor = cardBg;
+            this.panelCategories.Padding = new Padding(14, 12, 14, 14);
             this.panelCategories.Dock = DockStyle.Top;
-            this.panelCategories.Height = 90;
+            this.panelCategories.Height = 100;
 
-            this.labelCategories.Text = "Categories";
-            this.labelCategories.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            this.labelCategories.ForeColor = Color.FromArgb(31, 41, 55);
+            this.labelCategories.Text = "分類";
+            this.labelCategories.Font = headingFont;
+            this.labelCategories.ForeColor = headingColor;
             this.labelCategories.Dock = DockStyle.Top;
-            this.labelCategories.Height = 28;
-            this.labelCategories.Padding = new Padding(0, 0, 0, 4);
+            this.labelCategories.Height = 30;
 
             this.categoryDropDown.Dock = DockStyle.Top;
             this.categoryDropDown.DrawMode = DrawMode.OwnerDrawFixed;
@@ -126,39 +132,38 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.categoryDropDown.IntegralHeight = false;
             this.categoryDropDown.Items.AddRange(new object[] { "", "", "" });
             this.categoryDropDown.Name = "categoryDropDown";
-            this.categoryDropDown.Height = 28;
-            this.categoryDropDown.Font = new Font("Segoe UI", 9.5F);
+            this.categoryDropDown.ItemHeight = 28;
+            this.categoryDropDown.Height = 32;
+            this.categoryDropDown.Font = bodyFont;
             this.categoryDropDown.TabIndex = 0;
 
             this.panelCategories.Controls.Add(this.categoryDropDown);
             this.panelCategories.Controls.Add(this.labelCategories);
 
-            // ─── Tags Card ───
-            this.panelTags.BackColor = Color.White;
-            this.panelTags.Padding = new Padding(12);
-            this.panelTags.Margin = new Padding(0, 0, 0, 10);
+            // ═══════ 標籤卡片 ═══════
+            this.panelTags.BackColor = cardBg;
+            this.panelTags.Padding = new Padding(14, 12, 14, 14);
             this.panelTags.Dock = DockStyle.Top;
-            this.panelTags.Height = 90;
+            this.panelTags.Height = 100;
 
-            this.labelTags.Text = "Tags";
-            this.labelTags.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            this.labelTags.ForeColor = Color.FromArgb(31, 41, 55);
+            this.labelTags.Text = "標籤";
+            this.labelTags.Font = headingFont;
+            this.labelTags.ForeColor = headingColor;
             this.labelTags.Dock = DockStyle.Top;
-            this.labelTags.Height = 28;
-            this.labelTags.Padding = new Padding(0, 0, 0, 4);
+            this.labelTags.Height = 30;
 
             this.textTags.Dock = DockStyle.Top;
             this.textTags.DefaultText = null;
             this.textTags.Name = "textTags";
             this.textTags.ShowButton = true;
             this.textTags.Height = 28;
-            this.textTags.Font = new Font("Segoe UI", 9.5F);
+            this.textTags.Font = bodyFont;
             this.textTags.TabIndex = 1;
 
             this.panelTags.Controls.Add(this.textTags);
             this.panelTags.Controls.Add(this.labelTags);
 
-            // ─── Hidden controls (accessed via View All) ───
+            // ═══════ 隱藏控件 ═══════
             this.labelPageOrder.Visible = false;
             this.labelPageOrder.Name = "labelPageOrder";
             this.textPageOrder.Visible = false;
@@ -168,37 +173,36 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.comboPageParent.Visible = false;
             this.comboPageParent.Name = "comboPageParent";
 
-            // ─── View All link ───
-            this.linkViewAll.ActiveLinkColor = Color.FromArgb(37, 99, 235);
+            // ═══════ 檢視全部連結 ═══════
             this.linkViewAll.LinkBehavior = LinkBehavior.HoverUnderline;
-            this.linkViewAll.LinkColor = Color.FromArgb(37, 99, 235);
+            this.linkViewAll.ActiveLinkColor = accentBlue;
+            this.linkViewAll.LinkColor = accentBlue;
+            this.linkViewAll.VisitedLinkColor = accentBlue;
             this.linkViewAll.Dock = DockStyle.Top;
-            this.linkViewAll.Font = new Font("Segoe UI", 8.25F);
-            this.linkViewAll.Height = 24;
-            this.linkViewAll.Padding = new Padding(4, 4, 0, 0);
+            this.linkViewAll.Font = smallFont;
+            this.linkViewAll.Height = 28;
+            this.linkViewAll.Padding = new Padding(6, 6, 0, 0);
             this.linkViewAll.Name = "linkViewAll";
             this.linkViewAll.TabStop = true;
-            this.linkViewAll.Text = "View all properties...";
-            this.linkViewAll.VisitedLinkColor = Color.FromArgb(37, 99, 235);
+            this.linkViewAll.Text = "檢視全部屬性...";
             this.linkViewAll.LinkClicked += new LinkLabelLinkClickedEventHandler(this.linkViewAll_LinkClicked);
 
-            // ─── Left border separator ───
+            // ═══════ 左邊框線 ═══════
             this.panelShadow.BackColor = Color.FromArgb(229, 231, 235);
             this.panelShadow.Dock = DockStyle.Left;
             this.panelShadow.Width = 1;
             this.panelShadow.Name = "panelShadow";
 
-            // ─── Dummy table (kept for SharedPropertiesController compat) ───
+            // ═══════ 相容用隱藏 table ═══════
             this.table = new TableLayoutPanel();
             this.table.Visible = false;
             this.table.Size = new Size(0, 0);
 
-            // ─── Main control ───
+            // ═══════ 主控件 ═══════
             this.AutoScaleMode = AutoScaleMode.Inherit;
-            this.BackColor = Color.FromArgb(243, 244, 246);
-            this.Padding = new Padding(1, 10, 10, 10);
+            this.BackColor = sidebarBg;
+            this.Padding = new Padding(1, 8, 8, 8);
 
-            // Add in reverse dock order (bottom items first)
             this.Controls.Add(this.linkViewAll);
             this.Controls.Add(this.panelTags);
             this.Controls.Add(this.panelCategories);

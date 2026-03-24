@@ -118,14 +118,17 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelPageOrder.Name = "labelPageOrder";
             this.labelPageOrder.Size = new System.Drawing.Size(64, 15);
             this.labelPageOrder.TabIndex = 2;
-            this.labelPageOrder.Text = "Page order";
+            this.labelPageOrder.Text = "頁面排序";
+            this.labelPageOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelPageOrder.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // textPageOrder
             //
             this.textPageOrder.Location = new System.Drawing.Point(3, 19);
             this.textPageOrder.Margin = new System.Windows.Forms.Padding(3, 3, 3, 12);
             this.textPageOrder.Name = "textPageOrder";
-            this.textPageOrder.Size = new System.Drawing.Size(72, 23);
+            this.textPageOrder.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.textPageOrder.Size = new System.Drawing.Size(72, 26);
             this.textPageOrder.TabIndex = 3;
             //
             // labelPageParent
@@ -136,7 +139,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelPageParent.Name = "labelPageParent";
             this.labelPageParent.Size = new System.Drawing.Size(70, 15);
             this.labelPageParent.TabIndex = 4;
-            this.labelPageParent.Text = "Page parent";
+            this.labelPageParent.Text = "上層頁面";
+            this.labelPageParent.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelPageParent.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // comboPageParent
             //
@@ -159,7 +164,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelCategories.Name = "labelCategories";
             this.labelCategories.Size = new System.Drawing.Size(63, 15);
             this.labelCategories.TabIndex = 6;
-            this.labelCategories.Text = "Categories:";
+            this.labelCategories.Text = "分類";
+            this.labelCategories.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelCategories.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // categoryDropDown
             //
@@ -196,7 +203,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelTags.Name = "labelTags";
             this.labelTags.Size = new System.Drawing.Size(32, 15);
             this.labelTags.TabIndex = 8;
-            this.labelTags.Text = "Tags:";
+            this.labelTags.Text = "標籤";
+            this.labelTags.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelTags.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // textTags
             //
@@ -218,11 +227,14 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelPublishDate.Name = "labelPublishDate";
             this.labelPublishDate.Size = new System.Drawing.Size(72, 15);
             this.labelPublishDate.TabIndex = 11;
-            this.labelPublishDate.Text = "Publish date:";
+            this.labelPublishDate.Text = "發佈日期";
+            this.labelPublishDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelPublishDate.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // datePublishDate
             //
-            this.datePublishDate.CustomFormat = "M/d/yyyy, h:mm tt";
+            this.datePublishDate.CustomFormat = "yyyy/MM/dd  HH:mm";
+            this.datePublishDate.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.datePublishDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datePublishDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datePublishDate.Location = new System.Drawing.Point(3, 224);
@@ -241,7 +253,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelComments.Name = "labelComments";
             this.labelComments.Size = new System.Drawing.Size(66, 15);
             this.labelComments.TabIndex = 13;
-            this.labelComments.Text = "Comments";
+            this.labelComments.Text = "留言";
+            this.labelComments.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelComments.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // comboComments
             //
@@ -262,7 +276,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelPings.Name = "labelPings";
             this.labelPings.Size = new System.Drawing.Size(36, 15);
             this.labelPings.TabIndex = 15;
-            this.labelPings.Text = "Pings";
+            this.labelPings.Text = "引用通知";
+            this.labelPings.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelPings.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // comboPings
             //
@@ -283,7 +299,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelAuthor.Name = "labelAuthor";
             this.labelAuthor.Size = new System.Drawing.Size(44, 15);
             this.labelAuthor.TabIndex = 17;
-            this.labelAuthor.Text = "Author";
+            this.labelAuthor.Text = "作者";
+            this.labelAuthor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelAuthor.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // labelSlug
             //
@@ -293,7 +311,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelSlug.Name = "labelSlug";
             this.labelSlug.Size = new System.Drawing.Size(30, 15);
             this.labelSlug.TabIndex = 19;
-            this.labelSlug.Text = "Slug";
+            this.labelSlug.Text = "網址代稱";
+            this.labelSlug.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelSlug.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // textSlug
             //
@@ -312,7 +332,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(57, 15);
             this.labelPassword.TabIndex = 21;
-            this.labelPassword.Text = "Password";
+            this.labelPassword.Text = "密碼";
+            this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // textPassword
             //
@@ -331,7 +353,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelExcerpt.Name = "labelExcerpt";
             this.labelExcerpt.Size = new System.Drawing.Size(45, 15);
             this.labelExcerpt.TabIndex = 23;
-            this.labelExcerpt.Text = "Excerpt";
+            this.labelExcerpt.Text = "摘要";
+            this.labelExcerpt.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelExcerpt.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // textExcerpt
             //
@@ -352,7 +376,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.labelTrackbacks.Name = "labelTrackbacks";
             this.labelTrackbacks.Size = new System.Drawing.Size(66, 15);
             this.labelTrackbacks.TabIndex = 25;
-            this.labelTrackbacks.Text = "Trackbacks:";
+            this.labelTrackbacks.Text = "引用";
+            this.labelTrackbacks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelTrackbacks.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             //
             // textTrackbacks
             //
@@ -373,7 +399,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 1;
-            this.buttonClose.Text = "Close";
+            this.buttonClose.Text = "關閉";
+            this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             //
@@ -412,7 +439,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             this.Name = "PostPropertiesForm";
             this.Padding = new System.Windows.Forms.Padding(12, 12, 12, 45);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Post Properties";
+            this.Text = "文章屬性";
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PostPropertiesForm_FormClosing);
             this.flowLayoutPanel.ResumeLayout(false);
             this.flowLayoutPanel.PerformLayout();
