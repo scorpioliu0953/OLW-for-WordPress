@@ -49,6 +49,7 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
     {
         private Blog _targetBlog;
         private IBlogClientOptions _clientOptions;
+        private CommandManager _commandManager;
 
         private const int COL_CATEGORY = 0;
         private const int COL_TAGS = 1;
@@ -92,6 +93,10 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
 
             commandManager.Add(CommandId.PostProperties, PostProperties_Execute);
             commandManager.Add(CommandId.ShowCategoryPopup, ShowCategoryPopup_Execute);
+
+            // Wire publish button to the PostAndPublish command
+            _commandManager = commandManager;
+            buttonPublish.Click += (s, ev) => commandManager.Execute(CommandId.PostAndPublish);
 
             linkViewAll.KeyDown += (sender, args) =>
                                    {
@@ -160,22 +165,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
 
         protected override void OnPaintBackground(PaintEventArgs e)
         {
-            // Without the height/width checks, minimizing and restoring causes painting to blow up
-            if (!SystemInformation.HighContrast && table.Height > 0 && table.Width > 0 && panelShadow.Height > 0 && panelShadow.Width > 0)
-            {
-                using (
-                    Brush brush = new LinearGradientBrush(table.Bounds, Color.FromArgb(0xDC, 0xE7, 0xF5), Color.White,
-                                                          LinearGradientMode.Vertical))
-                    e.Graphics.FillRectangle(brush, table.Bounds);
-                using (
-                    Brush brush = new LinearGradientBrush(panelShadow.Bounds, Color.FromArgb(208, 208, 208), Color.White,
-                                                          LinearGradientMode.Vertical))
-                    e.Graphics.FillRectangle(brush, panelShadow.Bounds);
-            }
-            else
-            {
-                e.Graphics.Clear(SystemColors.Window);
-            }
+            // Simple flat sidebar background
+            e.Graphics.Clear(BackColor);
         }
 
         private bool categoryVisible = true;
@@ -184,9 +175,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
         {
             set
             {
-                table.ColumnStyles[COL_CATEGORY].SizeType = value ? SizeType.Percent : SizeType.AutoSize;
                 categoryDropDown.Visible = categoryVisible = value;
-                ManageFillerVisibility();
+                labelCategories.Visible = value;
             }
         }
 
@@ -196,16 +186,9 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
         {
             set
             {
-                table.ColumnStyles[COL_TAGS].SizeType = value ? SizeType.Percent : SizeType.AutoSize;
                 textTags.Visible = tagsVisible = value;
-                ManageFillerVisibility();
+                labelTags.Visible = value;
             }
-        }
-
-        private void ManageFillerVisibility()
-        {
-            bool shouldShow = !categoryVisible && !tagsVisible;
-            table.ColumnStyles[COL_FILLER].SizeType = shouldShow ? SizeType.Percent : SizeType.AutoSize;
         }
 
         private IBlogPostEditingContext _editorContext;

@@ -352,7 +352,8 @@ namespace OpenLiveWriter.PostEditor.PostHtmlEditing
             _postPropertyEditor = new PostPropertiesBandControl(CommandManager);
             _postPropertyEditor.TabStop = true;
             _postPropertyEditor.TabIndex = 2;
-            _postPropertyEditor.Dock = DockStyle.Top;
+            _postPropertyEditor.Dock = DockStyle.Right;
+            _postPropertyEditor.Width = 260;
             _postPropertyEditor.AccessibleName = Res.Get(StringId.PropertiesPanel);
             _editorContainer.Controls.Add(_postPropertyEditor);
             Trace.WriteLine(_postPropertyEditor.Width + " " + _postPropertyEditor.Parent.Width);

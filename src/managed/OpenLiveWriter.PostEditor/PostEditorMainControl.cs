@@ -1126,7 +1126,7 @@ namespace OpenLiveWriter.PostEditor
             string postDescription = (title != String.Empty) ? title : Res.Get(StringId.Untitled);
 
             // update frame window — append version to confirm updates are working
-            _mainFrameWindow.Caption = String.Format(CultureInfo.CurrentCulture, Res.Get(StringId.WindowTitleFormat), postDescription, ApplicationEnvironment.ProductNameQualified) + " [v0.7.0]";
+            _mainFrameWindow.Caption = String.Format(CultureInfo.CurrentCulture, Res.Get(StringId.WindowTitleFormat), postDescription, ApplicationEnvironment.ProductNameQualified) + " [v0.7.1]";
 
             UpdatePostStatusUI();
         }
