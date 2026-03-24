@@ -5,6 +5,7 @@ using System;
 using System.Diagnostics;
 using System.ComponentModel;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 using OpenLiveWriter.BlogClient;
@@ -108,8 +109,20 @@ namespace OpenLiveWriter.PostEditor
                 Application.Idle += LogStartupPerf;
             }
 
-            BackColor = Color.Red;
+            // Set warm amber theme background
+            BackColor = Color.FromArgb(253, 246, 236);
+
+            // Set title bar color via DWM API (Windows 11+)
+            try
+            {
+                int color = 0x0009B4FF; // COLORREF amber: R=255, G=180, B=9 → 0x0009B4FF
+                DwmSetWindowAttribute(Handle, 35 /* DWMWA_CAPTION_COLOR */, ref color, 4);
+            }
+            catch { }
         }
+
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
 
         private static bool startupLogged = false;
         private static void LogStartupPerf(object sender, EventArgs args)
