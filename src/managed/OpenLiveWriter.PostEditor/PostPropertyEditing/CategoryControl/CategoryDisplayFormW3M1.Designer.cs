@@ -62,6 +62,7 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             this.selectorContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectorContainer.AutoScroll = true;
             this.selectorContainer.Location = new System.Drawing.Point(12, 42);
             this.selectorContainer.Name = "selectorContainer";
             this.selectorContainer.Size = new System.Drawing.Size(209, 250);
@@ -76,7 +77,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             this.lblNone.Name = "lblNone";
             this.lblNone.Size = new System.Drawing.Size(159, 67);
             this.lblNone.TabIndex = 4;
-            this.lblNone.Text = "(No categories)";
+            this.lblNone.Text = "（無分類）";
+            this.lblNone.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblNone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblNone.Visible = false;
             //
@@ -87,7 +89,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(22, 24);
             this.btnRefresh.TabIndex = 1;
-            this.toolTip.SetToolTip(this.btnRefresh, "Refresh List");
+            this.toolTip.SetToolTip(this.btnRefresh, "重新整理");
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             //
@@ -104,7 +107,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             this.grpAdd.Size = new System.Drawing.Size(213, 77);
             this.grpAdd.TabIndex = 3;
             this.grpAdd.TabStop = false;
-            this.grpAdd.Text = "Add Category";
+            this.grpAdd.Text = "新增分類";
+            this.grpAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
             //
             // btnDoAdd
             //
@@ -114,7 +118,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             this.btnDoAdd.Name = "btnDoAdd";
             this.btnDoAdd.Size = new System.Drawing.Size(36, 23);
             this.btnDoAdd.TabIndex = 2;
-            this.btnDoAdd.Text = "&Add";
+            this.btnDoAdd.Text = "新增";
+            this.btnDoAdd.Font = new System.Drawing.Font("Segoe UI", 8.5F);
             this.btnDoAdd.UseVisualStyleBackColor = true;
             this.btnDoAdd.Click += new System.EventHandler(this.btnDoAdd_Click);
             //
@@ -154,7 +159,8 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             //
             // CategoryDisplayFormW3M1
             //
-            this.ClientSize = new System.Drawing.Size(233, 391);
+            this.ClientSize = new System.Drawing.Size(260, 420);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Controls.Add(this.lblNone);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpAdd);
@@ -162,7 +168,7 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing.CategoryControl
             this.Controls.Add(this.selectorContainer);
             this.Controls.Add(this.txtFilter);
             this.MaximumSize = new System.Drawing.Size(438, 566);
-            this.MinimumSize = new System.Drawing.Size(233, 300);
+            this.MinimumSize = new System.Drawing.Size(260, 350);
             this.Name = "CategoryDisplayFormW3M1";
             this.Text = "CategoryDisplayFormW3M1";
             this.grpAdd.ResumeLayout(false);
