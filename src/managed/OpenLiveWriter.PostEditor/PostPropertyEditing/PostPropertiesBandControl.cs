@@ -94,9 +94,10 @@ namespace OpenLiveWriter.PostEditor.PostPropertyEditing
             commandManager.Add(CommandId.PostProperties, PostProperties_Execute);
             commandManager.Add(CommandId.ShowCategoryPopup, ShowCategoryPopup_Execute);
 
-            // Wire publish button to the PostAndPublish command
+            // Wire publish/draft buttons to commands
             _commandManager = commandManager;
             buttonPublish.Click += (s, ev) => commandManager.Execute(CommandId.PostAndPublish);
+            buttonDraft.Click += (s, ev) => commandManager.Execute(CommandId.PostAsDraft);
 
             linkViewAll.KeyDown += (sender, args) =>
                                    {

@@ -444,10 +444,9 @@
             <ScalingPolicy>
               <ScalingPolicy.IdealSizes>
                 <Scale Group="cmdClipboardGroup" Size="Large"/>
-                <Scale Group="cmdPublishGroup" Size="Large"/>
                 <Scale Group="cmdFontGroup" Size="Large"/>
                 <Scale Group="cmdInsertGroup" Size="Large"/>
-                <Scale Group="cmdTextEditingGroup" Size="Medium"/>                
+                <Scale Group="cmdTextEditingGroup" Size="Medium"/>
                 <Scale Group="cmdParagraphGroup" Size="Medium"/>
                 <Scale Group="cmdSemanticHtmlGroup" Size="Large"/>
               </ScalingPolicy.IdealSizes>
@@ -473,21 +472,6 @@
             </DropDownButton>
             <Button CommandName="cmdCut"/>
             <Button CommandName="cmdCopyCommand"/>            
-          </Group>
-          <Group CommandName="cmdPublishGroup" SizeDefinition="OneBigButtonOneComboboxAndOneSmallButton" ApplicationModes="0">
-            <Button CommandName="cmdPostAndPublish"/>
-            <DropDownGallery CommandName="cmdSelectBlog" TextPosition="Right" Type="Items" ItemHeight="16" ItemWidth="16">
-              <DropDownGallery.MenuLayout>
-                <VerticalMenuLayout Gripper="None"/>
-              </DropDownGallery.MenuLayout>
-              <DropDownGallery.MenuGroups>
-                <MenuGroup Class="StandardItems">
-                  <Button CommandName="cmdAddWeblog"/>
-                  <Button CommandName="cmdAccounts"/>
-                </MenuGroup>
-              </DropDownGallery.MenuGroups>
-            </DropDownGallery>
-            <Button CommandName="cmdPostAsDraft"/>
           </Group>
             <Group CommandName="cmdFontGroup" SizeDefinition="CustomFontControl" ApplicationModes="0">
                 <ComboBox CommandName="cmdFontFamily" IsAutoCompleteEnabled="true" IsEditable="true" ResizeType="VerticalResize"/>
@@ -644,28 +628,11 @@
           <Tab.ScalingPolicy>
             <ScalingPolicy>
               <ScalingPolicy.IdealSizes>
-                <Scale Group="cmdPublishGroup" Size="Large"/>
                 <Scale Group="cmdBrowserGroup" Size="Large"/>
                 <Scale Group="cmdPreviewGroup" Size="Large"/>
               </ScalingPolicy.IdealSizes>
             </ScalingPolicy>
           </Tab.ScalingPolicy>
-          <Group CommandName="cmdPublishGroup" SizeDefinition="OneBigButtonOneComboboxAndOneSmallButton" ApplicationModes="1">
-            <!-- @RIBBON TODO: Consider using RibbonExport and RibbonInclude to include this duplicate markup. -->
-            <Button CommandName="cmdPostAndPublish"/>
-            <DropDownGallery CommandName="cmdSelectBlog" TextPosition="Right" Type="Items" ItemHeight="16" ItemWidth="16">
-              <DropDownGallery.MenuLayout>
-                <VerticalMenuLayout Gripper="None"/>
-              </DropDownGallery.MenuLayout>
-              <DropDownGallery.MenuGroups>
-                <MenuGroup Class="StandardItems">
-                  <Button CommandName="cmdAddWeblog"/>
-                  <Button CommandName="cmdAccounts"/>                  
-                </MenuGroup>
-              </DropDownGallery.MenuGroups>
-            </DropDownGallery>
-            <Button CommandName="cmdPostAsDraft"/>
-          </Group>
           <Group CommandName="cmdBrowserGroup" SizeDefinition="OneButton" ApplicationModes="1">            
             <Button CommandName="cmdUpdateWeblogStyle"/>
           </Group>
