@@ -685,8 +685,10 @@ namespace OpenLiveWriter.BlogClient.Clients
 
         protected virtual string CleanUploadFilename(string filename)
         {
-            string cleanFilename = filename.Replace("#", "_"); //avoids bug 494107
-            return cleanFilename;
+            // Replace original filename with timestamp to avoid control-char / encoding issues
+            string ext = Path.GetExtension(filename);
+            string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss_fff");
+            return "IMG_" + timestamp + ext;
         }
 
         public override string AddCategory(string blogId, BlogPostCategory category)

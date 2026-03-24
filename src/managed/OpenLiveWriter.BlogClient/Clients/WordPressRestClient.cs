@@ -757,8 +757,10 @@ namespace OpenLiveWriter.BlogClient.Clients
         {
             return WrapRestCall("UploadMedia", tc =>
             {
-                string fileName = uploadContext.PreferredFileName;
-                string contentType = MimeHelper.GetContentType(Path.GetExtension(fileName));
+                // Replace filename with timestamp to avoid control-char / encoding issues
+                string ext = Path.GetExtension(uploadContext.PreferredFileName);
+                string fileName = "IMG_" + DateTime.Now.ToString("yyyyMMdd_HHmmss_fff") + ext;
+                string contentType = MimeHelper.GetContentType(ext);
 
                 using (Stream fileStream = uploadContext.GetContents())
                 {
